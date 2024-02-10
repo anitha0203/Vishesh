@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../public/Satoshi-Medium.otf);
+}
+
+.main-heading {
+    font-family: Satoshi;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 2.5rem;
+}
+
+.main-logo {
+    width: 151px;
+    height: 114px;
+}
+
+.vishesh-head {
+    font-family: Satoshi-medium;
+    font-size: 3.7rem;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+    color: #131A27;
+}
+
+.vishesh-sub-head {
+    font-family: Satoshi-medium;
+    font-weight: 100;
+    font-size: 1.9rem;
+    margin: -8px 0px 0px 20px;
+    padding: 0px;
+    color: #131A27;
+}
+
+.header-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items-section {
+    display: flex;
+    gap: 4.5vh;
+    border-radius: 48px;
+    opacity: 0.95;
+    background: #181818;
+    backdrop-filter: blur(150px);
+    color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    bottom: 1%;
+}
+
+.nav-items {
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Satoshi;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.main-heading1 {
+    display: none;
+}
+
+.main-heading1.scrolled {
+    position: fixed;
+    display: block;
+    top: 3%;
+    left: 4%;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.main-logo1 {
+    width: 120px;
+    height: 90px;
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 650px) {
+    .nav-items-section {
+        gap: 2vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-logo,
+    .main-logo1 {
+        width: 130px;
+        height: 95px;
+    }
+
+    .vishesh-head {
+        font-size: 3rem;
+    }
+
+    .vishesh-sub-head {
+        font-size: 1.5rem;
+    }
+
+    .nav-items-section {
+        gap: 1vh;
+        padding: 1rem 1.8rem;
+    }
+
+    .nav-items {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-logo,
+    .main-logo1 {
+        width: 90px;
+        height: 75px;
+    }
+
+    .vishesh-head {
+        font-size: 2.2rem;
+    }
+
+    .vishesh-sub-head {
+        font-size: 1.2rem;
+    }
+
+    .nav-items-section {
+        gap: 0.8vh;
+        padding: 1rem 1.2rem;
+    }
+
+    .nav-items {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nav-items-section {
+        gap: 0.6vh;
+        padding: 0.8rem;
+    }
+
+    .nav-items {
+        font-size: 1rem;
+    }
+}

@@ -14,5 +14,6 @@
 }
 
 * {
-  font-family: hauora;
+  font-family: Satoshi;
+  background: var(--BgColors-Three, #F7F5F2);
 }
