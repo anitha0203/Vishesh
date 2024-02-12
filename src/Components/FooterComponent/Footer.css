@@ -1,0 +1,192 @@
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../public/Satoshi-Medium.otf);
+}
+
+@font-face {
+    font-family: Satoshi-web;
+    src: url(../../../public/Satoshi-Light.otf);
+}
+
+.footer-section {
+    font-family: Satoshi-web;
+    padding: 4rem 5rem 6.5rem;
+    background: var(--Grey-800, #1D2939);
+}
+
+.last-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vh;
+    background-color: transparent;
+    margin-top: 3rem;
+}
+
+.last-section1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vh;
+    background-color: transparent;
+}
+
+.last-section2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vh;
+    background-color: transparent;
+    margin-left: 20%;
+}
+
+.last-section3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    margin-top: 1.5rem;
+}
+
+.last-text {
+    background-color: transparent;
+    color: #FCFCFC;
+    font-family: Satoshi-web;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+.footer-section-color {
+    background-color: transparent;
+}
+
+.footer-section-color {
+    background-color: transparent;
+}
+
+.footer-section-text1 {
+    font-family: Satoshi-medium;
+    background-color: transparent;
+    color: #FCFCFC;
+    font-size: calc(1.4rem + 1.3vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.footer-section-text2 {
+    background-color: transparent;
+    color: #FCFCFC;
+    font-size: calc(0.65rem + 0.7vw);
+    line-height: 150%;
+    letter-spacing: 1px;
+    margin: 10px 0px 0px;
+    font-weight: 100;
+    font-family: Satoshi-web;
+}
+
+.footer-section-text3 {
+    background-color: transparent;
+    color: #FCFCFC;
+    font-size: calc(1.1rem + 0.85vw);
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.footer-section-text4 {
+    background-color: transparent;
+    color: #FCFCFC;
+    font-size: calc(1.1rem + 0.85vw);
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 0px;
+}
+
+.social-icon-img {
+    background-color: transparent;
+    margin-right: 2.5rem;
+}
+
+.footer-section-socialicons {
+    background-color: transparent;
+}
+
+.footer-section-icon {
+    background-color: transparent;
+    padding-top: 4px;
+    padding-left: 1rem;
+    position: absolute;
+}
+
+
+/* Responsive media queries */
+@media only screen and (max-width: 1960px) {
+    .last-section2 {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1760px) {
+    .last-section2 {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 1675px) {
+    .last-section2 {
+        margin-left: 0%;
+        gap: 3vh;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .last-section1 {
+        gap: 3vh;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .footer-section {
+        padding: 4rem 2rem 6.5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .last-section1 {
+        display: block;
+    }
+
+    .last-section2 {
+        margin-top: 1rem;
+    }
+
+    .social-icon-img {
+        margin-right: 0.5rem;
+    }
+
+    .last-section3 {
+        gap: 3vh;
+    }
+
+    .footer-section-icon {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .last-section3 {
+        display: block;
+    }
+
+    .footer-section-socialicons {
+        margin-top: 1rem;
+    }
+
+    .social-icon-img {
+        margin-right: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .last-section2 {
+        display: block;
+    }
+}

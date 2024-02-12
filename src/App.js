@@ -6,6 +6,7 @@ import ServicesPage from './Components/ServicesPage/ServicesPage.js'
 import WorkPage from './Components/WorkPage/WorkPage.js'
 import AboutPage from './Components/AboutPage/AboutPage.js'
 import ContactPage from './Components/ContactPage/ContactPage.js'
+import Footer from './Components/FooterComponent/Footer.js';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='privary-policy' Component={HomePage} />
         <Route path='*' Component={HomePage} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
