@@ -183,9 +183,12 @@
     .social-icon-img {
         margin-right: 0.8rem;
     }
+    .footer-section {
+        padding: 4rem 1rem 6.5rem;
+    }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 380px) {
     .last-section2 {
         display: block;
     }
