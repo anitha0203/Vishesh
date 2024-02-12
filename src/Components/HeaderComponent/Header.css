@@ -85,6 +85,24 @@
     height: 90px;
 }
 
+/* Add a dot style for the active link */
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+}
+
 /* Responsive media queries */
 @media only screen and (max-width: 650px) {
     .nav-items-section {
@@ -93,6 +111,7 @@
 }
 
 @media only screen and (max-width: 500px) {
+
     .main-logo,
     .main-logo1 {
         width: 130px;
@@ -118,6 +137,7 @@
 }
 
 @media only screen and (max-width: 400px) {
+
     .main-logo,
     .main-logo1 {
         width: 90px;
