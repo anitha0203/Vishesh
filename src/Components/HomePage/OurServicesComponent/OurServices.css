@@ -72,7 +72,7 @@
 .service-team-heading {
     color: #131A27;
     font-family: Satoshi-medium;
-    font-size: 68px;
+    font-size: calc(3rem + 2.1vh);
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -97,5 +97,102 @@
     width: 100%;
     height: auto;
     border-radius: 25px;
-    display: none; /* Initially hide the video */
+    display: none; 
+}
+
+/* Responsive media queries */
+@media only screen and (min-width: 2000px) {
+    .video-container1 {
+        width: 650px;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 2300px) {
+    .video-container1 {
+        width: 750px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 1718px) {
+    .service-team-heading {
+        font-size: calc(2rem + 2vh);
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .services-container {
+        margin-left: 2rem;
+    }
+    .services-hr {
+        width: 55%;
+    }
+    .video-container1 {
+        width: 480px;
+        height: 300px;
+    }
+    .service-team-heading {
+        font-size: calc(1.5rem + 1.5vh);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .services-container {
+        margin-left: 0rem;
+        gap: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .services-container {
+        margin-left: 0rem;
+        gap: 5rem;
+    }
+    .services-hr {
+        width: 60%;
+    }
+    .video-container1 {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .services-hr {
+        width: 52%;
+    }
+    .video-container1 {
+        width: 320px;
+        height: 250px;
+    }
+    .service-team-heading {
+        font-size: calc(1.2rem + 1.2vh);
+    }
+    .our-services-section {
+        margin: 10rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .video-container1 {
+        width: 270px;
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .services-hr {
+        width: 55%;
+    }
+    .video-container1 {
+        width: 270px;
+        height: 220px;
+    }
+    .service-team-heading {
+        font-size: calc(1.2rem + 1vh);
+    }
+    .our-services-section {
+        margin: 8rem 1rem;
+    }
 }
