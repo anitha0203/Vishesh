@@ -1,0 +1,274 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../public/Satoshi-Medium.otf);
+}
+
+.home-main-section {
+    text-align: center;
+    margin: 14rem 4rem;
+}
+
+.home-main-section1 {
+    text-align: center;
+    margin: 14rem 4rem;
+    display: none;
+}
+
+.home-main-heading {
+    font-family: Satoshi-medium;
+    font-size: calc(3rem + 2.5vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33353A;
+    margin: 0px;
+}
+
+.video-container {
+    width: 260px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-heading-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -6rem;
+}
+
+.home-heading-video h2 {
+    margin-left: 1rem;
+}
+
+.home-section-para {
+    width: 55%;
+    margin: 1.5rem auto 0;
+    font-family: Satoshi-light;
+    font-size: calc(0.6rem + 0.75vw);
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+}
+
+.video1 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Optionally, you can hide controls */
+.video1::-webkit-media-controls {
+    display: none;
+}
+
+.video1::-webkit-media-controls-enclosure {
+    display: none;
+}
+
+.video1::-webkit-media-controls-panel {
+    display: none;
+}
+
+.home-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 9.5rem auto 9.5rem 4rem;
+}
+
+.home-about-heading {
+    font-family: Satoshi-medium;
+    font-size: calc(2rem + 2vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.home-about-para {
+    width: 95%;
+    font-family: Satoshi-light;
+    font-size: calc(0.6rem + 0.75vw);
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+}
+
+.about-us-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid #131A27;
+    padding: 32px 40px 34px 40px;
+    color: #131A27;
+    font-family: Satoshi;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.26px;
+}
+
+.about-us-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d3b049;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.about-us-btn:hover {
+    border-color: transparent;
+    color: #fff;
+    z-index: 1000;
+}
+
+.about-us-btn:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* Responsive media queries */
+@media only screen and (max-width: 1700px) {
+    .home-section-para {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .about-us-img {
+        width: 45rem;
+        height: 35rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .home-heading-video {
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+
+    .home-main-heading {
+        font-size: calc(2rem + 2vw);
+    }
+
+    .video-container {
+        width: 238px;
+        height: 100px;
+    }
+
+    .about-us-img {
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .home-main-section {
+        margin: 14.5rem 0rem;
+    }
+
+    .home-about-section {
+        margin: 9.5rem auto 9.5rem 2rem;
+    }
+
+    .about-us-img {
+        width: 30rem;
+        height: 25rem;
+    }
+
+    .about-us-btn {
+        padding: 25px 33px 27px 33px;
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .home-main-heading {
+        font-size: calc(1.8rem + 2vw);
+    }
+
+    .video-container {
+        width: 200px;
+        height: 80px;
+    }
+
+    .home-about-section {
+        margin: 9.5rem auto 9.5rem 1rem;
+    }
+
+    .about-us-img {
+        width: 26rem;
+        height: 25rem;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .home-about-section {
+        display: block;
+    }
+
+    .about-us-img {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .home-main-heading {
+        font-size: calc(1.65rem + 1.85vw);
+    }
+
+    .video-container {
+        width: 200px;
+        height: 80px;
+    }
+
+    .about-us-btn {
+        padding: 20px 28px 22px 28px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-main-section {
+        display: none;
+    }
+
+    .home-main-section1 {
+        display: block;
+    }
+
+    .home-main-section1 {
+        margin: 3rem 0rem;
+    }
+
+    .video1 {
+        height: 30vh;
+    }
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+.our-services-section {
+    margin: 12rem 4rem;
+}
+
+.services-heading {
+    color: #33353A;
+    font-family: Satoshi-medium;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.services-container {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.video-container1 {
+    width: 550px;
+    height: 400px;
+    margin-top: 2rem;
+}
+
+/* Optionally, you can hide controls */
+.service-video::-webkit-media-controls {
+    display: none;
+}
+
+.service-video::-webkit-media-controls-enclosure {
+    display: none;
+}
+
+.service-video::-webkit-media-controls-panel {
+    display: none;
+}
+
+.service-video {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.services-hr {
+    width: 61.2%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.service-team-heading {
+    color: #131A27;
+    font-family: Satoshi-medium;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.service-team-text {
+    color: #33353A;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+}
+
+.services-container:hover .service-video {
+    display: block;
+}
+
+.service-video {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    display: none; /* Initially hide the video */
+}
