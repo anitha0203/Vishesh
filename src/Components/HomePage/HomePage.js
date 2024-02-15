@@ -1,6 +1,8 @@
 import React from 'react';
 import './HomePage.css';
 import video from '../../assets/HomePage/Video.mp4';
+import video2 from '../../assets/HomePage/video2.mp4';
+import video3 from '../../assets/HomePage/video3.mp4';
 import AboutUS from '../../assets/HomePage/AboutUs.png'
 import OurServices from './OurServicesComponent/OurServices';
 import Vector from '../../assets/HomePage/Vector.png'
@@ -8,6 +10,7 @@ import FeaturedProject from './FeaturedProjectComponent/FeaturedProject';
 import ClientLogos from './ClientLogosComponent/ClientLogos';
 import { useNavigate } from 'react-router-dom';
 import Reviews from './ReviewsComponent/Reviews';
+import LatestUpdates from './LatestUpdatesComponent/LatestUpdates';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -64,22 +67,67 @@ function HomePage() {
             <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE  <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} /> </h1>
         </div>
       </div>
-      <FeaturedProject />
 
-<<<<<<< HEAD
       {/* Featured Projects Section  
       <FeaturedProject />
 */}
-=======
->>>>>>> a00cc8662de192392ce87663f7024d998ed8a8fe
-
-
       {/**    logo slider 
       <ClientLogos />
 */}
 
-      {/**    Reviews      */}
+      {/**    Reviews Section     */}
       <Reviews />
+
+
+      {/**    teams heading SCROLLING Section  */}
+      <div className='team-heading-sections'>
+        <hr />
+        <div class="scroll-container1">
+          <div class="scroll-text">
+            <h1 className='team-scroll-heading'>
+              <img className='heading-scroll-img1' src={Vector} /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} />
+              CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} />
+              CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} />
+              CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} /> UI/UX <img className='heading-scroll-img1' src={Vector} /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} /> </h1>
+          </div>
+        </div>
+        <hr />
+        <div class="scroll-container1">
+          <div class="scroll-text2">
+            <h1 className='team-scroll-heading'>
+              <img className='heading-scroll-img1' src={Vector} /> DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} />
+              DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} />
+              DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} />
+              DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} /> </h1>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      {/**    Latest Updates Section      */}
+      <LatestUpdates />
+
+      {/**    Work with us section         
+      <div className='work-withus-section'>
+        <h2 className='work-section-heading'>
+          <span>As</span>
+          <div className='video-container4'>
+            <video className='video4' controls autoPlay muted loop>
+              <source src={video2} type='video/mp4' />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <span>aspiring enthusiasts, we combined our professional skills, empathy, and shared values to build a unique</span>
+          <div className='video-container4'>
+            <video className='video4' controls autoPlay muted loop>
+              <source src={video3} type='video/mp4' />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <span>collaborative environment.</span>
+        </h2>
+      </div>
+*/}
 
     </div>
   );

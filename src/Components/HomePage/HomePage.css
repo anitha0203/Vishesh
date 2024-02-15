@@ -48,6 +48,12 @@
     display: block;
 }
 
+.video4 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .home-heading-video {
     display: flex;
     justify-content: center;
@@ -76,15 +82,18 @@
 }
 
 /* Optionally, you can hide controls */
-.video1::-webkit-media-controls {
+.video1::-webkit-media-controls,
+.video4::-webkit-media-controls {
     display: none;
 }
 
-.video1::-webkit-media-controls-enclosure {
+.video1::-webkit-media-controls-enclosure,
+.video4::-webkit-media-controls-enclosure {
     display: none;
 }
 
-.video1::-webkit-media-controls-panel {
+.video1::-webkit-media-controls-panel,
+.video4::-webkit-media-controls-panel {
     display: none;
 }
 
@@ -140,7 +149,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #d3b049;
+    background-color: #F5A091;
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 0.3s ease;
@@ -168,8 +177,18 @@
 
 .scroll-text {
     display: flex;
-    animation: scroll 25s linear infinite;
+    animation: scroll1 30s linear infinite;
     width: 500%;
+}
+
+@keyframes scroll1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .vishesh-scroll-heading {
@@ -186,15 +205,81 @@
     width: 8rem;
 }
 
-@keyframes scroll {
+.team-scroll-heading {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 40px;
+    font-size: 68px;
+    flex-shrink: 0;
+    margin: 0px;
+}
+
+.heading-scroll-img1 {
+    width: 4rem;
+    margin-top: 1vh;
+}
+
+.scroll-container1 {
+    width: 92%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 2rem 4rem;
+}
+
+.scroll-text2 {
+    display: flex;
+    animation: scroll2 30s linear infinite;
+    width: 500%;
+}
+
+
+@keyframes scroll2 {
     0% {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(0%);
     }
 }
+
+.team-heading-sections {
+    margin: 8rem 0rem;
+}
+
+.work-withus-section {
+    margin: 5rem 4rem;
+    display: flex;
+    width: 20rem;
+}
+
+.work-section-heading {
+    color: #000;
+    font-family: Satoshi;
+    font-size: 136px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: flex;
+}
+
+.video-container4 {
+    width: 260px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 2.5rem;
+}
+
+span,
+.video-container4 {
+    flex: 0 0 auto;
+}
+
 
 /* Responsive media queries */
 @media only screen and (max-width: 1700px) {
@@ -221,6 +306,11 @@
     }
 
     .video-container {
+        width: 238px;
+        height: 100px;
+    }
+
+    .video-container4 {
         width: 238px;
         height: 100px;
     }
@@ -254,6 +344,10 @@
         margin: 8rem 0px;
     }
 
+    .scroll-container1 {
+        width: 86%;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -262,6 +356,11 @@
     }
 
     .video-container {
+        width: 200px;
+        height: 80px;
+    }
+
+    .video-container4 {
         width: 200px;
         height: 80px;
     }
@@ -311,6 +410,11 @@
         height: 80px;
     }
 
+    .video-container4 {
+        width: 200px;
+        height: 80px;
+    }
+
     .about-us-btn {
         padding: 20px 28px 22px 28px;
     }
@@ -343,7 +447,22 @@
     .heading-scroll-img {
         width: 2rem;
     }
+
     .home-about-section {
         margin: 1rem auto 6rem 1rem;
+    }
+
+    .scroll-container1 {
+        width: 80%;
+        margin: 2rem 1rem;
+    }
+
+    .team-scroll-heading {
+        font-size: 48px;
+    }
+
+    .heading-scroll-img1 {
+        width: 2.5rem;
+        margin-top: 0.5vh;
     }
 }
