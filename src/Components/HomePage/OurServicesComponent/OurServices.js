@@ -5,6 +5,7 @@ import Services2 from '../../../assets/ServicePage/UI-UX Design.mp4';
 import Services3 from '../../../assets/ServicePage/FullStack Dev.mp4';
 import Services4 from '../../../assets/ServicePage/Digital Marketing.mp4';
 import Services5 from '../../../assets/ServicePage/Marketing Analysis.mp4';
+import { useNavigate } from 'react-router-dom';
 
 const servicesData = [
     { videoSource: Services1, heading: 'Creative Design', text: 'Our creative services shape captivating realities. With a visionary approach and awe-inspiring execution, we join you in weaving narratives through pixels, words, and brushstrokes.' },
@@ -15,6 +16,7 @@ const servicesData = [
 ]
 
 function OurServices() {
+    const navigate = useNavigate();
     return (
         <div className='our-services-section'>
             <h2 className='services-heading'>Our Services</h2>
@@ -31,6 +33,12 @@ function OurServices() {
                         </div>
                         <div className='text-container'>
                             <h2 className='service-team-heading'>{service.heading}</h2>
+                            <div className='video-container2'>
+                                <video className='service-video2' controls autoPlay muted loop>
+                                    <source src={service.videoSource} type='video/mp4' />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                             <p className='service-team-text'>{service.text}</p>
                         </div>
                     </div>
@@ -38,9 +46,8 @@ function OurServices() {
             ))}
             <hr className='services-hr' />
             <div className='services-btn-container'>
-                <button className='services-btn'>View all</button>
+                <button onClick={() => { navigate('/services') }} className='services-btn'>View all</button>
             </div>
-
         </div>
     );
 }

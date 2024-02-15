@@ -113,6 +113,10 @@
     letter-spacing: 0.24px;
 }
 
+.about-us-img1 {
+    display: none;
+}
+
 .about-us-btn {
     position: relative;
     overflow: hidden;
@@ -126,6 +130,7 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.26px;
+    cursor: pointer;
 }
 
 .about-us-btn::before {
@@ -164,19 +169,21 @@
 .scroll-text {
     display: flex;
     animation: scroll 25s linear infinite;
-    /* position: absolute; */
     width: 500%;
-    /* Adjust the width based on your design */
 }
 
 .vishesh-scroll-heading {
     color: #33353a;
     font-family: Satoshi-medium;
-    font-size: 192px;
+    font-size: calc(7rem + 6vw);
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
     margin: 0;
+}
+
+.heading-scroll-img {
+    width: 8rem;
 }
 
 @keyframes scroll {
@@ -188,47 +195,6 @@
         transform: translateX(-100%);
     }
 }
-
-
-/* 
-.slider {
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .slide-track {
-    display: flex;
-    animation: scroll 40s linear infinite;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-100% * 4)); 
-    }
-  }
-  
-  .slide {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .slide p {
-    color: #33353A;
-    font-family: Satoshi;
-    font-size: calc(8rem + 8vh);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    margin: 0px;
-  } */
-
-
-
 
 /* Responsive media queries */
 @media only screen and (max-width: 1700px) {
@@ -320,9 +286,18 @@
     }
 
     .about-us-img {
-        width: 100%;
+        display: none;
+    }
+
+    .about-us-img1 {
+        width: 96%;
         height: 100%;
         margin-top: 1rem;
+        display: block;
+    }
+
+    .about-us-btn {
+        margin-top: 2rem;
     }
 }
 
@@ -356,5 +331,19 @@
 
     .video1 {
         height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .vishesh-scroll-heading {
+        font-size: calc(2rem + 2vw);
+        margin: 0px;
+    }
+
+    .heading-scroll-img {
+        width: 2rem;
+    }
+    .home-about-section {
+        margin: 1rem auto 6rem 1rem;
     }
 }

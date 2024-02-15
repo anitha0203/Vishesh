@@ -39,25 +39,29 @@ function FeaturedProject() {
                 </div>
             </div>
 
-            <div className='featured-projects-sections'>
-                <div className='projects-section3'>
-                    <h2 className='projects-heading1'>Sri Chaitanya Hospital</h2>
-                    <div className='projects-techs1'>
-                        <div style={{ backgroundColor: "transparent" }}>
-                            <button className='projects-techs-btn'>Development</button>
-                            <button className='projects-techs-btn'>CRM</button>
-                        </div>
-                    </div>
-                </div>
-                <div className='projects-section4' onClick={() => { navigate('/work') }}>
-                    <div className='projects-text-section'>
-                        <img src={PlusIcon} className='projects-img' alt='featured-projects' />
-                        <p className='projects-view-all'>View All</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     )
 }
 
 export default FeaturedProject
+
+
+
+// <div className='featured-projects-sections'>
+// <div className='projects-section3'>
+//     <h2 className='projects-heading1'>Sri Chaitanya Hospital</h2>
+//     <div className='projects-techs1'>
+//         <div style={{ backgroundColor: "transparent" }}>
+//             <button className='projects-techs-btn'>Development</button>
+//             <button className='projects-techs-btn'>CRM</button>
+//         </div>
+//     </div>
+// </div>
+// <div className='projects-section4' onClick={() => { navigate('/work') }}>
+//     <div className='projects-text-section'>
+//         <img src={PlusIcon} className='projects-img' alt='featured-projects' />
+//         <p className='projects-view-all'>View All</p>
+//     </div>
+// </div>
+// </div>
