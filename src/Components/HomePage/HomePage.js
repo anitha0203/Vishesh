@@ -57,8 +57,8 @@ function HomePage() {
           <h1 className='vishesh-scroll-heading'> * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * </h1>
         </div>
       </div>
+      <FeaturedProject />
 
-    
 
 
     </div>
