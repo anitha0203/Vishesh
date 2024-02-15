@@ -58,9 +58,7 @@ function HomePage() {
         </div>
       </div>
 
-      {/* Featured Projects Section  */}
-      <FeaturedProject />
-
+    
 
 
     </div>
