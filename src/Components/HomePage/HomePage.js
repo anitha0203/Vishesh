@@ -3,6 +3,7 @@ import './HomePage.css';
 import video from '../../assets/HomePage/Video.mp4';
 import AboutUS from '../../assets/HomePage/AboutUs.png'
 import OurServices from './OurServicesComponent/OurServices';
+import FeaturedProject from './FeaturedProjectComponent/FeaturedProject';
 
 function HomePage() {
   return (
@@ -28,7 +29,6 @@ function HomePage() {
         <p className='home-section-para'>We tackle your business challenges head-on through strategic product design, cutting-edge tech solutions, and effective marketing. We help turn your business dreams into reality.</p>
       </div>
 
-
       {/**    Video Section       */}
       <video className='video1' controls autoPlay muted loop>
         <source src={video} type='video/mp4' />
@@ -50,6 +50,18 @@ function HomePage() {
           <img src={AboutUS} className='about-us-img' alt='about-us' />
         </div>
       </div>
+
+      {/**    VISHESH COUNTRY CACHE * FOSTERING INTELLECT SCROLLING Section  */}
+      <div class="scroll-container">
+        <div class="scroll-text">
+          <h1 className='vishesh-scroll-heading'> * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * </h1>
+        </div>
+      </div>
+
+      {/* Featured Projects Section  */}
+      <FeaturedProject />
+
+
 
     </div>
   );

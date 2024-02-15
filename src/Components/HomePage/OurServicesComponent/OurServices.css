@@ -97,7 +97,51 @@
     width: 100%;
     height: auto;
     border-radius: 25px;
-    display: none; 
+    display: none;
+}
+
+.services-btn-container {
+    text-align: right;
+    margin-top: 3rem;
+}
+
+.services-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid #131A27;
+    padding: 32px 40px 34px 40px;
+    color: #131A27;
+    font-family: Satoshi;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.26px;
+}
+
+.services-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d3b049;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.services-btn:hover {
+    border-color: transparent;
+    color: #fff;
+    z-index: 1000;
+}
+
+.services-btn:hover::before {
+    transform: scaleY(1);
 }
 
 /* Responsive media queries */
@@ -125,13 +169,16 @@
     .services-container {
         margin-left: 2rem;
     }
+
     .services-hr {
         width: 55%;
     }
+
     .video-container1 {
         width: 480px;
         height: 300px;
     }
+
     .service-team-heading {
         font-size: calc(1.5rem + 1.5vh);
     }
@@ -149,9 +196,11 @@
         margin-left: 0rem;
         gap: 5rem;
     }
+
     .services-hr {
         width: 60%;
     }
+
     .video-container1 {
         width: 350px;
         height: 250px;
@@ -162,15 +211,23 @@
     .services-hr {
         width: 52%;
     }
+
     .video-container1 {
         width: 320px;
         height: 250px;
     }
+
     .service-team-heading {
         font-size: calc(1.2rem + 1.2vh);
     }
+
     .our-services-section {
         margin: 10rem 2rem;
+    }
+
+    .services-btn {
+        padding: 25px 33px 27px 33px;
+        font-size: large;
     }
 }
 
@@ -185,14 +242,35 @@
     .services-hr {
         width: 55%;
     }
+
     .video-container1 {
         width: 270px;
         height: 220px;
     }
+
     .service-team-heading {
         font-size: calc(1.2rem + 1vh);
     }
+
     .our-services-section {
         margin: 8rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .video-container1 {
+        display: none;
+    }
+
+    .services-hr {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .services-btn {
+        padding: 20px 28px 22px 28px;
     }
 }

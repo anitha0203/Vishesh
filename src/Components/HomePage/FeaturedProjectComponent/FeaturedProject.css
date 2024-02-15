@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+.featured-section {
+    margin: 6rem 4rem;
+}
+
+.featured-heading {
+    color: #131A27;
+    font-family: Satoshi-medium;
+    font-size: calc(3rem + 2.1vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.featured-text {
+    color: #344054;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+    margin-top: 15px;
+}
+
+.projects-section {
+    width: 880px;
+    height: 680px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: linear-gradient(2deg, rgba(0, 0, 0, 0.20) 19.87%, rgba(0, 0, 0, 0.04) 39.98%), var(--Other-colors-Four, #ABAEDB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-section2 {
+    width: 880px;
+    height: 680px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 19.23%, rgba(0, 0, 0, 0.19) 47.01%), #ABAEDB;
+    background-image: url('../../../assets/HomePage/FeaturedProject2.png');
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.projects-section3 {
+    width: 880px;
+    height: 680px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 19.23%, rgba(0, 0, 0, 0.19) 47.01%), #ABAEDB;
+    background-image: url('../../../assets/HomePage/FeaturedProject3.png');
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.projects-text-section {
+    background-color: transparent;
+    text-align: center;
+}
+
+.projects-heading1{
+    margin-left: 2rem;
+}
+
+.projects-heading, .projects-heading1 {
+    color: #FCFCFC;
+    background-color: transparent;
+    font-family: Satoshi;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.projects-img {
+    background-color: transparent;
+}
+
+.project-text-section2 {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-techs1{
+    margin-right: 2rem;
+}
+
+.projects-techs, .projects-techs1 {
+    background-color: transparent;
+    text-align: right;
+}
+
+.projects-techs-btn {
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: 1px solid #FCFCFC;
+    background-color: transparent;
+    color: #FCFCFC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    font-family: Satoshi-light;
+    margin: 0rem 0rem 1rem 1rem;
+}
+
+.featured-projects-sections {
+    display: flex;
+    gap: 2rem;
+    margin: 4rem 0px;
+}
+
+.projects-view-all {
+    color: #131A27;
+    font-family: Satoshi;
+    font-size: calc(1.4rem + 1.4vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.projects-section4 {
+    width: 880px;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    border-radius: 24px;
+    border: 1px solid #667085;
+    cursor: pointer;
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 1040px) {
+    .featured-section {
+        margin: 6rem 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .featured-section {
+        margin: 6rem 1rem;
+    }
+
+}

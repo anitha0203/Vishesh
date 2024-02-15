@@ -152,6 +152,83 @@
     transform: scaleY(1);
 }
 
+/**       heading  Scrolling         */
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 12rem 0px;
+}
+
+.scroll-text {
+    display: flex;
+    animation: scroll 25s linear infinite;
+    /* position: absolute; */
+    width: 500%;
+    /* Adjust the width based on your design */
+}
+
+.vishesh-scroll-heading {
+    color: #33353a;
+    font-family: Satoshi-medium;
+    font-size: 192px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* 
+.slider {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% * 4)); 
+    }
+  }
+  
+  .slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .slide p {
+    color: #33353A;
+    font-family: Satoshi;
+    font-size: calc(8rem + 8vh);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0px;
+  } */
+
+
+
 
 /* Responsive media queries */
 @media only screen and (max-width: 1700px) {
@@ -206,6 +283,11 @@
         padding: 25px 33px 27px 33px;
         font-size: large;
     }
+
+    .scroll-container {
+        margin: 8rem 0px;
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -225,6 +307,10 @@
     .about-us-img {
         width: 26rem;
         height: 25rem;
+    }
+
+    .scroll-container {
+        margin: 6rem 0px;
     }
 }
 
