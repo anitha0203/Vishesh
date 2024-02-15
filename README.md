@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### Packages
 
 ### Material UI
-    npm install @mui/material @emotion/react @emotion/styled
+    npm uninstall @mui/material @emotion/react @emotion/styled
     npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 
 ### `npm start`

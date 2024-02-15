@@ -3,9 +3,14 @@ import './HomePage.css';
 import video from '../../assets/HomePage/Video.mp4';
 import AboutUS from '../../assets/HomePage/AboutUs.png'
 import OurServices from './OurServicesComponent/OurServices';
+import Vector from '../../assets/HomePage/Vector.png'
 import FeaturedProject from './FeaturedProjectComponent/FeaturedProject';
+import ClientLogos from './ClientLogosComponent/ClientLogos';
+import { useNavigate } from 'react-router-dom';
+import Reviews from './ReviewsComponent/Reviews';
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div>
 
@@ -44,7 +49,8 @@ function HomePage() {
           <h2 className='home-about-heading'>Who We Are</h2>
           <p className='home-about-para'>Over the past seven years, we have produced groundbreaking work that aligns with our clients' needs and their audiences' desires.</p>
           <p className='home-about-para'>We like to think of ourselves as the ones who bring wild, ambitious, and experimental ideas to life, but we invite you to be the judge of that. Our mission is to drive engagement, understanding, and action through every experience we create.</p>
-          <button className='about-us-btn'>About Us</button>
+          <img src={AboutUS} className='about-us-img1' alt='about-us' />
+          <button onClick={() => { navigate('/about') }} className='about-us-btn'>About Us</button>
         </div>
         <div>
           <img src={AboutUS} className='about-us-img' alt='about-us' />
@@ -54,12 +60,26 @@ function HomePage() {
       {/**    VISHESH COUNTRY CACHE * FOSTERING INTELLECT SCROLLING Section  */}
       <div class="scroll-container">
         <div class="scroll-text">
-          <h1 className='vishesh-scroll-heading'> * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * VISHESH COUNTRY CACHE * FOSTERING INTELLECT * </h1>
+          <h1 className='vishesh-scroll-heading'>
+            <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE  <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} /> </h1>
         </div>
       </div>
       <FeaturedProject />
 
+<<<<<<< HEAD
+      {/* Featured Projects Section  
+      <FeaturedProject />
+*/}
+=======
+>>>>>>> a00cc8662de192392ce87663f7024d998ed8a8fe
 
+
+      {/**    logo slider 
+      <ClientLogos />
+*/}
+
+      {/**    Reviews      */}
+      <Reviews />
 
     </div>
   );

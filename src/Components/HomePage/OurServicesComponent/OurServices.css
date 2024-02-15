@@ -40,16 +40,25 @@
     margin-top: 2rem;
 }
 
+.video-container2 {
+    width: 100%;
+    margin-top: 2rem;
+    display: none;
+}
+
 /* Optionally, you can hide controls */
-.service-video::-webkit-media-controls {
+.service-video::-webkit-media-controls,
+.service-video2::-webkit-media-controls {
     display: none;
 }
 
-.service-video::-webkit-media-controls-enclosure {
+.service-video::-webkit-media-controls-enclosure,
+.service-video2::-webkit-media-controls-enclosure {
     display: none;
 }
 
-.service-video::-webkit-media-controls-panel {
+.service-video::-webkit-media-controls-panel,
+.service-video2::-webkit-media-controls-panel {
     display: none;
 }
 
@@ -100,6 +109,12 @@
     display: none;
 }
 
+.service-video2 {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
 .services-btn-container {
     text-align: right;
     margin-top: 3rem;
@@ -118,6 +133,7 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.26px;
+    cursor: pointer;
 }
 
 .services-btn::before {
@@ -260,6 +276,10 @@
 @media only screen and (max-width: 750px) {
     .video-container1 {
         display: none;
+    }
+
+    .video-container2 {
+        display: block;
     }
 
     .services-hr {
