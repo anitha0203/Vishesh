@@ -10,6 +10,7 @@ import WorkWithUs from './WorkWithUsComponent/WorkWithUs';
 import AboutUs from './AboutUsComponent/AboutUs';
 import CardsComponent from './CardsComponent/CardsComponent';
 import Projects from './ProjectsComponent/Projects';
+import FeaturedProject from "./FeaturedProjectComponent/FeaturedProject"
 
 function HomePage() {
   return (
@@ -58,11 +59,14 @@ function HomePage() {
         </div>
       </div>
 
-      {/* Featured Projects Section  */}
-      <Projects />
 
-      {/**    logo slider          */} 
-      <ClientLogos /> 
+      {/* Featured Projects Section */}
+      <FeaturedProject />
+
+
+
+      {/**    logo slider          */}
+      <ClientLogos />
 
       {/**    Reviews Section        */}
       <Reviews />
@@ -98,51 +102,6 @@ function HomePage() {
       {/**    Work with us section         */}
       <WorkWithUs />
 
-      <div className="property-default">
-      <div className="overlap-group">
-        <div className="element">
-          <div className="text-wrapper">01</div>
-          <p className="div">
-            You&#39;ll collaborate with a highly skilled, agile team with extensive experience dedicated to the entire
-            project.
-          </p>
-          <div className="text-wrapper-2">We are Experts</div>
-        </div>
-        <div className="element-2">
-          <div className="text-wrapper">02</div>
-          <p className="div">
-            Adapting to your needs and constraints, we maintain unwavering responsiveness for a tailored and effective
-            solution.
-          </p>
-          <div className="text-wrapper-2">Our Ability to Adapt</div>
-        </div>
-        <div className="element-3">
-          <div className="text-wrapper">03</div>
-          <p className="p">
-            We prioritize cost-effectiveness, optimizing your resources while maintaining quality, to deliver
-            exceptional value and ensure your financial goals are met.
-          </p>
-          <div className="text-wrapper-2">We are Cost Effective</div>
-        </div>
-        <div className="element-4">
-          <div className="text-wrapper">04</div>
-          <p className="p">
-            Tailored solutions and expert guidance, catering to the diverse needs of brands across all scales, ensuring
-            effective strategies for growth and success.
-          </p>
-          <p className="text-wrapper-3">For Brands of All Sizes</p>
-        </div>
-        <div className="element-5">
-          <div className="text-wrapper">05</div>
-          <p className="p">
-            Tailored solutions and expert guidance, catering to the diverse needs of brands across all scales, ensuring
-            effective strategies for growth and success.
-          </p>
-          <p className="text-wrapper-3">For Brands of All Sizes</p>
-        </div>
-      </div>
-    </div>
-      
     </div>
   );
 }

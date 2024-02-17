@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+@font-face {
+    font-family: Satoshi-reg;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+
+.NumberContainer{
+    padding: 0% 3.2%;
+}
+
+.NumberContainer h3{
+    color: var(--text-icon-light-heading, #131A27);
+/* Headings/H3/Medium */
+font-family: Satoshi;
+font-size: 96px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 115.2px */
+margin-bottom: 64px;
+}
+
+.NumberContainer h5{
+    color: var(--text-icon-light-body, #33353A);
+/* Headings/H5/Medium */
+font-family: Satoshi;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 57.6px */
+}
+
+.NumberContainer p{
+    color: #000;
+
+/* Body/Text/Regular */
+font-family: Satoshi-reg;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 36px */
+letter-spacing: 0.24px;
+}

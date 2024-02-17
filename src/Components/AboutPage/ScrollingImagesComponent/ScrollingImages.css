@@ -1,0 +1,61 @@
+.ScrollingImagesContainer{
+height: 1014px;
+flex-shrink: 0;
+border: 0px solid;
+overflow: scroll;
+background-image: url("../../../assets/AboutPage/Banner\ image\ Building.png");
+background-repeat: no-repeat;
+background-position: right;
+position: relative;
+
+}
+
+.ScrollingImagesContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.ScrollingImage1{
+    width: 750px;
+    height: 581px;
+    flex-shrink: 0;
+    position: absolute;
+    border-radius: 16px;
+    background: var(--Neutral-800, #E5E5E7);
+    left: 10%;
+    top: 5%;
+}
+.ScrollingImage2{
+    width: 591px;
+    height: 352px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--Neutral-800, #E5E5E7);
+    position: absolute;
+    left: 6%;
+    top: 85%;
+
+}
+.ScrollingImage3{
+    width: 672px;
+    height: 652px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--Neutral-800, #E5E5E7);
+    position: absolute;
+
+    
+    top: 100%;
+    right: 0%;
+}
+.ScrollingImage4{
+    width: 503px;
+    height: 686px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--Neutral-800, #E5E5E7);
+    position: absolute;
+
+    top: 130%;
+    right: 50%;
+   margin-bottom: 20%;
+}
