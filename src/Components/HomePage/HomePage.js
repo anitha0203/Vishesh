@@ -66,12 +66,10 @@ function HomePage() {
       </div>
       <FeaturedProject />
 
-<<<<<<< HEAD
       {/* Featured Projects Section  
       <FeaturedProject />
 */}
-=======
->>>>>>> a00cc8662de192392ce87663f7024d998ed8a8fe
+
 
 
       {/**    logo slider 

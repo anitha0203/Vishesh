@@ -1,7 +1,42 @@
-.AboutHeaderVideo{
+
+.about-header-container{
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.AboutHeaderVideoContainer{
+    position: absolute;
+    right:4%;
+    border: 0px solid;
     width: 757px;
-    height: 638px;
+    background-color: transparent;
+    
+
+}
+.AboutHeaderVideo{
+    width: 150%;
+    height: 560px;
     flex-shrink: 0;
     position: relative;
-    right: 0px;
+    
+    outline: none;
+
+    
+}
+
+
+.AboutHeaderText{
+    color: var(--text-icon-light-heading, #131A27);
+/* Headings/H3/Regular */
+font-family: Satoshi;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 115.2px */
+width: 1792px;
+position: absolute;
+background-color: transparent;
+top: 20%;
+padding-left: 3.1%;
 }
