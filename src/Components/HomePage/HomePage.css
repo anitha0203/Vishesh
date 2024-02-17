@@ -1,9 +1,4 @@
 @font-face {
-    font-family: Satoshi-light;
-    src: url(../../../public/Satoshi-Light.otf);
-}
-
-@font-face {
     font-family: Satoshi;
     src: url(../../../public/Satoshi-Regular.otf);
 }
@@ -15,7 +10,7 @@
 
 .home-main-section {
     text-align: center;
-    margin: 8rem 4rem 18rem;
+    margin: 8rem 4rem 19rem;
 }
 
 .home-main-section1 {
@@ -68,7 +63,7 @@
 .home-section-para {
     width: 60%;
     margin: 1.5rem auto 0;
-    font-family: Satoshi-light;
+    font-family: Satoshi;
     font-size: calc(0.7rem + 0.7vw);
     font-weight: 400;
     line-height: 150%;
@@ -309,3 +304,5 @@
         font-size: calc(1.2rem + 0.7vw);
     }
 }
+
+

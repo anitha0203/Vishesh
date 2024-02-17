@@ -10,7 +10,6 @@ import WorkWithUs from './WorkWithUsComponent/WorkWithUs';
 import AboutUs from './AboutUsComponent/AboutUs';
 import CardsComponent from './CardsComponent/CardsComponent';
 import Projects from './ProjectsComponent/Projects';
-import FeaturedProject from "./FeaturedProjectComponent/FeaturedProject"
 
 function HomePage() {
   return (
@@ -59,11 +58,8 @@ function HomePage() {
         </div>
       </div>
 
-
-      {/* Featured Projects Section */}
-      <FeaturedProject />
-
-
+      {/* Featured Projects Section  */}
+      <Projects />
 
       {/**    logo slider          */}
       <ClientLogos />

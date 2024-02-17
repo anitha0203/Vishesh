@@ -1,16 +1,16 @@
 @font-face {
-    font-family: Satoshi-light;
-    src: url(../../../../public/Satoshi-Light.otf);
+  font-family: Satoshi-light;
+  src: url(../../../../public/Satoshi-Light.otf);
 }
 
 @font-face {
-    font-family: Satoshi;
-    src: url(../../../../public/Satoshi-Regular.otf);
+  font-family: Satoshi;
+  src: url(../../../../public/Satoshi-Regular.otf);
 }
 
 @font-face {
-    font-family: Satoshi-medium;
-    src: url(../../../../public/Satoshi-Medium.otf);
+  font-family: Satoshi-medium;
+  src: url(../../../../public/Satoshi-Medium.otf);
 }
 
 
@@ -37,78 +37,512 @@ span,
     flex: 0 0 auto;
 } */
 
-
-
-.work-section-heading span{
-    color: #000;
-    font-family: Satoshi;
-    font-size: 136px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    display: flex;
-   
+.work-text-lines {
+  display: flex;
+  color: #000;
+  font-family: Satoshi;
+  font-size: calc(4.5rem + 3vw);
 }
+
+.work-section-heading span {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 136px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+
+}
+
 .work-with-us-btn {
-    text-align: center;
+  text-align: center;
 }
 
 
 .work-withus-section {
-    margin: 15rem 2rem 0rem;
-    /* Adjust margin as needed */
-    /* max-width: 1200px; */
+  margin: 15rem 2rem 0rem;
+  /* Adjust margin as needed */
+  /* max-width: 1200px; */
 
-    /* Set a maximum width for the content */
+  /* Set a maximum width for the content */
 }
 
 .work-section-heading {
-    display: flex;
-    font-size: 80px;
-    flex-wrap: wrap;
-    /* align-items: center; */
-   
-    /* width: 100%; */
+  display: flex;
+  font-size: 80px;
+  flex-wrap: wrap;
+  /* align-items: center; */
+
+  /* width: 100%; */
 
 }
 
 .video-container4 {
-    width: 260px;
-    height: 106px;
-    border-radius: 50px;
-    overflow: hidden;
-    margin: 28px 10px;
-    /* Adjust the margin as needed */
-    
+  width: 260px;
+  height: 106px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 28px 10px;
 }
 
 
 .video-container5 {
-    width: 350px;
-    height: 100px;
-    border-radius: 50px;
+  width: 350px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 31px 10px;
+}
+
+.video5 {
+  position: relative;
+  top: -190%;
+  height: 500px;
+  width: 500px;
+  transform: rotateZ(-90deg);
+
+}
+
+@media only screen and (max-width: 1505px) {
+  .work-text-lines {
+    font-size: calc(3.5rem + 3vw);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .work-text-lines {
+    font-size: calc(3rem + 2vw);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .work-text-lines {
+    font-size: calc(2rem + 2vw);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .work-withus-section {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .work-text-lines {
+    font-size: calc(1.5rem + 1.8vw);
+  }
+}
+
+
+/* 
+
+:root {
+    --body-text-bold-font-family: "Satoshi", Helvetica;
+    --body-text-bold-font-size: 24px;
+    --body-text-bold-font-style: normal;
+    --body-text-bold-font-weight: 700;
+    --body-text-bold-letter-spacing: 0.24px;
+    --body-text-bold-line-height: 150%;
+    --body-text-itallic-font-family: "Satoshi", Helvetica;
+    --body-text-itallic-font-size: 24px;
+    --body-text-itallic-font-style: italic;
+    --body-text-itallic-font-weight: 400;
+    --body-text-itallic-letter-spacing: 0.24px;
+    --body-text-itallic-line-height: 150%;
+    --body-text-light-font-family: "Satoshi", Helvetica;
+    --body-text-light-font-size: 24px;
+    --body-text-light-font-style: normal;
+    --body-text-light-font-weight: 300;
+    --body-text-light-letter-spacing: 0.24px;
+    --body-text-light-line-height: 150%;
+    --body-text-medium-font-family: "Satoshi", Helvetica;
+    --body-text-medium-font-size: 24px;
+    --body-text-medium-font-style: normal;
+    --body-text-medium-font-weight: 500;
+    --body-text-medium-letter-spacing: 0.24px;
+    --body-text-medium-line-height: 150%;
+    --body-text-regular-font-family: "Satoshi", Helvetica;
+    --body-text-regular-font-size: 24px;
+    --body-text-regular-font-style: normal;
+    --body-text-regular-font-weight: 400;
+    --body-text-regular-letter-spacing: 0.24px;
+    --body-text-regular-line-height: 150%;
+    --body-texts-bold-font-family: "Satoshi", Helvetica;
+    --body-texts-bold-font-size: 20px;
+    --body-texts-bold-font-style: normal;
+    --body-texts-bold-font-weight: 700;
+    --body-texts-bold-letter-spacing: 0.2px;
+    --body-texts-bold-line-height: 150%;
+    --body-texts-light-font-family: "Satoshi", Helvetica;
+    --body-texts-light-font-size: 20px;
+    --body-texts-light-font-style: normal;
+    --body-texts-light-font-weight: 300;
+    --body-texts-light-letter-spacing: 0.2px;
+    --body-texts-light-line-height: 150%;
+    --body-texts-medium-font-family: "Satoshi", Helvetica;
+    --body-texts-medium-font-size: 20px;
+    --body-texts-medium-font-style: normal;
+    --body-texts-medium-font-weight: 500;
+    --body-texts-medium-letter-spacing: 0.2px;
+    --body-texts-medium-line-height: 150%;
+    --body-texts-regular-font-family: "Satoshi", Helvetica;
+    --body-texts-regular-font-size: 20px;
+    --body-texts-regular-font-style: normal;
+    --body-texts-regular-font-weight: 400;
+    --body-texts-regular-letter-spacing: 0.2px;
+    --body-texts-regular-line-height: 150%;
+    --body-textxs-bold-font-family: "Satoshi", Helvetica;
+    --body-textxs-bold-font-size: 16px;
+    --body-textxs-bold-font-style: normal;
+    --body-textxs-bold-font-weight: 700;
+    --body-textxs-bold-letter-spacing: 0.16px;
+    --body-textxs-bold-line-height: 150%;
+    --body-textxs-light-font-family: "Satoshi", Helvetica;
+    --body-textxs-light-font-size: 16px;
+    --body-textxs-light-font-style: normal;
+    --body-textxs-light-font-weight: 300;
+    --body-textxs-light-letter-spacing: 0.16px;
+    --body-textxs-light-line-height: 150%;
+    --body-textxs-medium-font-family: "Satoshi", Helvetica;
+    --body-textxs-medium-font-size: 16px;
+    --body-textxs-medium-font-style: normal;
+    --body-textxs-medium-font-weight: 500;
+    --body-textxs-medium-letter-spacing: 0.16px;
+    --body-textxs-medium-line-height: 150%;
+    --body-textxs-regular-font-family: "Satoshi", Helvetica;
+    --body-textxs-regular-font-size: 16px;
+    --body-textxs-regular-font-style: normal;
+    --body-textxs-regular-font-weight: 400;
+    --body-textxs-regular-letter-spacing: 0.16px;
+    --body-textxs-regular-line-height: 150%;
+    --buttontext-large-font-family: "Satoshi", Helvetica;
+    --buttontext-large-font-size: 26px;
+    --buttontext-large-font-style: normal;
+    --buttontext-large-font-weight: 400;
+    --buttontext-large-letter-spacing: 0.26px;
+    --buttontext-large-line-height: normal;
+    --buttontext-regular-font-family: "Satoshi", Helvetica;
+    --buttontext-regular-font-size: 24px;
+    --buttontext-regular-font-style: normal;
+    --buttontext-regular-font-weight: 400;
+    --buttontext-regular-letter-spacing: 0.24px;
+    --buttontext-regular-line-height: normal;
+    --buttontext-small-font-family: "Satoshi", Helvetica;
+    --buttontext-small-font-size: 20px;
+    --buttontext-small-font-style: normal;
+    --buttontext-small-font-weight: 500;
+    --buttontext-small-letter-spacing: 0.2px;
+    --buttontext-small-line-height: normal;
+    --colors-base-white: rgba(255, 255, 255, 1);
+    --colors-bgcolors-one: rgba(244, 233, 225, 1);
+    --colors-bgcolors-three: rgba(247, 245, 242, 1);
+    --colors-green-400: rgba(110, 231, 191, 1);
+    --colors-grey-300: rgba(208, 213, 221, 1);
+    --colors-grey-400: rgba(152, 162, 179, 1);
+    --colors-grey-500: rgba(102, 112, 133, 1);
+    --colors-grey-600: rgba(71, 84, 103, 1);
+    --colors-grey-700: rgba(52, 64, 84, 1);
+    --colors-grey-800: rgba(29, 41, 57, 1);
+    --colors-grey-900: rgba(16, 24, 40, 1);
+    --colors-neutral-100: rgba(250, 251, 252, 1);
+    --colors-neutral-1000: rgba(161, 164, 172, 1);
+    --colors-neutral-300: rgba(239, 239, 241, 1);
+    --colors-neutral-800: rgba(229, 229, 231, 1);
+    --colors-neutral-900: rgba(193, 195, 199, 1);
+    --colors-other-colors-five: rgba(225, 227, 197, 1);
+    --colors-other-colors-four: rgba(171, 174, 219, 1);
+    --colors-other-colors-one: rgba(168, 218, 244, 1);
+    --colors-other-colors-three: rgba(245, 160, 145, 1);
+    --colors-other-colors-two: rgba(178, 222, 202, 1);
+    --colors-primary-500: rgba(245, 160, 145, 1);
+    --colors-primary-700: rgba(0, 69, 153, 1);
+    --colors-text-icon-dark-body: rgba(252, 252, 252, 0.9);
+    --colors-text-icon-dark-disabled: rgba(252, 252, 252, 0.8);
+    --colors-text-icon-dark-heading: rgba(252, 252, 252, 1);
+    --colors-text-icon-light-body: rgba(51, 53, 58, 1);
+    --colors-text-icon-light-disabled: rgba(208, 213, 221, 1);
+    --colors-text-icon-light-heading: rgba(19, 26, 39, 1);
+    --headings-h1-bold-font-family: "Satoshi", Helvetica;
+    --headings-h1-bold-font-size: 192px;
+    --headings-h1-bold-font-style: normal;
+    --headings-h1-bold-font-weight: 700;
+    --headings-h1-bold-letter-spacing: 0px;
+    --headings-h1-bold-line-height: 120.00000476837158%;
+    --headings-h1-light-font-family: "Satoshi", Helvetica;
+    --headings-h1-light-font-size: 192px;
+    --headings-h1-light-font-style: normal;
+    --headings-h1-light-font-weight: 300;
+    --headings-h1-light-letter-spacing: 0px;
+    --headings-h1-light-line-height: 120.00000476837158%;
+    --headings-h1-medium-font-family: "Satoshi", Helvetica;
+    --headings-h1-medium-font-size: 192px;
+    --headings-h1-medium-font-style: normal;
+    --headings-h1-medium-font-weight: 500;
+    --headings-h1-medium-letter-spacing: 0px;
+    --headings-h1-medium-line-height: 120.00000476837158%;
+    --headings-h1-regular-font-family: "Satoshi", Helvetica;
+    --headings-h1-regular-font-size: 192px;
+    --headings-h1-regular-font-style: normal;
+    --headings-h1-regular-font-weight: 400;
+    --headings-h1-regular-letter-spacing: 0px;
+    --headings-h1-regular-line-height: 120.00000476837158%;
+    --headings-h2-bold-font-family: "Satoshi", Helvetica;
+    --headings-h2-bold-font-size: 136px;
+    --headings-h2-bold-font-style: normal;
+    --headings-h2-bold-font-weight: 700;
+    --headings-h2-bold-letter-spacing: 0px;
+    --headings-h2-bold-line-height: 120.00000476837158%;
+    --headings-h2-light-font-family: "Satoshi", Helvetica;
+    --headings-h2-light-font-size: 136px;
+    --headings-h2-light-font-style: normal;
+    --headings-h2-light-font-weight: 300;
+    --headings-h2-light-letter-spacing: 0px;
+    --headings-h2-light-line-height: 120.00000476837158%;
+    --headings-h2-medium-font-family: "Satoshi", Helvetica;
+    --headings-h2-medium-font-size: 136px;
+    --headings-h2-medium-font-style: normal;
+    --headings-h2-medium-font-weight: 500;
+    --headings-h2-medium-letter-spacing: 0px;
+    --headings-h2-medium-line-height: 120.00000476837158%;
+    --headings-h2-regular-font-family: "Satoshi", Helvetica;
+    --headings-h2-regular-font-size: 136px;
+    --headings-h2-regular-font-style: normal;
+    --headings-h2-regular-font-weight: 400;
+    --headings-h2-regular-letter-spacing: 0px;
+    --headings-h2-regular-line-height: 120.00000476837158%;
+    --headings-h3-bold-font-family: "Satoshi", Helvetica;
+    --headings-h3-bold-font-size: 96px;
+    --headings-h3-bold-font-style: normal;
+    --headings-h3-bold-font-weight: 700;
+    --headings-h3-bold-letter-spacing: 0px;
+    --headings-h3-bold-line-height: 120.00000476837158%;
+    --headings-h3-light-font-family: "Satoshi", Helvetica;
+    --headings-h3-light-font-size: 96px;
+    --headings-h3-light-font-style: normal;
+    --headings-h3-light-font-weight: 300;
+    --headings-h3-light-letter-spacing: 0px;
+    --headings-h3-light-line-height: 120.00000476837158%;
+    --headings-h3-medium-font-family: "Satoshi", Helvetica;
+    --headings-h3-medium-font-size: 96px;
+    --headings-h3-medium-font-style: normal;
+    --headings-h3-medium-font-weight: 500;
+    --headings-h3-medium-letter-spacing: 0px;
+    --headings-h3-medium-line-height: 120.00000476837158%;
+    --headings-h3-regular-font-family: "Satoshi", Helvetica;
+    --headings-h3-regular-font-size: 96px;
+    --headings-h3-regular-font-style: normal;
+    --headings-h3-regular-font-weight: 400;
+    --headings-h3-regular-letter-spacing: 0px;
+    --headings-h3-regular-line-height: 120.00000476837158%;
+    --headings-h4-bold-font-family: "Satoshi", Helvetica;
+    --headings-h4-bold-font-size: 68px;
+    --headings-h4-bold-font-style: normal;
+    --headings-h4-bold-font-weight: 700;
+    --headings-h4-bold-letter-spacing: 0px;
+    --headings-h4-bold-line-height: 120.00000476837158%;
+    --headings-h4-light-font-family: "Satoshi", Helvetica;
+    --headings-h4-light-font-size: 68px;
+    --headings-h4-light-font-style: normal;
+    --headings-h4-light-font-weight: 300;
+    --headings-h4-light-letter-spacing: 0px;
+    --headings-h4-light-line-height: 120.00000476837158%;
+    --headings-h4-medium-font-family: "Satoshi", Helvetica;
+    --headings-h4-medium-font-size: 68px;
+    --headings-h4-medium-font-style: normal;
+    --headings-h4-medium-font-weight: 500;
+    --headings-h4-medium-letter-spacing: 0px;
+    --headings-h4-medium-line-height: 120.00000476837158%;
+    --headings-h4-regular-font-family: "Satoshi", Helvetica;
+    --headings-h4-regular-font-size: 68px;
+    --headings-h4-regular-font-style: normal;
+    --headings-h4-regular-font-weight: 400;
+    --headings-h4-regular-letter-spacing: 0px;
+    --headings-h4-regular-line-height: 120.00000476837158%;
+    --headings-h5-bold-font-family: "Satoshi", Helvetica;
+    --headings-h5-bold-font-size: 48px;
+    --headings-h5-bold-font-style: normal;
+    --headings-h5-bold-font-weight: 700;
+    --headings-h5-bold-letter-spacing: 0px;
+    --headings-h5-bold-line-height: 120.00000476837158%;
+    --headings-h5-light-font-family: "Satoshi", Helvetica;
+    --headings-h5-light-font-size: 48px;
+    --headings-h5-light-font-style: normal;
+    --headings-h5-light-font-weight: 300;
+    --headings-h5-light-letter-spacing: 0px;
+    --headings-h5-light-line-height: 120.00000476837158%;
+    --headings-h5-medium-font-family: "Satoshi", Helvetica;
+    --headings-h5-medium-font-size: 48px;
+    --headings-h5-medium-font-style: normal;
+    --headings-h5-medium-font-weight: 500;
+    --headings-h5-medium-letter-spacing: 0px;
+    --headings-h5-medium-line-height: 120.00000476837158%;
+    --headings-h5-regular-font-family: "Satoshi", Helvetica;
+    --headings-h5-regular-font-size: 48px;
+    --headings-h5-regular-font-style: normal;
+    --headings-h5-regular-font-weight: 400;
+    --headings-h5-regular-letter-spacing: 0px;
+    --headings-h5-regular-line-height: 120.00000476837158%;
+    --headings-h6-bold-font-family: "Satoshi", Helvetica;
+    --headings-h6-bold-font-size: 34px;
+    --headings-h6-bold-font-style: normal;
+    --headings-h6-bold-font-weight: 700;
+    --headings-h6-bold-letter-spacing: 0px;
+    --headings-h6-bold-line-height: 120.00000476837158%;
+    --headings-h6-light-font-family: "Satoshi", Helvetica;
+    --headings-h6-light-font-size: 34px;
+    --headings-h6-light-font-style: normal;
+    --headings-h6-light-font-weight: 300;
+    --headings-h6-light-letter-spacing: 0px;
+    --headings-h6-light-line-height: 120.00000476837158%;
+    --headings-h6-medium-font-family: "Satoshi", Helvetica;
+    --headings-h6-medium-font-size: 34px;
+    --headings-h6-medium-font-style: normal;
+    --headings-h6-medium-font-weight: 500;
+    --headings-h6-medium-letter-spacing: 0px;
+    --headings-h6-medium-line-height: 120.00000476837158%;
+    --headings-h6-regular-font-family: "Satoshi", Helvetica;
+    --headings-h6-regular-font-size: 34px;
+    --headings-h6-regular-font-style: normal;
+    --headings-h6-regular-font-weight: 400;
+    --headings-h6-regular-letter-spacing: 0px;
+    --headings-h6-regular-line-height: 120.00000476837158%;
+  }
+  
+.property-default {
+    height: 500px;
     overflow: hidden;
-    margin: 31px 10px;
-    
-    /* Adjust the margin as needed */
-   
-}
-
-.video5{
-   position:relative;
-   top: -190%;
-   height: 500px;
-   width: 500px;
-   transform: rotateZ(-90deg);
-   
-}
-
-
-
-@media (min-width: 600px) {
-    .work-withus-section {
-        display: flex;
-        flex-wrap: nowrap;
-        /* Prevent content from wrapping on larger screens */
-    }
-}
+    width: 1423px;
+  }
+  
+  .property-default .overlap-group {
+    height: 500px;
+    position: relative;
+    width: 2720px;
+  }
+  
+  .property-default .element {
+    background-color: var(--colors-other-colors-one);
+    border-radius: 24px 0px 0px 24px;
+    height: 500px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1400px;
+  }
+  
+  .property-default .text-wrapper {
+    color: var(--colors-text-icon-light-body);
+    font-family: var(--body-text-regular-font-family);
+    font-size: var(--body-text-regular-font-size);
+    font-style: var(--body-text-regular-font-style);
+    font-weight: var(--body-text-regular-font-weight);
+    left: 20px;
+    letter-spacing: var(--body-text-regular-letter-spacing);
+    line-height: var(--body-text-regular-line-height);
+    position: absolute;
+    top: 442px;
+    white-space: nowrap;
+  }
+  
+  .property-default .div {
+    color: var(--colors-text-icon-light-body);
+    font-family: var(--body-text-regular-font-family);
+    font-size: var(--body-text-regular-font-size);
+    font-style: var(--body-text-regular-font-style);
+    font-weight: var(--body-text-regular-font-weight);
+    left: 103px;
+    letter-spacing: var(--body-text-regular-letter-spacing);
+    line-height: var(--body-text-regular-line-height);
+    position: absolute;
+    top: 223px;
+    width: 509px;
+  }
+  
+  .property-default .text-wrapper-2 {
+    color: var(--colors-text-icon-light-heading);
+    font-family: var(--headings-h6-medium-font-family);
+    font-size: var(--headings-h6-medium-font-size);
+    font-style: var(--headings-h6-medium-font-style);
+    font-weight: var(--headings-h6-medium-font-weight);
+    left: 103px;
+    letter-spacing: var(--headings-h6-medium-letter-spacing);
+    line-height: var(--headings-h6-medium-line-height);
+    position: absolute;
+    top: 166px;
+    width: 329px;
+  }
+  
+  .property-default .element-2 {
+    background-color: var(--colors-other-colors-three);
+    border-radius: 24px 0px 0px 24px;
+    height: 500px;
+    left: 1020px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1400px;
+  }
+  
+  .property-default .element-3 {
+    background-color: var(--colors-other-colors-two);
+    border-radius: 24px 0px 0px 24px;
+    height: 500px;
+    left: 1120px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1400px;
+  }
+  
+  .property-default .p {
+    color: var(--colors-text-icon-light-body);
+    font-family: var(--body-text-regular-font-family);
+    font-size: var(--body-text-regular-font-size);
+    font-style: var(--body-text-regular-font-style);
+    font-weight: var(--body-text-regular-font-weight);
+    left: 103px;
+    letter-spacing: var(--body-text-regular-letter-spacing);
+    line-height: var(--body-text-regular-line-height);
+    position: absolute;
+    top: 223px;
+    width: 625px;
+  }
+  
+  .property-default .element-4 {
+    background-color: var(--colors-other-colors-four);
+    border-radius: 24px 0px 0px 24px;
+    height: 500px;
+    left: 1220px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1400px;
+  }
+  
+  .property-default .text-wrapper-3 {
+    color: var(--colors-text-icon-light-heading);
+    font-family: var(--headings-h6-medium-font-family);
+    font-size: var(--headings-h6-medium-font-size);
+    font-style: var(--headings-h6-medium-font-style);
+    font-weight: var(--headings-h6-medium-font-weight);
+    left: 103px;
+    letter-spacing: var(--headings-h6-medium-letter-spacing);
+    line-height: var(--headings-h6-medium-line-height);
+    position: absolute;
+    top: 166px;
+    width: 354px;
+  }
+  
+  .property-default .element-5 {
+    background-color: var(--colors-other-colors-five);
+    border-radius: 24px 0px 0px 24px;
+    height: 500px;
+    left: 1320px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1400px;
+  }
+   */

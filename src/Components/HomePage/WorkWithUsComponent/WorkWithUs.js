@@ -10,24 +10,17 @@ function WorkWithUs() {
         <div className='team-heading-sections '>
             <div className='work-withus-section'>
                 <div className='work-section-heading'>
-                    <span>As</span>
-                    <div className='video-container4'>
-                        <video className='video4 ' autoPlay muted loop>
-                            <source src={video2} type='video/mp4' />
-                            Your browser does not support the video tag.
-                        </video>
+                    <div className='work-text-lines'>
+                        As
+                        <div className='video-container4'>
+                            <video className='video4 ' autoPlay muted loop>
+                                <source src={video2} type='video/mp4' />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        aspiring enthusiasts,
                     </div>
-                    <span >aspiring enthusiasts, </span>
-                    <span>we combined our professional skills, empathy, and shared </span>
-                    <span> values to build a unique</span>
-                    <div className='video-container5'>
-                        <video className='video5' autoPlay muted loop>
-                            <source src={video3} type='video/mp4' />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-
-                    <span>collaborative environment.</span>
+                    
                 </div>
             </div>
 
@@ -39,3 +32,6 @@ function WorkWithUs() {
 }
 
 export default WorkWithUs
+
+
+
