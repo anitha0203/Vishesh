@@ -18,6 +18,7 @@ const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Lo
 function ClientLogos() {
     return (
         <div className='slider'>
+            <h2 className='logos-heading'>We are proud to call them Clients</h2>
             <div className='slide-track'>
                 {logos.map((logo, index) => (
                     <div key={index} className='slide'>

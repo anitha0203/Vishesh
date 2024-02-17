@@ -15,7 +15,7 @@
 
 .home-main-section {
     text-align: center;
-    margin: 14rem 4rem;
+    margin: 8rem 4rem 18rem;
 }
 
 .home-main-section1 {
@@ -48,6 +48,12 @@
     display: block;
 }
 
+.video4 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .home-heading-video {
     display: flex;
     justify-content: center;
@@ -60,10 +66,10 @@
 }
 
 .home-section-para {
-    width: 55%;
+    width: 60%;
     margin: 1.5rem auto 0;
     font-family: Satoshi-light;
-    font-size: calc(0.6rem + 0.75vw);
+    font-size: calc(0.7rem + 0.7vw);
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.24px;
@@ -76,85 +82,19 @@
 }
 
 /* Optionally, you can hide controls */
-.video1::-webkit-media-controls {
+.video1::-webkit-media-controls,
+.video4::-webkit-media-controls {
     display: none;
 }
 
-.video1::-webkit-media-controls-enclosure {
+.video1::-webkit-media-controls-enclosure,
+.video4::-webkit-media-controls-enclosure {
     display: none;
 }
 
-.video1::-webkit-media-controls-panel {
+.video1::-webkit-media-controls-panel,
+.video4::-webkit-media-controls-panel {
     display: none;
-}
-
-.home-about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 9.5rem auto 9.5rem 4rem;
-}
-
-.home-about-heading {
-    font-family: Satoshi-medium;
-    font-size: calc(2rem + 2vw);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    margin: 0px;
-}
-
-.home-about-para {
-    width: 95%;
-    font-family: Satoshi-light;
-    font-size: calc(0.6rem + 0.75vw);
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0.24px;
-}
-
-.about-us-img1 {
-    display: none;
-}
-
-.about-us-btn {
-    position: relative;
-    overflow: hidden;
-    border-radius: 28px;
-    border: 1px solid #131A27;
-    padding: 32px 40px 34px 40px;
-    color: #131A27;
-    font-family: Satoshi;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.26px;
-    cursor: pointer;
-}
-
-.about-us-btn::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #d3b049;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform 0.3s ease;
-    z-index: -1;
-}
-
-.about-us-btn:hover {
-    border-color: transparent;
-    color: #fff;
-    z-index: 1000;
-}
-
-.about-us-btn:hover::before {
-    transform: scaleY(1);
 }
 
 /**       heading  Scrolling         */
@@ -163,30 +103,16 @@
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    margin: 12rem 0px;
+    margin: 15rem 0px 0rem;
 }
 
 .scroll-text {
     display: flex;
-    animation: scroll 25s linear infinite;
+    animation: scroll1 60s linear infinite;
     width: 500%;
 }
 
-.vishesh-scroll-heading {
-    color: #33353a;
-    font-family: Satoshi-medium;
-    font-size: calc(7rem + 6vw);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    margin: 0;
-}
-
-.heading-scroll-img {
-    width: 8rem;
-}
-
-@keyframes scroll {
+@keyframes scroll1 {
     0% {
         transform: translateX(0);
     }
@@ -196,17 +122,71 @@
     }
 }
 
-/* Responsive media queries */
-@media only screen and (max-width: 1700px) {
-    .home-section-para {
-        width: 80%;
+.vishesh-scroll-heading {
+    color: #444444;
+    font-family: Satoshi-medium;
+    font-size: calc(4rem + 6vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0;
+}
+
+.heading-scroll-img {
+    width: 8rem;
+    margin-top: -3rem;
+}
+
+.team-scroll-heading {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 40px;
+    font-size: 68px;
+    flex-shrink: 0;
+    margin: 0px;
+}
+
+.heading-scroll-img1 {
+    width: 3rem;
+    margin-top: 2vh;
+    opacity: 90%;
+}
+
+.scroll-container1 {
+    width: 92%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 2rem 4rem;
+}
+
+.scroll-text2 {
+    display: flex;
+    animation: scroll2 60s linear infinite;
+    width: 500%;
+}
+
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
 
-@media only screen and (max-width: 1400px) {
-    .about-us-img {
-        width: 45rem;
-        height: 35rem;
+.team-heading-sections {
+    margin: 15rem 0rem 0rem;
+}
+
+
+/* Responsive media queries */
+@media only screen and (max-width: 1700px) {
+    .home-section-para {
+        width: 82%;
     }
 }
 
@@ -225,9 +205,9 @@
         height: 100px;
     }
 
-    .about-us-img {
-        width: 40rem;
-        height: 30rem;
+    .video-container4 {
+        width: 238px;
+        height: 100px;
     }
 }
 
@@ -236,22 +216,12 @@
         margin: 14.5rem 0rem;
     }
 
-    .home-about-section {
-        margin: 9.5rem auto 9.5rem 2rem;
-    }
-
-    .about-us-img {
-        width: 30rem;
-        height: 25rem;
-    }
-
-    .about-us-btn {
-        padding: 25px 33px 27px 33px;
-        font-size: large;
-    }
-
     .scroll-container {
         margin: 8rem 0px;
+    }
+
+    .scroll-container1 {
+        width: 86%;
     }
 
 }
@@ -266,38 +236,13 @@
         height: 80px;
     }
 
-    .home-about-section {
-        margin: 9.5rem auto 9.5rem 1rem;
-    }
-
-    .about-us-img {
-        width: 26rem;
-        height: 25rem;
+    .video-container4 {
+        width: 200px;
+        height: 80px;
     }
 
     .scroll-container {
         margin: 6rem 0px;
-    }
-}
-
-@media only screen and (max-width: 725px) {
-    .home-about-section {
-        display: block;
-    }
-
-    .about-us-img {
-        display: none;
-    }
-
-    .about-us-img1 {
-        width: 96%;
-        height: 100%;
-        margin-top: 1rem;
-        display: block;
-    }
-
-    .about-us-btn {
-        margin-top: 2rem;
     }
 }
 
@@ -311,8 +256,9 @@
         height: 80px;
     }
 
-    .about-us-btn {
-        padding: 20px 28px 22px 28px;
+    .video-container4 {
+        width: 200px;
+        height: 80px;
     }
 }
 
@@ -341,9 +287,25 @@
     }
 
     .heading-scroll-img {
-        width: 2rem;
+        width: 1.6rem;
+        margin-top: -0.8vh;
     }
-    .home-about-section {
-        margin: 1rem auto 6rem 1rem;
+
+    .scroll-container1 {
+        width: 90%;
+        margin: 2rem 1rem;
+    }
+
+    .team-scroll-heading {
+        font-size: 22px;
+        gap: 20px;
+    }
+
+    .heading-scroll-img1 {
+        width: 1rem;
+        margin-top: 0.2vh;
+    }
+    .home-section-para {
+        font-size: calc(1.2rem + 0.7vw);
     }
 }

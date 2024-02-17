@@ -47,6 +47,9 @@ function FeaturedProject() {
 
             </div>
 
+<<<<<<< HEAD
+
+=======
             <div className='featured-projects-sections'>
 
                 <div className='projects-section3' >
@@ -75,8 +78,8 @@ function FeaturedProject() {
                     </div>
                 </div>
             </div>
-
-        </div>
+>>>>>>> a00cc8662de192392ce87663f7024d998ed8a8fe
+        </div >
     )
 }
 

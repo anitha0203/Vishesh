@@ -1,16 +1,17 @@
 import React from 'react';
 import './HomePage.css';
 import video from '../../assets/HomePage/Video.mp4';
-import AboutUS from '../../assets/HomePage/AboutUs.png'
 import OurServices from './OurServicesComponent/OurServices';
 import Vector from '../../assets/HomePage/Vector.png'
-import FeaturedProject from './FeaturedProjectComponent/FeaturedProject';
 import ClientLogos from './ClientLogosComponent/ClientLogos';
-import { useNavigate } from 'react-router-dom';
 import Reviews from './ReviewsComponent/Reviews';
+import LatestUpdates from './LatestUpdatesComponent/LatestUpdates';
+import WorkWithUs from './WorkWithUsComponent/WorkWithUs';
+import AboutUs from './AboutUsComponent/AboutUs';
+import CardsComponent from './CardsComponent/CardsComponent';
+import Projects from './ProjectsComponent/Projects';
 
 function HomePage() {
-  const navigate = useNavigate();
   return (
     <div>
 
@@ -44,42 +45,66 @@ function HomePage() {
       <OurServices />
 
       {/**    About Us Section     */}
-      <div className='home-about-section'>
-        <div>
-          <h2 className='home-about-heading'>Who We Are</h2>
-          <p className='home-about-para'>Over the past seven years, we have produced groundbreaking work that aligns with our clients' needs and their audiences' desires.</p>
-          <p className='home-about-para'>We like to think of ourselves as the ones who bring wild, ambitious, and experimental ideas to life, but we invite you to be the judge of that. Our mission is to drive engagement, understanding, and action through every experience we create.</p>
-          <img src={AboutUS} className='about-us-img1' alt='about-us' />
-          <button onClick={() => { navigate('/about') }} className='about-us-btn'>About Us</button>
-        </div>
-        <div>
-          <img src={AboutUS} className='about-us-img' alt='about-us' />
-        </div>
-      </div>
+      <AboutUs />
+
+      {/**    Why Us Cards Section */}
+      <CardsComponent />
 
       {/**    VISHESH COUNTRY CACHE * FOSTERING INTELLECT SCROLLING Section  */}
       <div class="scroll-container">
         <div class="scroll-text">
           <h1 className='vishesh-scroll-heading'>
-            <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE  <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} /> </h1>
+            VISHESH COUNTRY CACHE  <img className='heading-scroll-img' src={Vector} alt='star-vector' /> FOSTERING INTELLECT <img className='heading-scroll-img' src={Vector} alt='star-vector' /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} alt='star-vector' /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} alt='star-vector' /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} alt='star-vector' /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} alt='star-vector' /> </h1>
         </div>
       </div>
       <FeaturedProject />
 
-      {/* Featured Projects Section  
+<<<<<<< HEAD
+  {/* Featured Projects Section  
       <FeaturedProject />
 */}
+=======
+>>>>>>> a00cc8662de192392ce87663f7024d998ed8a8fe
 
 
+  {/**    logo slider          */ }
+  <ClientLogos />
 
-      {/**    logo slider 
-      <ClientLogos />
-*/}
+  {/**    Reviews Section        */ }
+  <Reviews />
 
-      {/**    Reviews      */}
-      <Reviews />
-
+  {/**    teams heading SCROLLING Section  */ }
+  <div className='team-heading-sections'>
+    <hr />
+    <div class="scroll-container1">
+      <div class="scroll-text">
+        <h1 className='team-scroll-heading'>
+          CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
+          CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
+          CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
+          CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> </h1>
+      </div>
     </div>
+    <hr />
+    <div class="scroll-container1">
+      <div class="scroll-text2">
+        <h1 className='team-scroll-heading'>
+          DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
+          DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
+          DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
+          DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> </h1>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  {/**    Latest Updates Section      */ }
+  <LatestUpdates />
+
+  {/**    Work with us section         */ }
+  <WorkWithUs />
+
+    </div >
   );
 }
 
