@@ -137,6 +137,9 @@
         margin-left: 0%;
         gap: 3vh;
     }
+    .footer-section {
+        padding: 4rem 2rem 12rem;
+    }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -147,7 +150,7 @@
 
 @media only screen and (max-width: 1040px) {
     .footer-section {
-        padding: 4rem 2rem 8rem;
+        padding: 4rem 2rem 12rem;
     }
 }
 
@@ -201,7 +204,7 @@
     }
 
     .footer-section {
-        padding: 4rem 1rem 6.5rem;
+        padding: 4rem 1rem 8rem;
     }
     .social-icon-img1{
         width: 2.3rem;

@@ -130,6 +130,7 @@
 
 .reviews-arrows {
     display: flex;
+    background-color: transparent;
 }
 
 .reviews-arrow {
@@ -139,12 +140,14 @@
     margin: 5px 10px;
     cursor: pointer;
     font-size: 20px;
+    background-color: transparent;
 }
 
 .disabled-icon1 {
     color: rgba(140, 140, 140, 0.697);
     border-color: rgba(140, 140, 140, 0.697);
     cursor: default;
+    background-color: transparent;
 }
 
 .disabled-icon1:hover {
