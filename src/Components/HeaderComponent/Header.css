@@ -83,7 +83,6 @@
 
 .main-logo1 {
     width: 103px;
-    height: 78px;
     background-color: transparent;
 }
 
@@ -116,14 +115,19 @@
     .nav-items-section {
         gap: 2vh;
     }
+    .main-logo1 {
+        width: 80px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-
-    .main-logo,
     .main-logo1 {
-        width: 130px;
-        height: 95px;
+        width: 60px;
+    }
+
+    .main-logo {
+        width: 100px;
+        height: 80px;
     }
 
     .vishesh-head {
@@ -146,14 +150,13 @@
 
 @media only screen and (max-width: 400px) {
 
-    .main-logo,
-    .main-logo1 {
+    .main-logo{
         width: 90px;
-        height: 75px;
     }
 
     .vishesh-head {
         font-size: 2.2rem;
+        margin-bottom: 1rem;
     }
 
     .vishesh-sub-head {
