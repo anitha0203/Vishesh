@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+.home-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem auto 0rem 4rem;
+}
+
+.home-about-heading {
+    font-family: Satoshi-medium;
+    font-size: calc(2rem + 2vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 0px;
+}
+
+.home-about-para {
+    width: 95%;
+    font-family: Satoshi-light;
+    font-size: calc(0.6rem + 0.75vw);
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+}
+
+.about-us-img1 {
+    display: none;
+}
+
+.about-us-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid #131A27;
+    padding: 32px 40px 34px 40px;
+    color: #131A27;
+    font-family: Satoshi;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    cursor: pointer;
+}
+
+.about-us-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F5A091;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.about-us-btn:hover {
+    border-color: transparent;
+    color: #fff;
+    z-index: 1000;
+}
+
+.about-us-btn:hover::before {
+    transform: scaleY(1);
+}
+
+/* Responsive media queries */
+@media only screen and (max-width: 1400px) {
+    .about-us-img {
+        width: 45rem;
+        height: 35rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-us-img {
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .home-about-section {
+        margin: 9.5rem auto 9.5rem 2rem;
+    }
+
+    .about-us-img {
+        width: 30rem;
+        height: 25rem;
+    }
+
+    .about-us-btn {
+        padding: 25px 33px 27px 33px;
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .home-about-section {
+        margin: 9.5rem auto 9.5rem 1rem;
+    }
+
+    .about-us-img {
+        width: 26rem;
+        height: 25rem;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .home-about-section {
+        display: block;
+    }
+
+    .about-us-img {
+        display: none;
+    }
+
+    .about-us-img1 {
+        width: 96%;
+        height: 100%;
+        margin: 2rem 0rem;
+        display: block;
+    }
+
+    .about-us-btn {
+        margin-top: 2rem;
+    }
+    .home-about-para {
+        font-size: calc(1.2rem + 0.75vw);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .about-us-btn {
+        padding: 20px 28px 22px 28px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home-about-section {
+        margin: 1rem auto 6rem 1rem;
+    }
+}

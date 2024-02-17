@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+.cards-us-section {
+    margin: 15rem 0rem 0rem 4rem;
+    display: flex;
+    gap: 10%;
+    /* justify-content: flex-end;
+    align-items: center; */
+}
+
+.why-us-heading {
+    color: #131A27;
+    font-family: Satoshi-medium;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.arrow-img-css {
+    width: 57px;
+    height: 54.073px;
+    flex-shrink: 0;
+}
+
+.cards-section-css {
+    display: flex;
+}
+
+.cards-sections-us {
+    border-radius: 24px 0px 0px 24px;
+    width: 86rem;
+    height: 500px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 8%;
+    position: relative; 
+}
+
+.cards-section-us-heading {
+    color: #131A27;
+    font-family: Satoshi-medium;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    background-color: transparent;
+}
+
+.cards-section-us-text {
+    color: #33353A;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+    background-color: transparent;
+    width: 45%;
+}
+
+.cards-section-us-number {
+    color: #33353A;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 2.5%;
+    left: 1.5%;
+}

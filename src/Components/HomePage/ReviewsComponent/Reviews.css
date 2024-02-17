@@ -15,7 +15,7 @@
 
 .reviews-section {
     font-family: Satoshi-medium;
-    margin: 15rem 0rem 15rem 4rem;
+    margin: 15rem 0rem 0rem 4rem;
 }
 
 .reviews-heading {
@@ -168,7 +168,7 @@
 }
 
 .reviews-para-mobile {
-    font-size: calc(1rem + 0.2vw);
+    font-size: calc(1.2rem + 0.5vw);
 }
 
 

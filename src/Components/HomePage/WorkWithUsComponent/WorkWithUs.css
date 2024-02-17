@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+
+/* .work-withus-section {
+    margin: 5rem 4rem;
+    display: flex;
+    width: 20rem;
+}
+
+.work-section-heading {
+    color: #000;
+    font-family: Satoshi;
+    font-size: 136px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: flex;
+}
+
+.video-container4 {
+    width: 260px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 2.5rem;
+}
+
+span,
+.video-container4 {
+    flex: 0 0 auto;
+} */
+
+.work-with-us-btn {
+    text-align: center;
+}
+
+
+.work-withus-section {
+    margin: 15rem 2rem 0rem;
+    /* Adjust margin as needed */
+    max-width: 1200px;
+    /* Set a maximum width for the content */
+}
+
+.work-section-heading {
+    display: flex;
+    font-size: 80px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.video-container4 {
+    width: 260px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+}
+
+.video-container5 {
+    width: 360px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+}
+
+@media (min-width: 600px) {
+    .work-withus-section {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Prevent content from wrapping on larger screens */
+    }
+}

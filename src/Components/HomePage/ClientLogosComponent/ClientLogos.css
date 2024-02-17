@@ -1,6 +1,31 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-medium;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
 .slider {
     overflow: hidden;
-    margin: 0px 5rem;
+    margin: 15rem 5rem 0rem;
+}
+
+.logos-heading {
+    color: #33353A;
+    font-family: Satoshi-medium;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 5rem;
 }
 
 .slide-track {
