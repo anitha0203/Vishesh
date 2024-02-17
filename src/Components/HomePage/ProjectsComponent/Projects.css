@@ -1,9 +1,4 @@
 @font-face {
-    font-family: Satoshi-light;
-    src: url(../../../../public/Satoshi-Light.otf);
-}
-
-@font-face {
     font-family: Satoshi;
     src: url(../../../../public/Satoshi-Regular.otf);
 }
@@ -129,7 +124,7 @@
 .home-project-btn {
     padding: 10px 20px;
     color: #FCFCFC;
-    font-family: Satoshi-light;
+    font-family: Satoshi;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

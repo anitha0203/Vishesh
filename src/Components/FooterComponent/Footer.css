@@ -10,7 +10,7 @@
 
 .footer-section {
     font-family: Satoshi-web;
-    padding: 4rem 5rem 7.5rem;
+    padding: 4rem 5rem 9rem;
     background: var(--Grey-800, #1D2939);
 }
 
@@ -65,7 +65,7 @@
     font-family: Satoshi-medium;
     background-color: transparent;
     color: #FCFCFC;
-    font-size: calc(1.4rem + 1.3vw);
+    font-size: calc(1.1rem + 0.85vw);
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -89,6 +89,7 @@
     font-weight: 500;
     line-height: 120%;
     margin: 0px;
+    margin-top: 0.8rem;
 }
 
 .footer-section-text4 {
@@ -98,9 +99,10 @@
     font-weight: 400;
     line-height: 120%;
     margin-bottom: 0px;
+    margin-top: 1rem;
 }
 
-.social-icon-img {
+.social-icon-img, .social-icon-img1 {
     background-color: transparent;
     margin-right: 2.5rem;
 }
@@ -145,7 +147,7 @@
 
 @media only screen and (max-width: 1040px) {
     .footer-section {
-        padding: 4rem 2rem 6.5rem;
+        padding: 4rem 2rem 8rem;
     }
 }
 
@@ -154,11 +156,16 @@
         display: block;
     }
 
-    .last-section2 {
-        margin-top: 1rem;
+    .footer-section-text2 {
+        width: 80%;
     }
 
-    .social-icon-img {
+    .last-section2 {
+        margin-top: 1rem;
+        margin: 2rem 0rem;
+    }
+
+    .social-icon-img, .social-icon-img1 {
         margin-right: 0.5rem;
     }
 
@@ -169,6 +176,22 @@
     .footer-section-icon {
         padding-top: 0px;
     }
+    .last-section2 {
+        display: block;
+    }
+    .footer-section-socialicons{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .temp-col-temp{
+        display: none;
+    }
+    
+    .last-text{
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -176,20 +199,15 @@
         display: block;
     }
 
-    .footer-section-socialicons {
-        margin-top: 1rem;
-    }
-
-    .social-icon-img {
-        margin-right: 0.8rem;
-    }
     .footer-section {
         padding: 4rem 1rem 6.5rem;
     }
-}
-
-@media only screen and (max-width: 380px) {
-    .last-section2 {
-        display: block;
+    .social-icon-img1{
+        width: 2.3rem;
     }
+    
+    .last-text{
+        font-size: 10px;
+    }
+
 }

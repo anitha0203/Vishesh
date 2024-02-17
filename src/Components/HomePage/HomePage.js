@@ -17,7 +17,7 @@ function HomePage() {
 
       {/**    Web view view       */}
       <div className='home-main-section'>
-        <h2 className='home-main-heading'>Turning Technological Needs</h2>
+        <h1 className='home-main-heading'>Turning Technological Needs</h1>
         <div className='home-heading-video'>
           <div className='video-container'>
             <video className='video' controls autoPlay muted loop>
@@ -68,7 +68,7 @@ function HomePage() {
       <Reviews />
 
       {/**    teams heading SCROLLING Section  */}
-      <div className='team-heading-sections'>
+      <div className='team-heading-sections1'>
         <hr />
         <div class="scroll-container1">
           <div class="scroll-text">
