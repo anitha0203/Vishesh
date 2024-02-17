@@ -181,7 +181,10 @@
 /* Responsive media queries */
 @media only screen and (max-width: 1700px) {
     .home-section-para {
-        width: 82%;
+        width: 90%;
+    }
+    .video1 {
+        height: 60vh;
     }
 }
 
@@ -203,6 +206,9 @@
     .video-container4 {
         width: 238px;
         height: 100px;
+    }
+    .video1 {
+        height: 40vh;
     }
 }
 
@@ -239,6 +245,9 @@
     .scroll-container {
         margin: 6rem 0px;
     }
+    .video1 {
+        height: 20vh;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -271,7 +280,7 @@
     }
 
     .video1 {
-        height: 30vh;
+        height: 20vh;
     }
 }
 
@@ -301,7 +310,7 @@
         margin-top: 0.2vh;
     }
     .home-section-para {
-        font-size: calc(1.2rem + 0.7vw);
+        font-size: calc(0.8rem + 0.7vw);
     }
 }
 
