@@ -20,15 +20,7 @@
     width: 20rem;
 }
 
-.work-section-heading {
-    color: #000;
-    font-family: Satoshi;
-    font-size: 136px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    display: flex;
-}
+
 
 .video-container4 {
     width: 260px;
@@ -45,6 +37,18 @@ span,
     flex: 0 0 auto;
 } */
 
+
+
+.work-section-heading span{
+    color: #000;
+    font-family: Satoshi;
+    font-size: 136px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    display: flex;
+   
+}
 .work-with-us-btn {
     text-align: center;
 }
@@ -53,7 +57,8 @@ span,
 .work-withus-section {
     margin: 15rem 2rem 0rem;
     /* Adjust margin as needed */
-    max-width: 1200px;
+    /* max-width: 1200px; */
+
     /* Set a maximum width for the content */
 }
 
@@ -62,25 +67,43 @@ span,
     font-size: 80px;
     flex-wrap: wrap;
     /* align-items: center; */
+   
+    /* width: 100%; */
+
 }
 
 .video-container4 {
     width: 260px;
-    height: 100px;
+    height: 106px;
     border-radius: 50px;
     overflow: hidden;
-    margin: 0 10px;
+    margin: 28px 10px;
     /* Adjust the margin as needed */
+    
 }
 
+
 .video-container5 {
-    width: 360px;
+    width: 350px;
     height: 100px;
     border-radius: 50px;
     overflow: hidden;
-    margin: 0 10px;
+    margin: 31px 10px;
+    
     /* Adjust the margin as needed */
+   
 }
+
+.video5{
+   position:relative;
+   top: -190%;
+   height: 500px;
+   width: 500px;
+   transform: rotateZ(-90deg);
+   
+}
+
+
 
 @media (min-width: 600px) {
     .work-withus-section {
