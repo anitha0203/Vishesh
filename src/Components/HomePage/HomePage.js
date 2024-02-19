@@ -47,8 +47,8 @@ function HomePage() {
       {/**    About Us Section     */}
       <AboutUs />
 
-      {/**    Why Us Cards Section 
-      <CardsComponent />*/}
+      {/**    Why Us Cards Section */}
+      <CardsComponent />
 
       {/**    VISHESH COUNTRY CACHE * FOSTERING INTELLECT SCROLLING Section  */}
       <div class="scroll-container">

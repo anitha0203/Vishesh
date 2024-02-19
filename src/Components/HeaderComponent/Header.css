@@ -118,9 +118,20 @@
     .main-logo1 {
         width: 80px;
     }
+
+    /* .nav-items-section {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .header-section {
+        position: relative;
+    } */
     .nav-items-section {
-        padding: 3.2rem 3rem;
-        gap: 1vh;
+        bottom: 1.5%;
+        padding: 3.2rem 2rem;
+        border-radius: 100px;
+        gap: 1.4vh;
     }
 }
 
@@ -143,7 +154,7 @@
     }
 
     .nav-items-section {
-        padding: 2rem 3rem;
+        padding: 2rem 2rem;
     }
 
     .nav-items {
@@ -151,13 +162,13 @@
     }
 }
 
-@media only screen and (max-width: 410px) {
+/* @media only screen and (max-width: 410px) {
     .nav-items-section {
         padding: 2rem 2.6rem;
     }
-}
+} */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
 
     .main-logo {
         width: 90px;

@@ -12,8 +12,6 @@
     margin: 15rem 0rem 0rem 4rem;
     display: flex;
     gap: 10%;
-    /* justify-content: flex-end;
-    align-items: center; */
 }
 
 .why-us-heading {
@@ -33,19 +31,53 @@
 
 .cards-section-css {
     display: flex;
+    /* overflow: hidden; */
 }
 
-.cards-sections-us {
+.cards-sections-us,
+.cards-sections-us1,
+.cards-sections-us2,
+.cards-sections-us3,
+.cards-sections-us4 {
     border-radius: 24px 0px 0px 24px;
-    width: 86rem;
     height: 500px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding-left: 8%;
-    position: relative; 
+    position: relative;
+}
+
+.cards-sections-us {
+    width: 76.5%;
+}
+
+.cards-section-card1,
+.cards-section-card2,
+.cards-section-card3,
+.cards-section-card4  {
+    display: none;
+}
+
+.cards-sections-us1 {
+    margin-left: -5%;
+    width: 10rem;
+}
+
+.cards-sections-us2 {
+    margin-left: -5%;
+    width: 10rem;
+}
+
+.cards-sections-us3 {
+    margin-left: -5%;
+    width: 10rem;
+}
+
+.cards-sections-us4 {
+    margin-left: -5%;
+    width: 5rem;
 }
 
 .cards-section-us-heading {

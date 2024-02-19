@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import './Reviews.css';
-import { Accordion, Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 
 //  Reviews Data
 const reviews = [
@@ -35,11 +35,18 @@ function Reviews() {
 
   const calculateScrollDistance = () => {
     const screenWidth = window.innerWidth;
-
     if (screenWidth > 1800) {
       return 500;
     } else if (screenWidth >= 1000) {
       return 540;
+    } else if (screenWidth > 545) {
+      return 540;
+    } else if (screenWidth >= 545) {
+      return 420;
+    } else if (screenWidth >= 385) {
+      return 350;
+    } else if (screenWidth < 345) {
+      return 325;
     }
   };
   const btnpressprev = () => {
@@ -57,15 +64,14 @@ function Reviews() {
   return (
     <div className='reviews-section'>
 
-      {/**    Web View */}
       <Row className='reviews-web-view'>
         <Col md={4} className='reviews-text'>
           <div className='reviews-text-sec'>
             <div className='text-arrows-container'>
               <h2 className='reviews-client'>What Our Clients Say About Us</h2>
               <div className='reviews-arrows'>
-                <div className={`reviews-arrow ${isPrevDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressprev}><FaAngleLeft /></div>
-                <div className={`reviews-arrow ${isNextDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressnext}><FaAngleRight /></div>
+                <div className={`reviews-arrow ${isPrevDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressprev}><FaAngleLeft style={{ backgroundColor: "transparent", fontSize: "25px" }} /></div>
+                <div className={`reviews-arrow ${isNextDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressnext}><FaAngleRight style={{ backgroundColor: "transparent", fontSize: "25px" }} /></div>
               </div>
             </div>
           </div>
@@ -92,25 +98,8 @@ function Reviews() {
         </Col>
       </Row>
 
-      {/**    Mobile View */}
-      <div className="reviews-mobile-view">
-        <h2 className='reviews-client'>What Our Clients Say About Us</h2>
-
-        <Accordion defaultActiveKey="0">
-          {reviews.map((review, index) => (
-            <Accordion.Item key={index} eventKey={index.toString()}>
-              <Accordion.Header>{review.name}</Accordion.Header>
-              <Accordion.Body>
-                <p className="reviews-para-mobile">{review.description}</p>
-                <div>- {review.place}</div>
-              </Accordion.Body>
-            </Accordion.Item>
-          ))}
-        </Accordion>
-      </div>
     </div>
   )
 }
 
 export default Reviews
-
