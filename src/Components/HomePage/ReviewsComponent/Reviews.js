@@ -45,7 +45,7 @@ function Reviews() {
       return 420;
     } else if (screenWidth >= 385) {
       return 350;
-    } else if (screenWidth < 345) {
+    } else if (screenWidth < 385) {
       return 325;
     }
   };
