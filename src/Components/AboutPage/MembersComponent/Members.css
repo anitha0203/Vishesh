@@ -67,6 +67,8 @@ font-weight: 500;
 line-height: 120%; /* 40.8px */
 
 text-align: center;
+
+margin-top: 1rem;
 }
 
 .Member-teamName{
@@ -81,6 +83,19 @@ line-height: 150%; /* 36px */
 letter-spacing: 0.24px;
 }
 
+
+.SupportContainer-h5{
+
+    color: var(--text-icon-light-heading, #131A27);
+/* Headings/H5/Medium */
+font-family: Satoshi-med;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 57.6px */
+padding: 0% 2.2%;
+margin-top: 5rem;
+}
 
 @media (max-width:1265px) {
     .Member{
@@ -128,6 +143,9 @@ letter-spacing: 0.24px;
     .Member-teamName{
         font-size: 18px;
     }
+    .SupportContainer-h5{
+        font-size: 40px;
+    }
 }
 
 
@@ -169,6 +187,9 @@ letter-spacing: 0.24px;
     .Member-teamName{
         font-size: 15px;
     }
+    .MembersContainer-Row-2{
+        justify-content: space-between;    
+    }
 }
 
 @media (max-width:537px) {
@@ -188,6 +209,10 @@ letter-spacing: 0.24px;
     }
     .Member-teamName{
         font-size: 15px;
+    }
+    .SupportContainer-h5{
+        font-size: 37px;
+        margin-top: 2rem;
     }
 }
 

@@ -21,6 +21,11 @@ const MembersData = [
     { image: require("../../../assets/AboutPage/Ramesh.png"), name: "Ramesh", teamName: "Marketing Analysis" },
     { image: require("../../../assets/AboutPage/Kartheek.png"), name: "Kartheek", teamName: "Marketing Analysis" },
     { image: require("../../../assets/AboutPage/mounika.png"), name: "Mounika", teamName: "Marketing Analysis" },
+    { image: "", name: "", teamName: "s" },
+    { image: "", name: "", teamName: "4" },
+]
+
+const TraineesData = [
     { image: require("../../../assets/AboutPage/Uday.png"), name: "Uday", teamName: "Trainee" },
     { image: require("../../../assets/AboutPage/Kumar.png"), name: "Kumar", teamName: "Trainee" },
     { image: require("../../../assets/AboutPage/Ganesh.png"), name: "Ganesh", teamName: "Trainee" },
@@ -34,19 +39,56 @@ function Members(props) {
             <Row className='MembersContainer-Row'>
                 {
                     MembersData.map((MemberData) => {
+                        if (MemberData.name) {
+                            return (
+                                <div className='Member' key={MemberData.name}>
+                                    <Row className='Member-Row'>
+                                        <div style={{ backgroundImage: `url("${MemberData.image}")` }} className='MemberImage'>
+
+                                        </div>
+                                    </Row>
+                                    <Row className='Member-Row' >
+                                        <div>
+                                            <h6 className='Member-name'>{MemberData.name}</h6>
+                                        </div>
+                                        <div className='Member-teamName'>
+                                            {MemberData.teamName}
+                                        </div>
+                                    </Row>
+                                </div>
+
+                            )
+                        }
+                        else {
+                            return (
+                                <div className='Member' key={MemberData.teamName}>
+                                    <Row className='Member-Row'>
+                                    </Row>
+                                    <Row className='Member-Row' >
+                                    </Row>
+                                </div>
+                            )
+                        }
+                    })
+                }
+            </Row>
+            <div className='SupportContainer'><h5 className='SupportContainer-h5'>Support</h5></div>
+            <Row className='MembersContainer-Row-2'>
+                {
+                    TraineesData.map((TraineeData) => {
                         return (
-                            <div className='Member' key={MemberData.name}>
+                            <div className='Member' key={TraineeData.name}>
                                 <Row className='Member-Row'>
-                                    <div style={{ backgroundImage: `url("${MemberData.image}")` }} className='MemberImage'>
+                                    <div style={{ backgroundImage: `url("${TraineeData.image}")` }} className='MemberImage'>
 
                                     </div>
                                 </Row>
                                 <Row className='Member-Row' >
                                     <div>
-                                        <h6 className='Member-name'>{MemberData.name}</h6>
+                                        <h6 className='Member-name'>{TraineeData.name}</h6>
                                     </div>
                                     <div className='Member-teamName'>
-                                        {MemberData.teamName}
+                                        {TraineeData.teamName}
                                     </div>
                                 </Row>
                             </div>
@@ -54,6 +96,7 @@ function Members(props) {
                     })
                 }
             </Row>
+
         </Container>
     );
 }
