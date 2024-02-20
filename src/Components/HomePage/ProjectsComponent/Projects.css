@@ -204,7 +204,7 @@
 
 @media only screen and (max-width: 1337px) {
     .home-projects-section {
-        margin: 15rem 2rem 0rem;
+        margin: 10rem 2rem 0rem;
     }
 
     .home-feature-projects {
@@ -249,7 +249,7 @@
     }
 
     .home-projects-section {
-        margin: 15rem 1rem 0rem;
+        margin: 6rem 1rem 0rem;
     }
 }
 

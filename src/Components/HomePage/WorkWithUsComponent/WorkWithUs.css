@@ -30,6 +30,8 @@
 
 .work-text-lines2 {
   display: none;
+  text-align: justify;
+  
 }
 
 .work-with-us-btn {
@@ -171,7 +173,7 @@
   }
 
   .team-heading-sections {
-    margin: 10rem 1rem 5rem;
+    margin: 5rem 1rem 5rem;
   }
 
   .work-with-us-btn {

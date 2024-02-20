@@ -183,7 +183,7 @@
         width: 90%;
     }
     .video1 {
-        height: 60vh;
+        height: auto;
     }
 }
 
@@ -206,9 +206,6 @@
         width: 238px;
         height: 100px;
     }
-    .video1 {
-        height: 40vh;
-    }
 }
 
 @media only screen and (max-width: 1040px) {
@@ -222,6 +219,9 @@
 
     .scroll-container1 {
         width: 86%;
+    }
+    .team-heading-sections1 {
+        margin: 10rem 0rem 0rem;
     }
 
 }
@@ -244,8 +244,12 @@
     .scroll-container {
         margin: 6rem 0px;
     }
-    .video1 {
-        height: 20vh;
+    .heading-scroll-img{
+        width: 3.8rem;
+        margin-top: -25px;
+    }
+    .team-heading-sections1 {
+        margin: 8rem 0rem 0rem;
     }
 }
 
@@ -277,10 +281,6 @@
     .home-main-section1 {
         margin: 3rem 0rem;
     }
-
-    .video1 {
-        height: 20vh;
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -310,6 +310,9 @@
     }
     .home-section-para {
         font-size: calc(0.8rem + 0.7vw);
+    }
+    .team-heading-sections1 {
+        margin: 5rem 0rem 0rem;
     }
 }
 

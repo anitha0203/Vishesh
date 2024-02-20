@@ -172,7 +172,7 @@
 
 @media (max-width: 1200px) {
     .reviews-section {
-        margin: 70px 2rem;
+        margin: 120px 2rem;
     }
 
     .reviews-text {
@@ -183,7 +183,7 @@
 
 @media (max-width: 1000px) {
     .reviews-section {
-        margin: 70px 1rem;
+        margin: 120px 1rem;
     }
 
     .reviews-web-view {
