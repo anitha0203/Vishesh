@@ -117,24 +117,35 @@ letter-spacing: 0.24px;
 }
 
 
+@media (max-width:1440px) {
+    .CareersNav-h5{
+        font-size: 35px;
+    }
+}
+
 @media (max-width:1024px) {
     .CareersNav-p{
         font-size: 20px;
     }
     .CareersNav-h5{
-        font-size: 35px;
+        font-size: 30px;
     }
     .CareersNav-h3{
         font-size: 45px;
     }
+    .CareersBackground{
+        padding-bottom: 60px;
+    }
 }
+
+
 
 @media (max-width:768px) {
     .CareersNav-p{
         font-size: 15px;
     }
     .CareersNav-h5{
-        font-size: 30px;
+        font-size: 24px;
     }
     .Arrow-Icon{
         width: 100px;
@@ -198,5 +209,14 @@ letter-spacing: 0.24px;
     }
     .CareersNav-container{
         padding-top: 80px;
+    }
+}
+
+@media (max-width:375px) {
+    .CareersNav-container{
+        padding: 0% 6%;
+    }
+    .CareersNav-h3{
+        margin-top: 25px;
     }
 }

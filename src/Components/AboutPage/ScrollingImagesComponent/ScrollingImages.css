@@ -87,6 +87,12 @@ position: relative;
     }
 }
 
+@media (max-width:768px) {
+    .ScrollingImagesContainer{
+        background-position: right;
+        background-size: 110%;
+    }
+}
 
 @media (max-width:500px) {
     .ScrollingImagesContainer{
