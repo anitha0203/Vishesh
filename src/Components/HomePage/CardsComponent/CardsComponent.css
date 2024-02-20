@@ -14,13 +14,11 @@
     gap: 10%;
 }
 
-.why-us-heading {
-    color: #131A27;
-    font-family: Satoshi-medium;
-    font-size: 68px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
+.why-us-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .arrow-img-css {
@@ -31,7 +29,11 @@
 
 .cards-section-css {
     display: flex;
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+.cards-section-css1 {
+    display: none;
 }
 
 .cards-sections-us,
@@ -41,43 +43,55 @@
 .cards-sections-us4 {
     border-radius: 24px 0px 0px 24px;
     height: 500px;
+    width: 85%;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 8%;
     position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cards-sections-us11 {
+    cursor: default;
 }
 
 .cards-sections-us {
-    width: 76.5%;
-}
-
-.cards-section-card1,
-.cards-section-card2,
-.cards-section-card3,
-.cards-section-card4  {
-    display: none;
+    width: 85%;
 }
 
 .cards-sections-us1 {
-    margin-left: -5%;
-    width: 10rem;
+    right: 12.5%;
 }
 
 .cards-sections-us2 {
-    margin-left: -5%;
-    width: 10rem;
+    right: 91%;
 }
 
 .cards-sections-us3 {
-    margin-left: -5%;
-    width: 10rem;
+    right: 169.5%;
 }
 
 .cards-sections-us4 {
-    margin-left: -5%;
-    width: 5rem;
+    right: 247.5%;
+}
+
+.cards-sections-us12 {
+    right: 78%;
+}
+
+.cards-sections-us23 {
+    right: 156%;
+}
+
+.cards-sections-us34 {
+    right: 234%;
+}
+
+.cards-sections-us45 {
+    right: 312%;
 }
 
 .cards-section-us-heading {
@@ -114,4 +128,277 @@
     position: absolute;
     bottom: 2.5%;
     left: 1.5%;
+}
+
+
+/* Responsive media queries */
+@media only screen and (max-width: 1850px) {
+    .cards-us-section {
+        gap: 2%;
+    }
+
+    .why-us-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1515px) {
+    .why-us-section {
+        width: 120%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .why-us-section {
+        width: 140%;
+    }
+}
+
+@media only screen and (max-width: 1310px) {
+    .why-us-section {
+        width: 160%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cards-us-section {
+        margin: 15rem 0rem 0rem 2rem;
+    }
+
+    .why-us-section {
+        width: 180%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cards-section-css {
+        margin-top: 2rem;
+    }
+
+    .cards-us-section {
+        display: block;
+        overflow: hidden;
+    }
+
+    .arrow-img-css {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards-section-css {
+        display: none;
+    }
+
+    .cards-section-css1 {
+        display: block;
+        overflow: hidden;
+        height: 56rem;
+        margin-top: 2rem;
+    }
+
+    .cards-sections-us-mobile,
+    .cards-sections-us-mobile1,
+    .cards-sections-us-mobile2,
+    .cards-sections-us-mobile3,
+    .cards-sections-us-mobile4 {
+        border-radius: 24px 24px 0px 0px;
+        height: 500px;
+        width: 95%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 8%;
+        padding-right: 1%;
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .cards-section-us-text {
+        width: 100%;
+    }
+
+    .cards-section-us-number {
+        top: 3.5%;
+        left: 4%;
+    }
+
+    .cards-sections-us-mobile11 {
+        cursor: default;
+    }
+
+    .cards-sections-us-mobile1 {
+        bottom: 10rem;
+    }
+
+    .cards-sections-us-mobile2 {
+        bottom: 32rem;
+    }
+
+    .cards-sections-us-mobile3 {
+        bottom: 55rem;
+    }
+
+    .cards-sections-us-mobile4 {
+        bottom: 78rem;
+    }
+
+    .cards-sections-us-mobile12 {
+        bottom: 25rem;
+    }
+
+    .cards-sections-us-mobile23 {
+        bottom: 49rem;
+    }
+
+    .cards-sections-us-mobile34 {
+        bottom: 73rem;
+    }
+
+    .cards-sections-us-mobile45 {
+        bottom: 97rem;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .cards-section-css1 {
+        height: 54rem;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .cards-sections-us-mobile1 {
+        bottom: 2rem;
+    }
+
+    .cards-sections-us-mobile2 {
+        bottom: 26rem;
+    }
+
+    .cards-sections-us-mobile3 {
+        bottom: 51.5rem;
+    }
+
+    .cards-sections-us-mobile4 {
+        bottom: 77rem;
+    }
+
+    .cards-sections-us-mobile12 {
+        bottom: 25rem;
+    }
+
+    .cards-sections-us-mobile23 {
+        bottom: 49.5rem;
+    }
+
+    .cards-sections-us-mobile34 {
+        bottom: 74.7rem;
+    }
+
+    .cards-sections-us-mobile45 {
+        bottom: 100rem;
+    }
+
+    .cards-section-us-text {
+        font-size: calc(1.2rem + 0.75vw)
+    }
+
+    .cards-section-us-heading {
+        font-size: calc(1.6rem + 1.5vw)
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .cards-us-section {
+        margin: 15rem 0rem 0rem 1rem;
+    }
+
+    .cards-section-css1 {
+        height: 42.5rem;
+    }
+
+    .cards-sections-us-mobile1 {
+        bottom: 8rem;
+    }
+
+    .cards-sections-us-mobile2 {
+        bottom: 34rem;
+    }
+
+    .cards-sections-us-mobile3 {
+        bottom: 60rem;
+    }
+
+    .cards-sections-us-mobile4 {
+        bottom: 87rem;
+    }
+
+    .cards-sections-us-mobile12 {
+        bottom: 27rem;
+    }
+
+    .cards-sections-us-mobile23 {
+        bottom: 53.5rem;
+    }
+
+    .cards-sections-us-mobile34 {
+        bottom: 80rem;
+    }
+
+    .cards-sections-us-mobile45 {
+        bottom: 107rem;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .cards-section-css1 {
+        height: 45rem;
+    }
+
+    .cards-sections-us-mobile,
+    .cards-sections-us-mobile1,
+    .cards-sections-us-mobile2,
+    .cards-sections-us-mobile3,
+    .cards-sections-us-mobile4 {
+        height: 550px;
+    }
+
+    .cards-sections-us-mobile1 {
+        bottom: 10.5rem;
+    }
+
+    .cards-sections-us-mobile2 {
+        bottom: 39rem;
+    }
+
+    .cards-sections-us-mobile3 {
+        bottom: 68rem;
+    }
+
+    .cards-sections-us-mobile4 {
+        bottom: 97rem;
+    }
+
+    .cards-sections-us-mobile12 {
+        bottom: 30rem;
+    }
+
+    .cards-sections-us-mobile23 {
+        bottom: 60rem;
+    }
+
+    .cards-sections-us-mobile34 {
+        bottom: 90rem;
+    }
+
+    .cards-sections-us-mobile45 {
+        bottom: 120rem;
+    }
+
 }

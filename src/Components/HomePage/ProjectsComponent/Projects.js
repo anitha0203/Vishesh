@@ -7,7 +7,7 @@ import PlusIcon from '../../../assets/HomePage/PlusIcon.png'
 function Projects() {
     return (
         <div className='home-projects-section'>
-            <h2 className='home-project-heading'>Featured Projects</h2>
+            <h2 className='home-about-heading'>Featured Projects</h2>
             <p className='home-project-text'>We've crushed it on lots of projects, and we've got the receipts to prove it in our portfolio of case studies.</p>
 
             <div className='home-feature-projects'>

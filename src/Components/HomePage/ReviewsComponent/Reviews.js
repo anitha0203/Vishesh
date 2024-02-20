@@ -45,7 +45,7 @@ function Reviews() {
       return 420;
     } else if (screenWidth >= 385) {
       return 350;
-    } else if (screenWidth < 345) {
+    } else if (screenWidth < 385) {
       return 325;
     }
   };
@@ -68,7 +68,7 @@ function Reviews() {
         <Col md={4} className='reviews-text'>
           <div className='reviews-text-sec'>
             <div className='text-arrows-container'>
-              <h2 className='reviews-client'>What Our Clients Say About Us</h2>
+              <h2 className='home-about-heading'>What Our Clients Say About Us</h2>
               <div className='reviews-arrows'>
                 <div className={`reviews-arrow ${isPrevDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressprev}><FaAngleLeft style={{ backgroundColor: "transparent", fontSize: "25px" }} /></div>
                 <div className={`reviews-arrow ${isNextDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressnext}><FaAngleRight style={{ backgroundColor: "transparent", fontSize: "25px" }} /></div>

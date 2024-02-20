@@ -22,9 +22,9 @@ function OurServices() {
             <h2 className='services-heading'>Our Services</h2>
 
             {servicesData.map((service, index) => (
-                <div>
+                <div key={index}>
                     <hr className='services-hr' />
-                    <div key={index} className='services-container'>
+                    <div className='services-container'>
                         <div className='video-container1'>
                             <video className='service-video' controls autoPlay muted loop>
                                 <source src={service.videoSource} type='video/mp4' />

@@ -173,6 +173,10 @@
   .team-heading-sections {
     margin: 10rem 1rem 5rem;
   }
+
+  .work-with-us-btn {
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
