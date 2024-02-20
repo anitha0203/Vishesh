@@ -8,7 +8,6 @@ function Header() {
   const navigate = useNavigate();
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [clickCount, setClickCount] = useState(0);
   const [orderCount, setOrderCount] = useState(0);
 
   useEffect(() => {
@@ -31,16 +30,6 @@ function Header() {
     // Check if the current path matches the provided path
     return location.pathname === path;
   };
-
-  // const handleNavItemClick = (path) => {
-  //   const currentPath = location.pathname;
-  //   if (currentPath !== path) {
-  //     const isRight = path === '/home' || (currentPath === '/services' && path === '/home');
-  //     setClickCount((prevCount) => prevCount + (isRight ? -5 : 5));
-  //   }
-
-  //   navigate(path);
-  // };
 
   const handleNavItemClick = (path) => {
     const currentIndex = getOrderIndex(path);
