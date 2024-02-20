@@ -2,9 +2,14 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import "./ScrollingImages.css"
 
-function ScrollingImages(props) {
+
+
+function ScrollingImages() {
+
+
+
     return (
-        <Container className='ScrollingImagesContainer' fluid>
+        <Container className='ScrollingImagesContainer' fluid >
             <div className='ScrollingImage1'></div>
             <div className='ScrollingImage2'></div>
             <div className='ScrollingImage3'></div>

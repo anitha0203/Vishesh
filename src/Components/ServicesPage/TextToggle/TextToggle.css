@@ -1,0 +1,32 @@
+.TextToggle-container {
+    display: flex;
+    justify-content: space-between; /* Align texts with equal space */
+  }
+  
+  .team {
+    padding: 10px;
+    cursor: pointer;
+    color: #8f8f8f;
+  }
+  
+  .team.active {
+    color: black; /* Highlight active text */
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  .underline-container {
+    display: flex;
+  }
+  
+  .underline {
+    border-bottom: 2px solid #999; /* Light color for the line below text */
+    flex-grow: 1;
+  }
+  
+  .underline.active {
+    border-bottom-color: #000; /* Dark color for the active line below text */
+  }
+  
