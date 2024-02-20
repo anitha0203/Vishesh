@@ -6,19 +6,23 @@ function Numbers(props) {
     const [getDaysCount, setDaysCount] = useState(0);
     const [getMembers, setMembers] = useState(0);
     const [getMouseEvent, setMouseEvent] = useState(true);
+    const setDate = new Date("2016-01-01")
+    const todaysDate = new Date();
+    const daysCompleted = Math.floor((todaysDate - setDate) / (1000 * 60 * 60 * 24));
+
     var DaysCount = 0;
     var MembersCount = 0;
-    const count = () => {
+    var count = () => {
         if (getMouseEvent) {
 
             setMouseEvent(false);
             let Days = setInterval(() => {
                 setDaysCount(DaysCount);
 
-                if (DaysCount === 2858) {
+                if (DaysCount === daysCompleted) {
                     clearInterval(Days);
                 }
-                console.log(DaysCount)
+                // console.log(DaysCount)
                 DaysCount++;
             }, 1);
             const Members = setInterval(() => {
@@ -32,8 +36,9 @@ function Numbers(props) {
     }
 
 
+
     return (
-        <Container fluid className='NumberContainer' onMouseEnter={() => { count() }}>
+        <Container fluid className='NumberContainer' onMouseEnter={() => { count() }} onTouchMove={() => { count() }}>
             <Row>
                 <Col><h3 className='NumberContainer-h3'>Numbers</h3></Col>
             </Row>
