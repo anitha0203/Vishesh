@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: Satoshi;
+    font-family: Satoshi-med;
     src: url(../../../../public/Satoshi-Medium.otf);
 }
 
@@ -11,7 +11,7 @@
 .StoryVisionFuture-h5{
     color: var(--text-icon-light-heading, #131A27);
 /* Headings/H5/Medium */
-font-family: Satoshi;
+font-family: Satoshi-med;
 font-size: 3rem;/* 48px */
 
 font-style: normal;

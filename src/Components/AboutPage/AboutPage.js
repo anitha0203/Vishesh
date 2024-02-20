@@ -27,8 +27,8 @@ function AboutPage() {
         <AboutHeader />
       </div>
       <div className='height-3'></div>
-      <div onClick={() => { handleClick() }} onPointerOver={() => { handleClick() }} ref={componentRef}>
-        <ScrollingImages />
+      <div onClick={() => { handleClick() }} onPointerOver={() => { handleClick() }} ref={componentRef} >
+        <ScrollingImages onScrolling={() => { handleClick() }} />
       </div>
       <div className='height-1'></div>
       <StoryVisionFuture />

@@ -4,12 +4,12 @@ import "./ScrollingImages.css"
 
 
 
-function ScrollingImages() {
+function ScrollingImages({ onScrolling }) {
 
 
 
     return (
-        <Container className='ScrollingImagesContainer' fluid >
+        <Container className='ScrollingImagesContainer' fluid onScroll={() => { onScrolling() }}>
             <div className='ScrollingImage1'></div>
             <div className='ScrollingImage2'></div>
             <div className='ScrollingImage3'></div>
