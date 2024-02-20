@@ -52,7 +52,7 @@
 }
 .nav-items-section2 {
     display: flex;
-    gap: 4.5vh;
+    gap: 15%;
     opacity: 0.95;
     background-color: #181818;
     backdrop-filter: blur(150px);
@@ -65,6 +65,9 @@
     font-family: Satoshi;
     font-size: 1.4rem;
     font-weight: 100;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .5s;
 }
 
 .main-heading1 {
@@ -117,11 +120,18 @@
     }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 550px) {
+    .nav-items-section {
+        bottom: 1.5%;
+        padding: 2.2rem 2.5rem;
+        border-radius: 100px;
+        gap: 2vh;
+    }
     .main-logo1 {
         width: 80px;
     }
-
+}
+@media only screen and (max-width: 500px) {
     .header-section {
         display: none;
     }
@@ -134,9 +144,10 @@
         position: relative;
         display: flex;
     } 
-}
 
-@media only screen and (max-width: 500px) {
+    .nav-items{
+        font-size: 18px;
+    }
     .main-logo1 {
         width: 60px;
     }
@@ -150,13 +161,4 @@
     .main-logo {
         width: 280px;
     }
-}
-
-@media only screen and (max-width: 320px) {
-
-}
-
-.nav-items-section21 {
-    left: 35%;
-    position: relative;
 }
