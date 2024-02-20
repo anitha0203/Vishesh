@@ -10,8 +10,9 @@ import Logo7 from '../../../assets/HomePage/Purple Petal_.png'
 import Logo8 from '../../../assets/HomePage/Sanjivi.png'
 import Logo9 from '../../../assets/HomePage/Sri Chaitanya Hospital Logo-02.png'
 import Logo10 from '../../../assets/HomePage/terrang_b.png'
+import Logo11 from '../../../assets/HomePage/terrang_b.png'
 
-const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10]
+const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11]
 
 function ClientLogos() {
     return (
