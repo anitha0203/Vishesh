@@ -1,13 +1,237 @@
-.MembersContainer{
-    padding: 0% 3.2%;
-    width: 100%;
+
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
 }
 
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-med;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+.MembersContainer{
+    /* padding: 0% 3.2%; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.MembersContainer-Row{
+    justify-content: space-between;
+    
+}
 .Member{
-    border: 1px solid;
-    margin: 50px 29.5px;
+    border: 0px solid;
+    margin: 80px 0px;
+    width: 16.7%;
+    
+}
+
+.Member-Row{
+    justify-content: center;
+    align-content: center;
+    
 }
 
 .MemberImage{
+    height: 230px;
+    width: 230px;
+  
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size:auto;
+   
+    border-radius: 500px;
+    background-color: #EFEFF1;
+    filter: grayscale();
 
+    transition: 0.2s;
+}
+
+.MemberImage:hover{
+    filter: none;
+    background-color: #F4E9E1;
+}
+
+.Member-name{
+    color: var(--text-icon-light-heading, #131A27);
+/* Headings/H6/Medium */
+font-family: Satoshi-med;
+font-size: 34px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 40.8px */
+
+text-align: center;
+}
+
+.Member-teamName{
+    color: var(--text-icon-light-body, #33353A);
+text-align: center;
+/* Body/Text/Regular */
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 36px */
+letter-spacing: 0.24px;
+}
+
+
+@media (max-width:1024px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 22%;
+    }
+    .MemberImage{
+        height: 200px;
+        width: 200px;
+        background-size:75%;
+    }
+    .Member-name{
+        font-size:30px ;
+    }
+    .Member-teamName{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:896px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 22%;
+    }
+    .MemberImage{
+        height: 150px;
+        width: 150px;
+        background-size:75%;
+    }
+    .Member-name{
+        font-size:27px ;
+    }
+    .Member-teamName{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 30%;
+    }
+    .MemberImage{
+        height: 180px;
+        width: 180px;
+        background-size:70%;
+    }
+    .Member-name{
+        font-size:27px ;
+    }
+    .Member-teamName{
+        font-size: 17px;
+    }
+}
+
+@media (max-width:600px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 30%;
+    }
+    .MemberImage{
+        height: 150px;
+        width: 150px;
+        background-size:70%;
+    }
+    .Member-name{
+        font-size:20px ;
+    }
+    .Member-teamName{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:537px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 50%;
+    }
+    .MemberImage{
+        height: 200px;
+        width: 200px;
+        background-size:70%;
+    }
+    .Member-name{
+        font-size:20px ;
+    }
+    .Member-teamName{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:425px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 50%;
+    }
+    .MemberImage{
+        height: 170px;
+        width: 170px;
+        background-size:70%;
+    }
+    .Member-name{
+        font-size:20px ;
+    }
+    .Member-teamName{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:375px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 50%;
+    }
+    .MemberImage{
+        height: 150px;
+        width: 150px;
+        background-size:70%;
+    }
+    .Member-name{
+        font-size:20px ;
+    }
+    .Member-teamName{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:375px) {
+    .Member{
+        border: 0px solid;
+        margin: 80px 0px;
+        width: 50%;
+    }
+    .MemberImage{
+        height: 150px;
+        width: 150px;
+        background-size:70%;
+    }
+    .Member-name{
+        font-size:18px ;
+    }
+    .Member-teamName{
+        font-size: 13px;
+    }
 }

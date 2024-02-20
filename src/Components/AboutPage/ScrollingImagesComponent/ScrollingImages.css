@@ -59,3 +59,37 @@ position: relative;
     right: 50%;
    margin-bottom: 20%;
 }
+
+@media (max-width:1024px) {
+    .ScrollingImage1{
+        width: 450px;
+        height: 381px;
+        left: 10%;
+        top: 5%;
+    }
+    .ScrollingImage2{
+        width: 391px;
+        height: 352px;
+        left: 10%;
+        top: 50%;
+    }
+    .ScrollingImage3{
+        width: 500px;
+        height: 452px;
+        top: 90%;
+        right: 0%;
+    }
+    .ScrollingImage4{
+        width: 403px;
+        height: 586px;
+        top: 140%;
+        right: 50%;
+    }
+}
+
+
+@media (max-width:768px) {
+    .ScrollingImagesContainer{
+   
+    }
+}

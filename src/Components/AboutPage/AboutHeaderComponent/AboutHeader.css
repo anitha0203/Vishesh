@@ -3,6 +3,7 @@
     height: 800px;
     position: relative;
     overflow: hidden;
+    border: 0px solid;
 }
 
 .AboutHeaderVideoContainer{
@@ -21,6 +22,7 @@
     position: relative;
     
     outline: none;
+    border: none;
 
     
 }
@@ -30,7 +32,8 @@
     color: var(--text-icon-light-heading, #131A27);
 /* Headings/H3/Regular */
 font-family: Satoshi;
-font-size: 96px;
+/* font-size: 96px; */
+font-size: 6rem;
 font-style: normal;
 font-weight: 400;
 line-height: 120%; /* 115.2px */
@@ -39,4 +42,86 @@ position: absolute;
 background-color: transparent;
 top: 20%;
 padding-left: 3.1%;
+}
+
+@media  (max-width:1591px) {
+    .AboutHeaderText{
+        font-size: 4.8rem;
+    }
+
+    .about-header-container{
+        height: 700px;
+        
+    }
+    .AboutHeaderVideo{
+        width: 150%;
+        height: 450px;
+        
+    }
+    
+}
+
+@media  (max-width:1074px) {
+    .AboutHeaderText{
+        font-size: 5rem;
+    }
+}
+
+@media  (max-width:1024px) {
+    .AboutHeaderText{
+        font-size: 3.5rem;
+    }
+    .about-header-container{
+        height: 650px;
+        
+    }
+
+    .AboutHeaderVideo{
+        width: 150%;
+        height: 380px;
+        
+    }
+}
+
+
+@media  (max-width:768px) {
+    .AboutHeaderText{
+        font-size: 2.7rem;
+    }
+    .about-header-container{
+        height: 650px;
+        
+    }
+
+    .AboutHeaderVideo{
+        width: 150%;
+        height: 280px;
+        
+    }
+
+}
+
+
+@media  (max-width:425px) {
+    .AboutHeaderText{
+        font-size: 1.5rem;
+    }
+    .about-header-container{
+        height: 300px;
+        border: 0px solid;
+    }
+
+    .AboutHeaderVideo{
+        width: 170%;
+        height: 180px;
+        
+    }
+
+}
+
+@media (max-width:320px) {
+    .AboutHeaderVideo{
+       outline: none;
+       border: none;
+    }
 }

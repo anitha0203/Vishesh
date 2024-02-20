@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./Numbers.css";
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -35,25 +35,25 @@ function Numbers(props) {
     return (
         <Container fluid className='NumberContainer' onMouseEnter={() => { count() }}>
             <Row>
-                <Col><h3>Numbers</h3></Col>
+                <Col><h3 className='NumberContainer-h3'>Numbers</h3></Col>
             </Row>
             <Row>
                 <Col lg={4} md={4} sm={12}>
 
-                    <Col><h5>{getDaysCount} Days</h5></Col>
-                    <Col><p>in Business since 2016</p></Col>
+                    <Col><div><h5 className='NumberContainer-h5'>{getDaysCount} Days</h5></div></Col>
+                    <Col><div><p className='NumberContainer-p'>in Business since 2016</p></div></Col>
 
                 </Col >
 
                 <Col lg={4} md={4} sm={12}>
-                    <Col><h5>{getMembers}+ Members</h5></Col>
-                    <Col><p>and we never stop growing</p></Col>
+                    <Col><div><h5 className='NumberContainer-h5'>{getMembers}+ Members</h5></div></Col>
+                    <Col><div><p className='NumberContainer-p'>and we never stop growing</p></div></Col>
                 </Col>
 
                 <Col lg={4} md={4} sm={12}>
 
-                    <Col><h5>1K+ Projects</h5></Col>
-                    <Col><p>and we are not stopping</p></Col>
+                    <Col><div><h5 className='NumberContainer-h5'>1K+ Projects</h5></div></Col>
+                    <Col><div><p className='NumberContainer-p'>and we are not stopping</p></div></Col>
 
                 </Col>
             </Row>

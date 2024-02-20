@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Members.css"
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 const MembersData = [
     { image: require("../../../assets/AboutPage/Rajeswari.png"), name: "Rajeswari P", teamName: "Full Stack Development Lead" },
@@ -19,8 +19,8 @@ const MembersData = [
     { image: require("../../../assets/AboutPage/manoj.png"), name: "Manoj", teamName: "UI/UX Designer" },
     { image: require("../../../assets/AboutPage/Tejaswini.png"), name: "Tejaswini", teamName: "UI/UX Designer" },
     { image: require("../../../assets/AboutPage/Ramesh.png"), name: "Ramesh", teamName: "Marketing Analysis" },
-    { image: require("../../../assets/AboutPage/mounika.png"), name: "Mounika", teamName: "Marketing Analysis" },
     { image: require("../../../assets/AboutPage/Kartheek.png"), name: "Kartheek", teamName: "Marketing Analysis" },
+    { image: require("../../../assets/AboutPage/mounika.png"), name: "Mounika", teamName: "Marketing Analysis" },
     { image: require("../../../assets/AboutPage/Uday.png"), name: "Uday", teamName: "Trainee" },
     { image: require("../../../assets/AboutPage/Kumar.png"), name: "Kumar", teamName: "Trainee" },
     { image: require("../../../assets/AboutPage/Ganesh.png"), name: "Ganesh", teamName: "Trainee" },
@@ -31,15 +31,25 @@ function Members(props) {
 
     return (
         <Container className='MembersContainer' fluid >
-            <Row>
+            <Row className='MembersContainer-Row'>
                 {
                     MembersData.map((MemberData) => {
                         return (
-                            <Col lg={2} className='Member'>
-                                {/* <img src={MemberData.image} alt="" className='MemberImage' /> */}
-                                {MemberData.name}
+                            <div className='Member' key={MemberData.name}>
+                                <Row className='Member-Row'>
+                                    <div style={{ backgroundImage: `url("${MemberData.image}")` }} className='MemberImage'>
 
-                            </Col>
+                                    </div>
+                                </Row>
+                                <Row className='Member-Row' >
+                                    <div>
+                                        <h6 className='Member-name'>{MemberData.name}</h6>
+                                    </div>
+                                    <div className='Member-teamName'>
+                                        {MemberData.teamName}
+                                    </div>
+                                </Row>
+                            </div>
                         )
                     })
                 }
