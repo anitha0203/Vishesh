@@ -34,15 +34,6 @@
     margin: 0 auto;
 }
 
-.reviews-client {
-    color: #131A27;
-    font-family: Satoshi-medium;
-    font-size: 68px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-}
-
 .reviews-para {
     margin-bottom: 2rem;
     background-color: transparent;
@@ -136,7 +127,7 @@
 .reviews-arrow {
     border: 1px solid black;
     border-radius: 50%;
-    padding: 0.9vh 1.4vh;
+    padding: 1.2vh 1.4vh;
     margin: 5px 10px;
     cursor: pointer;
     background-color: transparent;
@@ -191,19 +182,6 @@
 }
 
 @media (max-width: 1000px) {
-    /* .reviews-web-view {
-        display: none;
-    }
-
-    .reviews-mobile-view {
-        display: block;
-    } */
-
-    .reviews-client {
-        font-size: calc(2rem + 2vw);
-        margin-bottom: 2rem;
-    }
-
     .reviews-section {
         margin: 70px 1rem;
     }
@@ -228,10 +206,6 @@
 }
 
 @media (max-width: 545px) {
-    .reviews-client {
-        font-size: calc(1.5rem + 1vw);
-    }
-
     .review-cards {
         width: 25rem;
     }

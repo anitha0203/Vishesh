@@ -138,19 +138,13 @@
         gap: 3vh;
     }
     .footer-section {
-        padding: 4rem 2rem 12rem;
+        padding: 4rem 2rem 8rem;
     }
 }
 
 @media only screen and (max-width: 1450px) {
     .last-section1 {
         gap: 3vh;
-    }
-}
-
-@media only screen and (max-width: 1040px) {
-    .footer-section {
-        padding: 4rem 2rem 12rem;
     }
 }
 

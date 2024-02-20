@@ -21,15 +21,6 @@
     justify-content: space-between;
 }
 
-.why-us-heading {
-    color: #131A27;
-    font-family: Satoshi-medium;
-    font-size: calc(2rem + 2vw);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-}
-
 .arrow-img-css {
     width: 57px;
     height: 54.073px;

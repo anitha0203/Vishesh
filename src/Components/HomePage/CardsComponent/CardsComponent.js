@@ -14,15 +14,15 @@ function CardsComponent() {
     const [activeCard, setActiveCard] = useState(1);
 
     const handleCardClick = (index) => {
-        if (activeCard != 1)
-            if (activeCard == index)
+        if (activeCard !== 1)
+            if (activeCard === index)
                 index = index - 1;
         setActiveCard(index);
     };
     return (
         <div className='cards-us-section'>
             <div className='why-us-section'>
-                <h2 className='why-us-heading'>Why Us</h2>
+                <h2 className='home-about-heading'>Why Us</h2>
                 <img src={ArrowRight} className='arrow-img-css' alt='right-arrow' />
             </div>
             {/**        Web View         */}
