@@ -15,6 +15,7 @@ function Footer() {
         <div className='footer-section-color'>
           <h2 className='footer-section-text1'>Let’s Create or Improve your Idea</h2>
           <p className='footer-section-text2'>Feel free to reach out if you want to collaborate with us, or simply have a chat.</p>
+          <h4 className='footer-section-text3'>Become a Client <img src={ArrowRight} className='footer-section-icon' alt='arrow-icon' /></h4>
         </div>
         <div className='last-section2'>
           <div className='footer-section-color'>
@@ -27,21 +28,21 @@ function Footer() {
               <p className='footer-section-text2'>hmallina@visheshcountrycache.com</p>
             </div>
           </div>
-          <div className='footer-section-color'>
-            <h2 className='footer-section-text4'>Address</h2>
-            <p className='footer-section-text2'>Near HP Petrol Bunk, Undrajavaram, Tanuku, Andhra Pradesh, India Zipcode: 534216</p>
-          </div>
+        </div>
+        <div className='footer-section-color'>
+          <h2 className='footer-section-text4'>Address</h2>
+          <p className='footer-section-text2'>Near HP Petrol Bunk, Undrajavaram, Tanuku, Andhra Pradesh, India Zipcode: 534216</p>
         </div>
       </div>
 
       <div className='last-section3'>
-        <h4 className='footer-section-text3'>Become a Client <img src={ArrowRight} className='footer-section-icon' alt='arrow-icon' /></h4>
+      <div className='temp-col-temp'></div>
         <div className='footer-section-socialicons'>
           <img src={Icon1} className='social-icon-img' alt='social-icons' />
           <img src={Icon2} className='social-icon-img' alt='social-icons' />
           <img src={Icon3} className='social-icon-img' alt='social-icons' />
           <img src={Icon4} className='social-icon-img' alt='social-icons' />
-          <img src={Icon5} className='social-icon-img' alt='social-icons' />
+          <img src={Icon5} className='social-icon-img1' alt='social-icons' />
         </div>
       </div>
 

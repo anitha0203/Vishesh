@@ -1,9 +1,4 @@
 @font-face {
-    font-family: Satoshi-light;
-    src: url(../../../../public/Satoshi-Light.otf);
-}
-
-@font-face {
     font-family: Satoshi;
     src: url(../../../../public/Satoshi-Regular.otf);
 }
@@ -58,6 +53,27 @@
     padding: 2rem;
 }
 
+.home-project1:hover .home-project-img1 {
+    transform: scale(1.1);
+    overflow-x: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-project2:hover,
+.home-project3:hover {
+    background-size: 110%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-project4:hover img {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.home-project4:not(:hover) img {
+    transform: rotate(0deg);
+}
+
 .home-project1 {
     background: linear-gradient(2deg, rgba(0, 0, 0, 0.20) 19.87%, rgba(0, 0, 0, 0.04) 39.98%), #ABAEDB;
     justify-content: flex-end;
@@ -66,14 +82,14 @@
 .home-project2 {
     background-image: url('../../../assets/HomePage/FeaturedProject2.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     justify-content: flex-end;
 }
 
 .home-project3 {
     background-image: url('../../../assets/HomePage/FeaturedProject3.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     justify-content: flex-end;
 }
 
@@ -93,7 +109,6 @@
     background-color: transparent;
     align-items: center;
     width: 100%;
-    gap: 2rem;
 }
 
 .home-project-head1 {
@@ -109,7 +124,7 @@
 .home-project-btn {
     padding: 10px 20px;
     color: #FCFCFC;
-    font-family: Satoshi-light;
+    font-family: Satoshi;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -139,9 +154,64 @@
 }
 
 /* Responsive media queries */
-@media only screen and (max-width: 1020px) {}
+@media only screen and (min-width: 2000px) {
 
-@media only screen and (max-width: 800px) {
+    .home-project1,
+    .home-project2,
+    .home-project3,
+    .home-project4 {
+        height: 780px;
+    }
+
+    .home-project-img1 {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+
+    .home-project1,
+    .home-project2,
+    .home-project3,
+    .home-project4 {
+        height: 880px;
+    }
+}
+
+@media only screen and (min-width: 2900px) {
+
+    .home-project1,
+    .home-project2,
+    .home-project3,
+    .home-project4 {
+        height: 980px;
+    }
+}
+
+@media only screen and (min-width: 2900px) {
+
+    .home-project1,
+    .home-project2,
+    .home-project3,
+    .home-project4 {
+        height: 1180px;
+    }
+}
+
+@media only screen and (max-width: 1590px) {
+    .home-project-head1 {
+        font-size: 25px;
+    }
+
+    .home-project1,
+    .home-project2,
+    .home-project3,
+    .home-project4 {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1337px) {
     .home-projects-section {
         margin: 15rem 2rem 0rem;
     }
@@ -153,8 +223,47 @@
 
     .home-project1,
     .home-project2,
-    .home-project3 {
+    .home-project3,
+    .home-project4 {
         width: 100%;
         margin-top: 2rem;
+        /* height: 600px; */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .home-project-img1 {
+        width: 100%;
+    }
+
+    .home-project1,
+    .home-project2,
+    .home-project3,
+    .home-project4 {
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .home-project1,
+    .home-project2,
+    .home-project3,
+    .home-project4 {
+        height: 500px;
+    }
+
+    .home-project-btn {
+        margin: 0.5rem 0rem 0.5rem 0.3rem;
+    }
+
+    .home-projects-section {
+        margin: 15rem 1rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    .home-project-techs {
+        display: block;
     }
 }

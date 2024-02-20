@@ -54,7 +54,7 @@
     background: #181818;
     backdrop-filter: blur(150px);
     color: #fff;
-    padding: 2rem;
+    padding: 2rem 3.5rem;
     position: fixed;
     bottom: 2.5%;
     z-index: 1000;
@@ -83,7 +83,6 @@
 
 .main-logo1 {
     width: 103px;
-    height: 78px;
     background-color: transparent;
 }
 
@@ -109,21 +108,41 @@
 @media only screen and (max-width: 1100px) {
     .nav-items-section {
         bottom: 1.5%;
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    .nav-items-section {
+        padding: 3.2rem 3.5rem;
+        border-radius: 100px;
         gap: 2vh;
     }
 }
 
-@media only screen and (max-width: 500px) {
-
-    .main-logo,
+@media only screen and (max-width: 690px) {
     .main-logo1 {
-        width: 130px;
-        height: 95px;
+        width: 80px;
+    }
+
+    /* .nav-items-section {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .header-section {
+        position: relative;
+    } */
+    .nav-items-section {
+        bottom: 1.5%;
+        padding: 3.2rem 2rem;
+        border-radius: 100px;
+        gap: 1.4vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-logo1 {
+        width: 60px;
+    }
+
+    .main-logo {
+        width: 100px;
+        height: 80px;
     }
 
     .vishesh-head {
@@ -135,25 +154,29 @@
     }
 
     .nav-items-section {
-        gap: 1vh;
-        padding: 1rem 1.8rem;
+        padding: 2rem 2rem;
     }
 
     .nav-items {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 410px) {
+    .nav-items-section {
+        padding: 2rem 2.6rem;
+    }
+} */
 
-    .main-logo,
-    .main-logo1 {
+@media only screen and (max-width: 410px) {
+
+    .main-logo {
         width: 90px;
-        height: 75px;
     }
 
     .vishesh-head {
         font-size: 2.2rem;
+        margin-bottom: 1rem;
     }
 
     .vishesh-sub-head {
@@ -161,22 +184,17 @@
     }
 
     .nav-items-section {
-        gap: 0.8vh;
-        padding: 1rem 1.2rem;
+        gap: 0.9vh;
+        padding: 2rem 2rem;
     }
 
     .nav-items {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 320px) {
     .nav-items-section {
-        gap: 0.6vh;
-        padding: 0.8rem;
-    }
-
-    .nav-items {
-        font-size: 1rem;
+        gap: 0.8vh;
     }
 }

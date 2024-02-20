@@ -1,9 +1,4 @@
 @font-face {
-    font-family: Satoshi-light;
-    src: url(../../../../public/Satoshi-Light.otf);
-}
-
-@font-face {
     font-family: Satoshi;
     src: url(../../../../public/Satoshi-Regular.otf);
 }
@@ -15,7 +10,7 @@
 
 .slider {
     overflow: hidden;
-    margin: 15rem 5rem 0rem;
+    margin: 15rem 4rem 0rem;
 }
 
 .logos-heading {
@@ -47,5 +42,19 @@
 
     100% {
         transform: translateX(calc(-250px * 9));
+    }
+}
+
+
+/* Responsive media queries */
+@media only screen and (max-width: 1040px) {
+    .slider {
+        margin: 15rem 2rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .slider {
+        margin: 15rem 1rem 0rem;
     }
 }

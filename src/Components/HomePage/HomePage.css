@@ -1,9 +1,4 @@
 @font-face {
-    font-family: Satoshi-light;
-    src: url(../../../public/Satoshi-Light.otf);
-}
-
-@font-face {
     font-family: Satoshi;
     src: url(../../../public/Satoshi-Regular.otf);
 }
@@ -15,7 +10,7 @@
 
 .home-main-section {
     text-align: center;
-    margin: 8rem 4rem 18rem;
+    margin: 8rem 4rem 19rem;
 }
 
 .home-main-section1 {
@@ -68,7 +63,7 @@
 .home-section-para {
     width: 60%;
     margin: 1.5rem auto 0;
-    font-family: Satoshi-light;
+    font-family: Satoshi;
     font-size: calc(0.7rem + 0.7vw);
     font-weight: 400;
     line-height: 150%;
@@ -178,15 +173,17 @@
     }
 }
 
-.team-heading-sections {
+.team-heading-sections1 {
     margin: 15rem 0rem 0rem;
 }
-
 
 /* Responsive media queries */
 @media only screen and (max-width: 1700px) {
     .home-section-para {
-        width: 82%;
+        width: 90%;
+    }
+    .video1 {
+        height: 60vh;
     }
 }
 
@@ -208,6 +205,9 @@
     .video-container4 {
         width: 238px;
         height: 100px;
+    }
+    .video1 {
+        height: 40vh;
     }
 }
 
@@ -244,6 +244,9 @@
     .scroll-container {
         margin: 6rem 0px;
     }
+    .video1 {
+        height: 20vh;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -276,7 +279,7 @@
     }
 
     .video1 {
-        height: 30vh;
+        height: 20vh;
     }
 }
 
@@ -306,6 +309,8 @@
         margin-top: 0.2vh;
     }
     .home-section-para {
-        font-size: calc(1.2rem + 0.7vw);
+        font-size: calc(0.8rem + 0.7vw);
     }
 }
+
+

@@ -10,7 +10,6 @@ import WorkWithUs from './WorkWithUsComponent/WorkWithUs';
 import AboutUs from './AboutUsComponent/AboutUs';
 import CardsComponent from './CardsComponent/CardsComponent';
 import Projects from './ProjectsComponent/Projects';
-import FeaturedProject from "./FeaturedProjectComponent/FeaturedProject"
 
 function HomePage() {
   return (
@@ -18,7 +17,7 @@ function HomePage() {
 
       {/**    Web view view       */}
       <div className='home-main-section'>
-        <h2 className='home-main-heading'>Turning Technological Needs</h2>
+        <h1 className='home-main-heading'>Turning Technological Needs</h1>
         <div className='home-heading-video'>
           <div className='video-container'>
             <video className='video' controls autoPlay muted loop>
@@ -59,11 +58,8 @@ function HomePage() {
         </div>
       </div>
 
-
-      {/* Featured Projects Section */}
-      <FeaturedProject />
-
-
+      {/* Featured Projects Section  */}
+      <Projects />
 
       {/**    logo slider          */}
       <ClientLogos />
@@ -72,7 +68,7 @@ function HomePage() {
       <Reviews />
 
       {/**    teams heading SCROLLING Section  */}
-      <div className='team-heading-sections'>
+      <div className='team-heading-sections1'>
         <hr />
         <div class="scroll-container1">
           <div class="scroll-text">
@@ -102,7 +98,7 @@ function HomePage() {
       {/**    Work with us section         */}
       <WorkWithUs />
 
-    </div >
+    </div>
   );
 }
 
