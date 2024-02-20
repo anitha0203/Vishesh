@@ -135,9 +135,6 @@
         display: block;
     }
 
-    .about-us-btn {
-        margin-top: 2rem;
-    }
     .home-about-para {
         font-size: calc(1.2rem + 0.75vw);
     }

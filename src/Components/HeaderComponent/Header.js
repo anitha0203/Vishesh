@@ -57,17 +57,17 @@ function Header() {
     const screenWidth = window.innerWidth;
     let basePercentage;
     if (screenWidth > 450) {
+      basePercentage = 8
+    } else if (screenWidth > 415) {
+      basePercentage = 10
+    } else if (screenWidth >= 400) {
       basePercentage = 12
-    } else if(screenWidth > 415){
+    } else if (screenWidth >= 380) {
       basePercentage = 15
-    } else if(screenWidth >= 400){
+    } else if (screenWidth >= 350) {
       basePercentage = 18
-    }  else if(screenWidth >= 380){
-      basePercentage = 20
-    } else if(screenWidth >= 350){
-      basePercentage = 23
     } else {
-      basePercentage = 26
+      basePercentage = 20
     }
     // Increase or decrease based on the order count and screen width
     return `calc(5% + ${orderCount * basePercentage}%)`;

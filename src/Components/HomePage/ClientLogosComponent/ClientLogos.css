@@ -49,12 +49,12 @@
 /* Responsive media queries */
 @media only screen and (max-width: 1040px) {
     .slider {
-        margin: 15rem 2rem 0rem;
+        margin: 6rem 2rem 0rem;
     }
 }
 
 @media only screen and (max-width: 800px) {
     .slider {
-        margin: 15rem 1rem 0rem;
+        margin: 5rem 1rem 0rem;
     }
 }
