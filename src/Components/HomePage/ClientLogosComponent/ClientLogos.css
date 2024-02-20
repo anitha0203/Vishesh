@@ -51,6 +51,9 @@
     .slider {
         margin: 6rem 2rem 0rem;
     }
+    .slide-track {
+        gap: 5rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
