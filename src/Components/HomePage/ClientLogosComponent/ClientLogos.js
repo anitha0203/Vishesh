@@ -14,7 +14,7 @@ import Logo11 from '../../../assets/HomePage/Purple Petal.png'
 import Logo12 from '../../../assets/HomePage/Sanjivi.png'
 import Logo13 from '../../../assets/HomePage/Ekantika.png'
 
-const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11, Logo12, Logo13]
+const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11, Logo12, Logo13, Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11, Logo12, Logo13]
 
 function ClientLogos() {
     return (
@@ -23,11 +23,6 @@ function ClientLogos() {
                 {logos.map((logo, index) => (
                     <div className='slide'>
                         <img key={index} src={logo} className='client-logo-img' alt={`client-logo-${index}`} />
-                    </div>
-                ))}
-                {logos.map((logo, index) => (
-                    <div key={index} className='slide'>
-                        <img src={logo} className='client-logo-img' alt={`client-logo-${index}`} />
                     </div>
                 ))}
                 {logos.map((logo, index) => (
