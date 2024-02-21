@@ -143,7 +143,7 @@
     background-color: #F5A091;
     transform: scaleY(0);
     transform-origin: bottom;
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
     z-index: -1;
 }
 
