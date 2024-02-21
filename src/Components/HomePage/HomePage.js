@@ -50,13 +50,13 @@ function HomePage() {
       {/**    Why Us Cards Section */}
       <CardsComponent />
 
-      {/**    VISHESH COUNTRY CACHE * FOSTERING INTELLECT SCROLLING Section  */}
+      {/**    VISHESH COUNTRY CACHE * FOSTERING INTELLECT SCROLLING Section  
       <div className="scroll-container">
         <div className="scroll-text">
           <h1 className='vishesh-scroll-heading'>
             VISHESH COUNTRY CACHE  <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  FOSTERING INTELLECT <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  FOSTERING INTELLECT  <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  FOSTERING INTELLECT  <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' /> </h1>
         </div>
-      </div>
+      </div>*/}
 
       {/* Featured Projects Section  */}
       <Projects />

@@ -20,7 +20,8 @@
     width: 450px;
 }
 
-.header-section, .header-section1 {
+.header-section,
+.header-section1 {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -28,19 +29,20 @@
 
 .nav-items-section {
     display: flex;
-    gap: 4.5vh;
-    border-radius: 48px;
+    gap: 3vh;
+    border-radius: 55px;
     opacity: 0.95;
     background: #181818;
     backdrop-filter: blur(150px);
     color: #fff;
-    padding: 2rem 3.5rem;
+    padding: 2rem 3rem;
     position: fixed;
     bottom: 2.5%;
     z-index: 1000;
 }
+
 .nav-items-section1 {
-    border-radius: 48px;
+    border-radius: 55px;
     opacity: 0.95;
     background: #181818;
     backdrop-filter: blur(150px);
@@ -49,9 +51,10 @@
     bottom: 2.5%;
     z-index: 1000;
 }
+
 .nav-items-section2 {
     display: flex;
-    gap: 13%;
+    gap: 5%;
     opacity: 0.95;
     background-color: #181818;
     backdrop-filter: blur(150px);
@@ -66,8 +69,14 @@
     font-size: 1.4rem;
     font-weight: 100;
     transition-property: opacity;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .5s;
+    padding: 0.5rem;
+}
+
+.nav-items:hover{
+    background-color: rgba(227, 233, 233, 0.5);
+    border-radius: 25px;
 }
 
 .main-heading1 {
@@ -86,7 +95,6 @@
 .main-logo1 {
     width: 103px;
     background-color: transparent;
-    backdrop-filter: blur(8px)
 }
 
 /* Add a dot style for the active link */
@@ -107,54 +115,64 @@
     display: block;
 }
 
-.header-section1{
+.header-section1 {
     display: none;
 }
 
 /* Responsive media queries */
+@media only screen and (max-width: 1300px) {
+    .main-logo {
+        width: 300px;
+    }
+
+    .main-heading {
+        margin: 2rem auto 1rem;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     .nav-items-section {
         bottom: 1.5%;
-        padding: 2.2rem 3.5rem;
+        padding: 1.5rem 1.8rem;
         border-radius: 100px;
-        gap: 2vh;
+        gap: 1.8vh;
     }
 }
 
 @media only screen and (max-width: 550px) {
     .nav-items-section {
         bottom: 1.5%;
-        padding: 2.2rem 2.5rem;
+        padding: 2rem 1.8rem;
         border-radius: 100px;
-        gap: 2vh;
+        gap: 1vh;
     }
+
     .main-logo1 {
         width: 80px;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .header-section {
         display: none;
     }
 
     .nav-items-section1 {
-        width: 16rem;
+        width: 17.5rem;
         overflow: hidden;
     }
+
     .header-section1 {
         position: relative;
         display: flex;
-    } 
+    }
 
-    .nav-items{
+    .nav-items {
         font-size: 16px;
     }
+
     .main-logo1 {
         width: 60px;
-    }
-
-    .main-logo {
-        width: 350px;
     }
 }
 
@@ -166,7 +184,7 @@
 
 @media only screen and (max-width: 370px) {
     .nav-items-section1 {
-        width: 16rem;
+        width: 17rem;
         padding: 1.3rem 3.5rem;
     }
 }

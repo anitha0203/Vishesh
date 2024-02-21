@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './CardsComponent.css'
-import ArrowRight from '../../../assets/HomePage/arrow-right.png'
 
 const cardData = [
     { head: "We are Experts", text: "You'll collaborate with a highly skilled, agile team with extensive experience dedicated to the entire project.", bgColor: "#A8DAF4" },
@@ -23,7 +22,6 @@ function CardsComponent() {
         <div className='cards-us-section'>
             <div className='why-us-section'>
                 <h2 className='home-about-heading'>Why Us</h2>
-                <img src={ArrowRight} className='arrow-img-css' alt='right-arrow' />
             </div>
             {/**        Web View         */}
             <div className='cards-section-css'>

@@ -21,12 +21,6 @@
     justify-content: space-between;
 }
 
-.arrow-img-css {
-    width: 57px;
-    height: 54.073px;
-    flex-shrink: 0;
-}
-
 .cards-section-css {
     display: flex;
     overflow: hidden;
@@ -178,10 +172,6 @@
     .cards-us-section {
         display: block;
         overflow: hidden;
-    }
-
-    .arrow-img-css {
-        display: none;
     }
 }
 
