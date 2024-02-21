@@ -187,6 +187,12 @@
     }
 }
 
+@media only screen and (max-width: 1300px){
+    .home-main-section {
+        margin: 5rem 1rem 10rem;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .home-heading-video {
         margin-left: 0rem;
@@ -213,7 +219,7 @@
 
 @media only screen and (max-width: 1040px) {
     .home-main-section {
-        margin: 8rem 0rem;
+        margin: 5rem 0rem 10rem;
     }
 
     .scroll-container {

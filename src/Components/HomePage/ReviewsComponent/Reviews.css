@@ -113,6 +113,7 @@
 .reviews-carousel {
     overflow: hidden;
     scroll-behavior: smooth;
+    cursor: pointer;
 }
 
 .carousel-reviews {
