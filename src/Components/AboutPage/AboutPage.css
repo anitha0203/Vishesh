@@ -21,6 +21,9 @@
     .height-3{
         height: 90px;
     }
+    .height-2{
+        height: 150px;
+    }
 }
 @media (max-width:768px) {
     .height-3{
@@ -35,10 +38,17 @@
     .height-1{
         height: 60px;
     }
+
+    .height-2{
+        height: 50px;
+    }
 }
 
 @media (max-width:425px) {
     .height-1{
+        height: 50px;
+    }
+    .height-2{
         height: 50px;
     }
 }
