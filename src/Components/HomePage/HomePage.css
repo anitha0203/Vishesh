@@ -183,7 +183,7 @@
         width: 90%;
     }
     .video1 {
-        height: auto;
+        height: 100vh;
     }
 }
 
@@ -205,12 +205,15 @@
     .video-container4 {
         width: 238px;
         height: 100px;
+    }    
+    .video1 {
+        height: 60vh;
     }
 }
 
 @media only screen and (max-width: 1040px) {
     .home-main-section {
-        margin: 14.5rem 0rem;
+        margin: 8rem 0rem;
     }
 
     .scroll-container {
@@ -266,6 +269,9 @@
     .video-container4 {
         width: 200px;
         height: 80px;
+    }
+    .video1 {
+        height: auto;
     }
 }
 

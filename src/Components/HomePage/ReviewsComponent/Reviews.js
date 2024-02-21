@@ -77,8 +77,8 @@ function Reviews() {
             <div className='text-arrows-container'>
               <h2 className='home-about-heading'>What Our Clients Say About Us</h2>
               <div className='reviews-arrows'>
-                <div className={`reviews-arrow ${isPrevDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressprev}><FaAngleLeft style={{ backgroundColor: "transparent", fontSize: "25px" }} /></div>
-                <div className={`reviews-arrow ${isNextDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressnext}><FaAngleRight style={{ backgroundColor: "transparent", fontSize: "25px" }} /></div>
+                <div className={`reviews-arrow ${isPrevDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressprev}><FaAngleLeft style={{ backgroundColor: "transparent",color: 'rgb(122 122 122)', fontSize: "25px" }} /></div>
+                <div className={`reviews-arrow ${isNextDisabled ? 'disabled-icon1' : ''}`} onClick={btnpressnext}><FaAngleRight style={{ backgroundColor: "transparent",color: 'rgb(122 122 122)', fontSize: "25px" }} /></div>
               </div>
             </div>
           </div>

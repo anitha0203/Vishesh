@@ -27,12 +27,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8rem;
+    gap: 12rem;
     animation: scroll 20s linear infinite;
 }
 
 .client-logo-img{
-    width: 100px;
+    opacity: 95%;
 }
 
 @keyframes scroll {
@@ -59,5 +59,8 @@
 @media only screen and (max-width: 800px) {
     .slider {
         margin: 5rem 1rem 0rem;
+    }
+    .client-logo-img{
+        width: 100px;
     }
 }

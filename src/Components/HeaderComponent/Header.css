@@ -51,7 +51,7 @@
 }
 .nav-items-section2 {
     display: flex;
-    gap: 16%;
+    gap: 13%;
     opacity: 0.95;
     background-color: #181818;
     backdrop-filter: blur(150px);
@@ -86,6 +86,7 @@
 .main-logo1 {
     width: 103px;
     background-color: transparent;
+    backdrop-filter: blur(8px)
 }
 
 /* Add a dot style for the active link */
@@ -137,7 +138,7 @@
     }
 
     .nav-items-section1 {
-        width: 80%;
+        width: 16rem;
         overflow: hidden;
     }
     .header-section1 {
@@ -160,5 +161,18 @@
 @media only screen and (max-width: 410px) {
     .main-logo {
         width: 280px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .nav-items-section1 {
+        width: 16rem;
+        padding: 1.3rem 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 305px) {
+    .nav-items-section1 {
+        width: 85%;
     }
 }
