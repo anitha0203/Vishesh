@@ -14,11 +14,14 @@ import { useRef } from 'react'
 
 function AboutPage() {
 
+
   const componentRef = useRef(null);
   const handleClick = () => {
 
-    componentRef.current.scrollIntoView({ behavior: 'smooth' });
+    componentRef.current.scrollIntoView({ block: 'start' });
+
   };
+
 
 
   return (
@@ -26,8 +29,8 @@ function AboutPage() {
       <div >
         <AboutHeader />
       </div>
-      <div className='height-3'></div>
-      <div onClick={() => { handleClick() }} onPointerOver={() => { handleClick() }} ref={componentRef} >
+      <div className='height-3' ></div>
+      <div onClick={(e) => { e.preventDefault(); handleClick(e) }} onPointerOver={(e) => { e.preventDefault(); handleClick(e) }} onMouseEnter={(e) => { e.preventDefault(); handleClick(e) }} ref={componentRef} >
         <ScrollingImages onScrolling={() => { handleClick() }} />
       </div>
       <div className='height-1'></div>
