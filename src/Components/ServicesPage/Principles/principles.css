@@ -1,8 +1,12 @@
-.service-col-sec{
+.principlesp-container{
+    padding: 0% 3.2%;
+}
+
+.principles-Col{
     padding: 0px 10px !important;
     
 }
-.service-row-sec{
+.principles-Row{
     margin-top: 4rem;
 }
 
