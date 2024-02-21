@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-med;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+.ContactForm-container{
+
+    padding: 0% 3.2%;
+    
+    overflow: hidden;
+    padding-top: 2%;
+}
+
+.ContactForm-container-row-col-1{
+    width: 60%;
+}
+
+.ContactForm-container-row-col-2{
+    width: 40%;
+}
+
+.ContactForm-h6{
+    color: var(--text-icon-light-heading, #131A27);
+    /* Headings/H6/Regular */
+    font-family: Satoshi;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 40.8px */
+}
+
+.ContactForm-field-lable{
+    color: var(--Grey-500, #667085);
+    /* Body/TextS/Regular */
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.2px;
+}
+
+.ContactForm-field-input,.ContactForm-field-textarea{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--Grey-300, #D0D5DD);
+    width: 728px;
+    height: 80px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 3%;
+}
+
+.ContactForm-field-textarea{
+    padding-top: 2%;
+    height: 129px;
+}
