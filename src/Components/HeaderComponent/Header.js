@@ -59,7 +59,7 @@ function Header() {
       basePercentage = 20
     }
     // Increase or decrease based on the order count and screen width
-    return `calc(5% + ${orderCount * basePercentage}%)`;
+    return `calc(15% + ${orderCount * basePercentage}%)`;
   };
 
   return (

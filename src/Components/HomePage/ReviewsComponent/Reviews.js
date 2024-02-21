@@ -16,6 +16,7 @@ function Reviews() {
 
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
   const [isNextDisabled, setIsNextDisabled] = useState(false);
+  const [reviewsData, setReviews] = useState(reviews)
 
   useEffect(() => {
     const box = document.querySelector('.reviews-carousel');
@@ -61,6 +62,34 @@ function Reviews() {
     box.scrollLeft += width;
   };
 
+  
+  const handleDragStart = (e, index) => {
+    e.dataTransfer.setData('text/plain', index.toString());
+    // Set a dummy value for the data to enable dragging in Firefox
+    e.dataTransfer.setData('application/json', { index });
+    e.dataTransfer.effectAllowed = 'move';
+  };
+  
+  
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (e) => {
+    const draggedIndex = parseInt(e.dataTransfer.getData('text/plain'));
+    const droppedIndex = parseInt(e.currentTarget.dataset.index);
+
+    // Swap the positions of the dragged and dropped cards in the reviews array
+    const updatedReviews = [...reviews];
+    const temp = updatedReviews[draggedIndex];
+    updatedReviews[draggedIndex] = updatedReviews[droppedIndex];
+    updatedReviews[droppedIndex] = temp;
+
+    // Update the state with the new reviews order
+    // (You may want to use a state management library for better control)
+    setReviews(updatedReviews);
+  };
   return (
     <div className='reviews-section'>
 
@@ -79,8 +108,10 @@ function Reviews() {
         </Col>
         <Col className='reviews-carousel'>
           <div className='carousel-reviews'>
-            {reviews.map((review, index) => (
-              <div key={index} className='review-section'>
+            {reviewsData.map((review, index) => (
+              <div key={index} className='review-section' data-index={index}
+              draggable
+              onDragStart={(e) => handleDragStart(e, index)}>
                 <Card className='review-cards'>
                   <div className='reviewcard-container'>
                     <div className='reviewcard-description'>

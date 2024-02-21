@@ -1,9 +1,17 @@
 import React from 'react'
 import './WorkPage.css'
+import ClientLogos from '../HomePage/ClientLogosComponent/ClientLogos'
 
 function WorkPage() {
   return (
-    <div>WorkPage</div>
+    <div>
+
+      {/**    logo slider          */}
+      <ClientLogos />
+      
+      {/**    Reviews Section        */}
+      <Reviews />
+    </div>
   )
 }
 

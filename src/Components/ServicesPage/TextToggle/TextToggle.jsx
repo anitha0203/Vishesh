@@ -10,7 +10,7 @@ function TextToggle() {
 
   return (
     <div>
-      <div className="TextToggle-container">
+      <div className="container">
         <div
           className={`team ${selectedText === "Text 1" ? 'active' : ''}`}
           onClick={() => toggleContent("Text 1")}
@@ -21,13 +21,13 @@ function TextToggle() {
           className={`team ${selectedText === "Text 2" ? 'active' : ''}`}
           onClick={() => toggleContent("Text 2")}
         >
-          UI/UX
+         UI/UX
         </div>
         <div
           className={`team ${selectedText === "Text 3" ? 'active' : ''}`}
           onClick={() => toggleContent("Text 3")}
         >
-          Digital Marketing
+        Digital Marketing
         </div>
         <div
           className={`team ${selectedText === "Text 4" ? 'active' : ''}`}

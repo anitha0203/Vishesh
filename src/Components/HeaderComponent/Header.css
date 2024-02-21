@@ -51,7 +51,7 @@
 }
 .nav-items-section2 {
     display: flex;
-    gap: 12%;
+    gap: 16%;
     opacity: 0.95;
     background-color: #181818;
     backdrop-filter: blur(150px);

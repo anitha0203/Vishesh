@@ -8,7 +8,7 @@ function Projects() {
     return (
         <div className='home-projects-section'>
             <h2 className='home-about-heading'>Featured Projects</h2>
-            <p className='home-project-text'>We've crushed it on lots of projects, and we've got the receipts to prove it in our portfolio of case studies.</p>
+            <p className='home-about-para'>We've crushed it on lots of projects, and we've got the receipts to prove it in our portfolio of case studies.</p>
 
             <div className='home-feature-projects'>
                 <div className='home-project1'>
@@ -49,7 +49,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className='home-project4'>
-                    <img src={PlusIcon} alt='plus-icon' />
+                    <img src={PlusIcon} className='plus-icon-img' alt='plus-icon' />
                     <h5 className='view-all-projects-h5'>View All</h5>
                 </div>
             </div>

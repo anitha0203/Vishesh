@@ -202,7 +202,7 @@
     .cards-sections-us-mobile2,
     .cards-sections-us-mobile3,
     .cards-sections-us-mobile4 {
-        border-radius: 24px 24px 0px 0px;
+        border-radius: 16px 16px 0px 0px;
         height: 500px;
         width: 95%;
         flex-shrink: 0;

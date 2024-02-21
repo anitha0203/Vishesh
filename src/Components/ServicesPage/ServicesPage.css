@@ -1,0 +1,18 @@
+.heading-work{
+    text-align: center;
+    color: var(--text-icon-light-heading, #131A27);
+    /* Headings/H3/Medium */
+    font-family: Satoshi;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 115.2px */
+    }
+    .main-div{
+    max-width: 1920px;
+    height: 2896px;
+    background-color: #242424;
+    }
+    .row-container{
+        background-color: #242424 !important;
+    }
