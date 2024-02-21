@@ -1,9 +1,17 @@
 import React from 'react'
 import './ContactPage.css'
+import ContactHeader from './ContactHeaderComponent/ContactHeader'
+import ContactForm from './ContactFormComponent/ContactForm'
 
 function ContactPage() {
   return (
-    <div>ContactPage</div>
+    <>
+      {/* Contact Header Text */}
+      <ContactHeader />
+
+      {/** Contact form */}
+      <ContactForm />
+    </>
   )
 }
 

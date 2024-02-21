@@ -1,0 +1,365 @@
+
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-med;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+.ProjectsScrolling-container{
+
+    padding: 0% 3.2%;
+    overflow: hidden;
+    padding-top: 181px;
+}
+
+.ProjectsScrolling-container-row{
+   
+    align-items: start;
+
+    display: flex;
+    margin-bottom: 84px;
+}
+
+.ProjectsScrolling-container-row-col{
+    color: var(--text-icon-light-disabled, #D0D5DD);
+    text-align: center;
+    /* Body/Text/Regular */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+    width: auto;
+    border-bottom: 1px solid;
+}
+
+
+
+.ProjectsScrolling-teamName{
+    width: auto;
+   
+   margin: 0px 40px;
+   padding-bottom: 8px;
+   border-bottom: 2px solid #f7f5f2;
+   cursor: pointer;
+   transition: all 0.5s;
+}
+.ProjectsScrolling-teamName:nth-child(1){
+    margin-left: 0px;
+}
+.ProjectsScrolling-teamName:nth-child(6){
+    margin-right: 0px;
+}
+
+
+.ProjectsScrolling-teamName-active{
+
+    color: var(--text-icon-light-heading, #131A27);
+    text-align: center;
+    /* Body/Text/Regular */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+
+    border-bottom: 2px solid var(--Grey-500, #667085);
+}
+
+
+.ProjectsScrolling-card-container{
+    width: 50%;
+    margin-bottom: 173px;
+    border: none;
+    padding: 0% 2%;
+}
+.ProjectsScrolling-card-image{
+    margin-bottom: 48px;
+    overflow: hidden;
+}
+
+.ProjectsScrolling-card-ProjectName{
+    color: var(--text-icon-light-heading, #131A27);
+    /* Headings/H5/Medium */
+    font-family: Satoshi-med;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 57.6px */
+}
+.ProjectsScrolling-card-ProjectInfo{
+    color: var(--text-icon-light-body, #33353A);
+    /* Body/Text/Regular */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+}
+
+.ProjectsScrolling-card-ProjectType{
+    color: var(--text-icon-light-heading, #131A27);
+    /* Body/Text/Medium */
+    font-family: Satoshi-med;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+}
+
+
+
+@media (max-width:1440px) {
+    .ProjectsScrolling-card-container{
+        width: 50%;
+    }
+    .ProjectsScrolling-images{
+        width: 650px;
+        height: 550px;
+    }
+}
+
+@media (max-width:1024px) {
+    .ProjectsScrolling-card-container{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .ProjectsScrolling-images{
+        width: 450px;
+        height: 450px;
+        
+    }
+    .ProjectsScrolling-card-image{
+        margin-bottom: 10px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 36px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 18px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 18px;
+    }
+    .ProjectsScrolling-container-row-col,.ProjectsScrolling-teamName-active{
+        font-size: 20px;
+    }
+    .ProjectsScrolling-container{
+        padding-top: 100px;
+    }
+}
+
+
+@media (max-width:896px) {
+    .ProjectsScrolling-card-container{
+        width: 50%;
+    }
+    .ProjectsScrolling-images{
+        width: 400px;
+        height: 400px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 30px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 15px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 15px;
+    }
+    .ProjectsScrolling-container-row-col,.ProjectsScrolling-teamName-active{
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .ProjectsScrolling-card-container{
+        width: 50%;
+    }
+    .ProjectsScrolling-images{
+        width: 330px;
+        height: 320px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 28px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 14px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 14px;
+    }
+    .ProjectsScrolling-container-row-col,.ProjectsScrolling-teamName-active{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:602px) {
+    .ProjectsScrolling-card-container{
+        width: 50%;
+    }
+    .ProjectsScrolling-images{
+        width: 260px;
+        height: 260px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 25px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 13px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 13px;
+    }
+    .ProjectsScrolling-container-row-col,.ProjectsScrolling-teamName-active{
+        font-size: 9px;
+    }
+}
+
+@media (max-width:542px) {
+    .ProjectsScrolling-images{
+        width: 260px;
+        height: 260px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 20px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 13px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 13px;
+    }
+    .ProjectsScrolling-container-row-col,.ProjectsScrolling-teamName-active{
+        font-size: 9px;
+        
+    }
+    .ProjectsScrolling-teamName{
+        margin: 0 20px;
+    }
+
+    .ProjectsScrolling-container{
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .ProjectsScrolling-images{
+        width: 220px;
+        height: 220px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 17px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 11px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 11px;
+    }
+    .ProjectsScrolling-container-row{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width:425px) {
+    .ProjectsScrolling-images{
+        width: 220px;
+        height: 220px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 17px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 11px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 11px;
+    }
+    .ProjectsScrolling-container-row{
+        margin-bottom: 40px;
+    }
+
+    .ProjectsScrolling-teamName{
+        margin: 0 10px;
+        
+    }
+}
+
+@media (max-width:375px) {
+    .ProjectsScrolling-images{
+        width: 180px;
+        height: 180px;
+    }
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 15px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 9px;
+        margin-bottom: 3px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 9px;
+    }
+    .ProjectsScrolling-container-row{
+        margin-bottom: 40px;
+    }
+
+    .ProjectsScrolling-teamName{
+        margin: 0 10px;
+    }
+    .ProjectsScrolling-container{
+        padding-top: 40px;
+    }
+    .ProjectsScrolling-container-row-col,.ProjectsScrolling-teamName-active{
+        font-size: 8px;
+        
+    }
+
+
+}
+
+@media (max-width:375px) {
+    .ProjectsScrolling-images{
+        width: 170px;
+        height: 170px;
+    }
+
+    .ProjectsScrolling-container-row{
+        margin-bottom: 30px;
+    }
+    .ProjectsScrolling-card-container{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .ProjectsScrolling-images{
+        width: 150px;
+        height: 150px;
+    }
+}

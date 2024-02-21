@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: Satoshi-light;
+    src: url(../../../../public/Satoshi-Light.otf);
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(../../../../public/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: Satoshi-med;
+    src: url(../../../../public/Satoshi-Medium.otf);
+}
+
+
+.WorkPageHeader-container{
+    padding: 0% 3.2%;
+    overflow: hidden;
+    padding-top: 213px;
+}
+.WorkPageHeader-container-row-col-1{
+    width: 50%;
+    padding-right: 20%;
+    
+}
+.WorkPageHeader-container-row-col-2{
+    width: 50%;
+}
+.WorkPageHeader-h4{
+    color: var(--text-icon-light-heading, #131A27);
+    /* Headings/H4/Medium */
+    font-family: Satoshi-med;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 81.6px */
+}
+.WorkPageHeader-h6{
+    color: var(--text-icon-light-body, #33353A);
+    text-align: right;
+    /* Headings/H6/Regular */
+    font-family: Satoshi;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 40.8px */
+}
+
+@media (max-width:1232px) {
+    .WorkPageHeader-h4{
+        font-size: 45px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 24px;
+    }
+}
+@media (max-width:1024px) {
+    .WorkPageHeader-h4{
+        font-size: 30px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 18px;
+    }
+    .WorkPageHeader-container{
+        padding-top: 100px;
+    }
+}
+@media (max-width:768px) {
+    .WorkPageHeader-h4{
+        font-size: 28px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 15px;
+    }
+    .WorkPageHeader-container{
+        padding-top: 80px;
+    }
+}
+@media (max-width:600px) {
+    .WorkPageHeader-h4{
+        font-size: 20px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 13px;
+    }
+    .WorkPageHeader-container{
+        padding-top: 80px;
+    }
+}
+@media (max-width:425px) {
+    .WorkPageHeader-h4{
+        font-size: 18px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 10px;
+    }
+    .WorkPageHeader-container{
+        padding-top: 40px;
+    }
+}
+@media (max-width:375px) {
+    .WorkPageHeader-h4{
+        font-size: 15px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 9px;
+    }
+    .WorkPageHeader-container{
+        padding-top: 40px;
+    }
+}
+
+@media (max-width:320px) {
+    .WorkPageHeader-h4{
+        font-size: 13px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 7px;
+    }
+    .WorkPageHeader-container{
+        padding-top: 30px;
+    }
+}
