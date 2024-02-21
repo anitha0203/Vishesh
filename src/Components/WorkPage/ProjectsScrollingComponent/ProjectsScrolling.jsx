@@ -29,7 +29,8 @@ function ProjectsScrolling(props) {
             case 2: setProjects(DevelopmentProjects); console.log(Projects); break;
             case 3: setProjects(AnalysisProjects); console.log(Projects); break;
             case 4: setProjects(MarketingProjects); console.log(Projects); break;
-            case 5: setProjects(UI_UxProjects); console.log(Projects);
+            case 5: setProjects(UI_UxProjects); console.log(Projects); break;
+            default: ;
         }
 
     }
@@ -62,7 +63,7 @@ function ProjectsScrolling(props) {
                             return (
                                 <div className='ProjectsScrolling-card-container' key={"projects" + index}>
                                     <div className='ProjectsScrolling-card-image'>
-                                        <img src={project.image} alt="project image" className='ProjectsScrolling-images' />
+                                        <img src={project.image} alt="project " className='ProjectsScrolling-images' />
                                     </div>
                                     <div >
                                         <h5 className='ProjectsScrolling-card-ProjectName'>{project.ProjectName}</h5>
@@ -75,6 +76,9 @@ function ProjectsScrolling(props) {
                                     </div>
                                 </div>
                             )
+                        }
+                        else {
+                            return (<></>)
                         }
                     })
                 }
