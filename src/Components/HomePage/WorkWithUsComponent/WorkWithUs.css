@@ -29,9 +29,7 @@
 }
 
 .work-text-lines2 {
-  display: none;
-  text-align: justify;
-  
+  display: none;  
 }
 
 .work-with-us-btn {
@@ -166,6 +164,7 @@
   .work-text-lines2 {
     display: block;
     font-size: 40px;
+    text-align: center;
   }
 
   .work-text-lines {
