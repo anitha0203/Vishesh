@@ -2,7 +2,6 @@ import React from 'react';
 import './HomePage.css';
 import video from '../../assets/HomePage/Video.mp4';
 import OurServices from './OurServicesComponent/OurServices';
-import Vector from '../../assets/HomePage/Vector.png'
 import ClientLogos from './ClientLogosComponent/ClientLogos';
 import Reviews from './ReviewsComponent/Reviews';
 import LatestUpdates from './LatestUpdatesComponent/LatestUpdates';
@@ -10,6 +9,7 @@ import WorkWithUs from './WorkWithUsComponent/WorkWithUs';
 import AboutUs from './AboutUsComponent/AboutUs';
 import CardsComponent from './CardsComponent/CardsComponent';
 import Projects from './ProjectsComponent/Projects';
+import VectorSVG from '../../assets/HomePage/Vector.svg'
 
 function HomePage() {
   return (
@@ -54,7 +54,7 @@ function HomePage() {
       <div className="scroll-container">
         <div className="scroll-text">
           <h1 className='vishesh-scroll-heading'>
-            VISHESH COUNTRY CACHE  <img className='heading-scroll-img' src={Vector} alt='star-vector' /> FOSTERING INTELLECT <img className='heading-scroll-img' src={Vector} alt='star-vector' /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} alt='star-vector' /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} alt='star-vector' /> VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={Vector} alt='star-vector' /> FOSTERING INTELLECT  <img className='heading-scroll-img' src={Vector} alt='star-vector' /> </h1>
+            VISHESH COUNTRY CACHE  <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  FOSTERING INTELLECT <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  FOSTERING INTELLECT  <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  VISHESH COUNTRY CACHE <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' />  FOSTERING INTELLECT  <img className='heading-scroll-img' src={VectorSVG} alt='star-vector' /> </h1>
         </div>
       </div>
 
@@ -73,27 +73,27 @@ function HomePage() {
         <div className="scroll-container1">
           <div className="scroll-text">
             <h1 className='team-scroll-heading'>
-              CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
-              CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
-              CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
-              CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> </h1>
+              CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' />
+              CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' />
+              CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' />
+              CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> CREATIVE DESIGN  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> UI/UX <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> FULL STACK DEVELOPMENT  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> </h1>
           </div>
         </div>
         <hr />
         <div className="scroll-container1">
           <div className="scroll-text2">
             <h1 className='team-scroll-heading'>
-              DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
-              DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
-              DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' />
-              DIGITAL MARKETING  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={Vector} alt='star-vector' /> </h1>
+              DIGITAL MARKETING  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' />
+              DIGITAL MARKETING  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' />
+              DIGITAL MARKETING  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' />
+              DIGITAL MARKETING  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> DIGITAL MARKETING <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> MARKETING ANALYSIS  <img className='heading-scroll-img1' src={VectorSVG} alt='star-vector' /> </h1>
           </div>
         </div>
         <hr />
       </div>
 
-      {/**    Latest Updates Section      */}
-      <LatestUpdates />
+      {/**    Latest Updates Section      
+      <LatestUpdates />*/}
 
       {/**    Work with us section         */}
       <WorkWithUs />

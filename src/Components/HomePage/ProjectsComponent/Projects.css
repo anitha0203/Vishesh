@@ -12,6 +12,16 @@
     margin: 15rem 4rem 0rem;
 }
 
+.home-project-text {
+    color: #344054;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.24px;
+}
+
 .home-feature-projects {
     display: flex;
     justify-content: space-between;
@@ -208,17 +218,17 @@
     .home-project4 {
         width: 100%;
         margin-top: 2rem;
+        /* height: 600px; */
     }
 
-    .home-project4 {
-        height: auto;
+    .home-project4{
+        height: 25vh;
     }
-    .view-all-projects-h5 {
-        font-size: 28px;
-        margin-top: 2rem;
-    }
-    .plus-icon-img{
+    .projects-view-icon{
         width: 5rem;
+    }
+    .view-all-projects-h5{
+        font-size: 2rem;
     }
 }
 
@@ -229,7 +239,7 @@
 
     .home-project1,
     .home-project2,
-    .home-project3 {
+    .home-project3{
         height: 600px;
     }
 }

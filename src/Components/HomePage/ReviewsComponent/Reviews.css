@@ -39,7 +39,7 @@
     background-color: transparent;
     color: #33353A;
     font-family: Satoshi;
-    font-size: 24px;
+    font-size: calc(0.6rem + 0.75vw);
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -150,25 +150,11 @@
     margin: 0px;
 }
 
-/*  Mobile view */
-.reviews-mobile-view {
-    display: none;
-}
-
-.reviews-para-mobile {
-    font-size: calc(1.2rem + 0.5vw);
-}
-
-.accordion-button {
-    background-color: transparent;
-}
-
-
-@media only screen and (min-width: 1920px) {
+/* @media only screen and (min-width: 1920px) {
     .reviews-para {
         font-size: 1.1rem;
     }
-}
+} */
 
 @media (max-width: 1200px) {
     .reviews-section {
@@ -202,6 +188,9 @@
 
     .review-cards {
         margin-top: 2rem;
+    }
+    .reviews-para {
+        font-size: calc(1.2rem + 0.75vw);
     }
 }
 

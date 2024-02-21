@@ -37,8 +37,8 @@
       padding-left: 2%;
   }
   svg {
-    background-color: #242424 !important;
-    color: white !important;
+    background-color: #242424;
+    color: white;
   }
   .svg-belowtext{
       color: var(--text-icon-dark-body, rgba(252, 252, 252, 0.90));
