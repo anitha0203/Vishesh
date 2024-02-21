@@ -17,8 +17,8 @@ export default function WorkFlows() {
             </div>
           </div>
 
-          <div>
-            <p className="accordion-item-content">Content for section 1</p>
+          <div className="accordion-item-content">
+            <p style={{backgroundColor:'#1D2939'}}>We'll work to understand your goals, strategy, and mission to develop a strategy for success.</p>
           </div>
         </section>
         <section className="accordion-item">
@@ -31,8 +31,8 @@ export default function WorkFlows() {
             </div>
           </div>
 
-          <div>
-            <p className="accordion-item-content">Content for section 2</p>
+          <div className="accordion-item-content">
+            <p style={{backgroundColor:'#1D2939'}} >Our team will create an intuitive user experience that will bring your product to life.</p>
           </div>
         </section>
         <section className="accordion-item">
@@ -45,8 +45,8 @@ export default function WorkFlows() {
             </div>
           </div>
 
-          <div>
-            <p className="accordion-item-content">Content for section 3</p>
+          <div className="accordion-item-content">
+            <p style={{backgroundColor:'#1D2939'}}>We work in agile sprints to ensure you're always up to speed with the status of your project.</p>
           </div>
         </section>
         <section className="accordion-item">
@@ -59,8 +59,8 @@ export default function WorkFlows() {
             </div>
           </div>
 
-          <div>
-            <p className="accordion-item-content">Content for section 4</p>
+          <div className="accordion-item-content">
+            <p style={{backgroundColor:'#1D2939'}}>We efficiently hand over project results to intended recipients, ensuring stakeholder satisfaction.</p>
           </div>
         </section>
         <section className="accordion-item">
@@ -73,8 +73,8 @@ export default function WorkFlows() {
             </div>
           </div>
 
-          <div>
-            <p className="accordion-item-content">Content for section 5</p>
+          <div className="accordion-item-content">
+            <p style={{backgroundColor:'#1D2939',paddingBottom:"20px"}}>Our team will work diligently to maintain the optimal performance and current status of your core IT assets through support.</p>
           </div>
         </section>
       </section>

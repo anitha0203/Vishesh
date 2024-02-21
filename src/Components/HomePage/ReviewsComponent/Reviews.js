@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import './Reviews.css';
 import { Card, Col, Row } from 'react-bootstrap';
+import { motion } from "framer-motion"
 
 //  Reviews Data
 const reviews = [
@@ -16,7 +17,12 @@ function Reviews() {
 
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
   const [isNextDisabled, setIsNextDisabled] = useState(false);
-  const [reviewsData, setReviews] = useState(reviews)
+  const [width, setWidth] = useState(0)
+  const carousel = useRef()
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+  }, [])
 
   useEffect(() => {
     const box = document.querySelector('.reviews-carousel');
@@ -62,34 +68,6 @@ function Reviews() {
     box.scrollLeft += width;
   };
 
-  
-  const handleDragStart = (e, index) => {
-    e.dataTransfer.setData('text/plain', index.toString());
-    // Set a dummy value for the data to enable dragging in Firefox
-    e.dataTransfer.setData('application/json', { index });
-    e.dataTransfer.effectAllowed = 'move';
-  };
-  
-  
-
-  const handleDragOver = (e) => {
-    e.preventDefault();
-  };
-
-  const handleDrop = (e) => {
-    const draggedIndex = parseInt(e.dataTransfer.getData('text/plain'));
-    const droppedIndex = parseInt(e.currentTarget.dataset.index);
-
-    // Swap the positions of the dragged and dropped cards in the reviews array
-    const updatedReviews = [...reviews];
-    const temp = updatedReviews[draggedIndex];
-    updatedReviews[draggedIndex] = updatedReviews[droppedIndex];
-    updatedReviews[droppedIndex] = temp;
-
-    // Update the state with the new reviews order
-    // (You may want to use a state management library for better control)
-    setReviews(updatedReviews);
-  };
   return (
     <div className='reviews-section'>
 
@@ -106,12 +84,10 @@ function Reviews() {
           </div>
 
         </Col>
-        <Col className='reviews-carousel'>
-          <div className='carousel-reviews'>
-            {reviewsData.map((review, index) => (
-              <div key={index} className='review-section' data-index={index}
-              draggable
-              onDragStart={(e) => handleDragStart(e, index)}>
+        <Col className='reviews-carousel' ref={carousel}>
+          <motion.div className='carousel-reviews' drag="x" dragConstraints={{ right: 0, left: -width }}>
+            {reviews.map((review, index) => (
+              <motion.div key={index} className='review-section'>
                 <Card className='review-cards'>
                   <div className='reviewcard-container'>
                     <div className='reviewcard-description'>
@@ -123,9 +99,9 @@ function Reviews() {
                     </div>
                   </div>
                 </Card>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </Col>
       </Row>
 

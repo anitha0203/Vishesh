@@ -18,15 +18,29 @@
     border-radius: 24px 24px 0px 0px;
     border-top: 1px solid var(--text-icon-dark-heading, #FCFCFC);
     background: var(--Grey-800, #1D2939);
-    transition: height 0.25s ease; /* Added transition property */
+    transition: height 0.25s ease; 
+    
+    
+    /* Added transition property */
+}
+section.accordion-item{
+    padding-bottom: 0px !important;
 }
 
 .accordion-item-content {
     background-color: var(--Grey-800, #1D2939);
-    margin-top: 1.5rem;
-    color: #FAFBFC;
+    margin-top: 1rem;
+    color: var(--text-icon-dark-body, rgba(252, 252, 252, 0.90));
+    /* Body/Text/Regular */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
     height: 0; /* Initially hide content */
     overflow: hidden;
+    max-width: 687px;
     transition: height 0.55s ease; /* Added transition property */
 }
 
@@ -37,6 +51,7 @@
 .accordion:hover .accordion-item:hover .accordion-item-content,
 .accordion .accordion-item--default .accordion-item-content {
     height: 3em;
+    margin-bottom: 25px;
 }
 
 div.accordion-flex {
