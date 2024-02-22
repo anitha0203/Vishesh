@@ -120,13 +120,16 @@
 }
 
 /* Responsive media queries */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
     .main-logo {
-        width: 300px;
+        width: 250px;
     }
 
     .main-heading {
         margin: 2rem auto 1rem;
+    }
+    .main-logo1 {
+        width: 80px;
     }
 }
 
@@ -145,10 +148,6 @@
         padding: 2rem 1.8rem;
         border-radius: 100px;
         gap: 1vh;
-    }
-
-    .main-logo1 {
-        width: 80px;
     }
 }
 
@@ -173,12 +172,6 @@
 
     .main-logo1 {
         width: 60px;
-    }
-}
-
-@media only screen and (max-width: 410px) {
-    .main-logo {
-        width: 280px;
     }
 }
 

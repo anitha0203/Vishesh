@@ -83,6 +83,13 @@
         width: 45rem;
         height: 35rem;
     }
+    .about-us-btn {
+        padding: 25px 33px 27px 33px;
+        font-size: large;
+    }
+    .home-about-heading {
+        font-size: calc(1.6rem + 1.6vw);
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -101,10 +108,8 @@
         width: 30rem;
         height: 25rem;
     }
-
-    .about-us-btn {
-        padding: 25px 33px 27px 33px;
-        font-size: large;
+    .home-about-heading {
+        font-size: calc(1.5rem + 1.5vw);
     }
 }
 
@@ -137,6 +142,10 @@
 
     .home-about-para {
         font-size: calc(1.2rem + 0.75vw);
+    }
+    
+    .home-about-heading {
+        font-size: calc(1.4rem + 1.4vw);
     }
 }
 
