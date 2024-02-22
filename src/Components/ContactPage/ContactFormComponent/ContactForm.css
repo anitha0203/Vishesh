@@ -73,6 +73,9 @@
     height: 129px;
 }
 
+.ErrorMessage{
+    color: red;
+}
 
 @media (max-width:1440px) {
     
