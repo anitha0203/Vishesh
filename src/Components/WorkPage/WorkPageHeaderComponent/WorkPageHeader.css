@@ -48,6 +48,18 @@
     line-height: 120%; /* 40.8px */
 }
 
+@media (max-width:1625px) {
+    .WorkPageHeader-container{
+        padding-top: 100px;
+    }
+    .WorkPageHeader-h4{
+        font-size: 45px;
+    }
+    .WorkPageHeader-h6{
+        font-size: 24px;
+    }
+}
+
 @media (max-width:1232px) {
     .WorkPageHeader-h4{
         font-size: 45px;
