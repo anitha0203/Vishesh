@@ -202,6 +202,11 @@
         margin-left: 0rem;
         gap: 5rem;
     }
+
+    .services-btn {
+        padding: 25px 33px 27px 33px;
+        font-size: large;
+    }
 }
 
 @media only screen and (max-width: 1175px) {
@@ -238,10 +243,6 @@
         margin: 10rem 2rem;
     }
 
-    .services-btn {
-        padding: 25px 33px 27px 33px;
-        font-size: large;
-    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -284,6 +285,7 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+
     .service-team-text {
         font-size: calc(1.2rem + 0.75vw);
         margin-top: 0rem;

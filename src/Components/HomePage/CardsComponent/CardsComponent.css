@@ -146,6 +146,15 @@
     .why-us-section {
         width: 140%;
     }
+
+    .cards-sections-us,
+    .cards-sections-us1,
+    .cards-sections-us2,
+    .cards-sections-us3,
+    .cards-sections-us4 {
+        height: 400px;
+    }
+
 }
 
 @media only screen and (max-width: 1310px) {
