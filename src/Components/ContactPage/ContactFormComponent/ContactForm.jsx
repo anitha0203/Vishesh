@@ -34,7 +34,7 @@ function ContactForm(props) {
         for (let viewerKey in getFormData) {
             console.log(viewerKey);
             if (getFormData[viewerKey] === ".") {
-                var obj = JSON.parse(`{"${viewerKey}":""}`);
+
                 // console.log(obj);
                 tempFormData[viewerKey] = "";
 
