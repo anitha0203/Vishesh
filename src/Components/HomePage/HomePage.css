@@ -216,6 +216,12 @@
     }
 }
 
+@media only screen and (max-width: 1400px) {
+    .home-main-heading {
+        font-size: calc(2rem + 2vw);
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     .home-main-section {
         margin-left: 1rem;
@@ -227,10 +233,6 @@
     .home-heading-video {
         margin-left: 0rem;
         margin-top: 1rem;
-    }
-
-    .home-main-heading {
-        font-size: calc(2rem + 2vw);
     }
 
     .video-container {
@@ -268,9 +270,9 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 825px) {
     .home-main-heading {
-        font-size: calc(1.8rem + 2vw);
+        font-size: calc(1.5rem + 1.5vw);
     }
 
     .video-container {
@@ -298,10 +300,6 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .home-main-heading {
-        font-size: calc(1.65rem + 1.85vw);
-    }
-
     .video-container {
         width: 200px;
         height: 80px;
