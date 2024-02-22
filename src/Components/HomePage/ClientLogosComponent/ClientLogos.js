@@ -25,11 +25,6 @@ function ClientLogos() {
                         <img key={index} src={logo} className='client-logo-img' alt={`client-logo-${index}`} />
                     </div>
                 ))}
-                {logos.map((logo, index) => (
-                    <div key={index} className='slide'>
-                        <img src={logo} className='client-logo-img' alt={`client-logo-${index}`} />
-                    </div>
-                ))}
             </div>
 
         </div>

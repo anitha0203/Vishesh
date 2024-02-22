@@ -32,21 +32,21 @@ function CardsComponent() {
                     </div>
                     <h6 className='cards-section-us-number'>01</h6>
                 </div>
-                <div className={`cards-sections-us1 ${activeCard === 2 || activeCard === 3 || activeCard === 4 || activeCard === 5 ? 'cards-sections-us12' : ''}`} onClick={() => handleCardClick(2)} style={{ backgroundColor: '#F5A091' }}>
+                <div className={`cards-sections-us1 ${activeCard >= 2 ? 'cards-sections-us12' : ''}`} onClick={() => handleCardClick(2)} style={{ backgroundColor: '#F5A091' }}>
                     <div style={{ backgroundColor: "transparent" }}>
                         <h6 className='cards-section-us-heading'>{cardData[1].head}</h6>
                         <p className='cards-section-us-text'>{cardData[1].text}</p>
                     </div>
                     <h6 className='cards-section-us-number'>02</h6>
                 </div>
-                <div className={`cards-sections-us2 ${activeCard === 3 || activeCard === 4 || activeCard === 5 ? 'cards-sections-us23' : ''}`} onClick={() => handleCardClick(3)} style={{ backgroundColor: '#B2DECA' }}>
+                <div className={`cards-sections-us2 ${activeCard >= 3 ? 'cards-sections-us23' : ''}`} onClick={() => handleCardClick(3)} style={{ backgroundColor: '#B2DECA' }}>
                     <div style={{ backgroundColor: "transparent" }}>
                         <h6 className='cards-section-us-heading'>{cardData[2].head}</h6>
                         <p className='cards-section-us-text'>{cardData[2].text}</p>
                     </div>
                     <h6 className='cards-section-us-number'>03</h6>
                 </div>
-                <div className={`cards-sections-us3 ${activeCard === 4 || activeCard === 5 ? 'cards-sections-us34' : ''}`} onClick={() => handleCardClick(4)} style={{ backgroundColor: '#ABAEDB' }}>
+                <div className={`cards-sections-us3 ${activeCard >= 4 ? 'cards-sections-us34' : ''}`} onClick={() => handleCardClick(4)} style={{ backgroundColor: '#ABAEDB' }}>
                     <div style={{ backgroundColor: "transparent" }}>
                         <h6 className='cards-section-us-heading'>{cardData[3].head}</h6>
                         <p className='cards-section-us-text'>{cardData[3].text}</p>
@@ -71,21 +71,21 @@ function CardsComponent() {
                     </div>
                     <h6 className='cards-section-us-number'>01</h6>
                 </div>
-                <div className={`cards-sections-us-mobile1 ${activeCard === 2 || activeCard === 3 || activeCard === 4 || activeCard === 5 ? 'cards-sections-us-mobile12' : ''}`} onClick={() => handleCardClick(2)} style={{ backgroundColor: '#F5A091' }}>
+                <div className={`cards-sections-us-mobile1 ${activeCard >= 2 ? 'cards-sections-us-mobile12' : ''}`} onClick={() => handleCardClick(2)} style={{ backgroundColor: '#F5A091' }}>
                     <div style={{ backgroundColor: "transparent" }}>
                         <h6 className='cards-section-us-heading'>{cardData[1].head}</h6>
                         <p className='cards-section-us-text'>{cardData[1].text}</p>
                     </div>
                     <h6 className='cards-section-us-number'>02</h6>
                 </div>
-                <div className={`cards-sections-us-mobile2 ${activeCard === 3 || activeCard === 4 || activeCard === 5 ? 'cards-sections-us-mobile23' : ''}`} onClick={() => handleCardClick(3)} style={{ backgroundColor: '#B2DECA' }}>
+                <div className={`cards-sections-us-mobile2 ${activeCard >= 3 ? 'cards-sections-us-mobile23' : ''}`} onClick={() => handleCardClick(3)} style={{ backgroundColor: '#B2DECA' }}>
                     <div style={{ backgroundColor: "transparent" }}>
                         <h6 className='cards-section-us-heading'>{cardData[2].head}</h6>
                         <p className='cards-section-us-text'>{cardData[2].text}</p>
                     </div>
                     <h6 className='cards-section-us-number'>03</h6>
                 </div>
-                <div className={`cards-sections-us-mobile3 ${activeCard === 4 || activeCard === 5 ? 'cards-sections-us-mobile34' : ''}`} onClick={() => handleCardClick(4)} style={{ backgroundColor: '#ABAEDB' }}>
+                <div className={`cards-sections-us-mobile3 ${activeCard >= 4 ? 'cards-sections-us-mobile34' : ''}`} onClick={() => handleCardClick(4)} style={{ backgroundColor: '#ABAEDB' }}>
                     <div style={{ backgroundColor: "transparent" }}>
                         <h6 className='cards-section-us-heading'>{cardData[3].head}</h6>
                         <p className='cards-section-us-text'>{cardData[3].text}</p>

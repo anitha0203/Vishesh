@@ -10,7 +10,7 @@
 
 .home-main-section {
     text-align: center;
-    margin: 8rem 4rem 19rem;
+    margin: 10rem 4rem 18rem;
 }
 
 .home-main-section1 {
@@ -178,18 +178,48 @@
 }
 
 /* Responsive media queries */
+@media screen and (min-width: 1200px) and  (max-width: 2200px) and (max-height: 950px) {
+    .home-main-section {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and  (max-width: 2000px) and (max-height: 750px) {
+    .home-main-section {
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2000px) and (max-height: 650px) {
+    .home-main-section {
+        margin-top: 0rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-main-section {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+}
+
 @media only screen and (max-width: 1700px) {
     .home-section-para {
         width: 90%;
     }
+
     .video1 {
         height: 100vh;
     }
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1300px) {
     .home-main-section {
-        margin: 5rem 1rem 10rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -211,7 +241,8 @@
     .video-container4 {
         width: 238px;
         height: 100px;
-    }    
+    }
+
     .video1 {
         height: 60vh;
     }
@@ -219,7 +250,8 @@
 
 @media only screen and (max-width: 1040px) {
     .home-main-section {
-        margin: 5rem 0rem 10rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     .scroll-container {
@@ -229,6 +261,7 @@
     .scroll-container1 {
         width: 86%;
     }
+
     .team-heading-sections1 {
         margin: 10rem 0rem 0rem;
     }
@@ -253,10 +286,12 @@
     .scroll-container {
         margin: 6rem 0px;
     }
-    .heading-scroll-img{
+
+    .heading-scroll-img {
         width: 3.8rem;
         margin-top: -25px;
     }
+
     .team-heading-sections1 {
         margin: 8rem 0rem 0rem;
     }
@@ -276,6 +311,7 @@
         width: 200px;
         height: 80px;
     }
+
     .video1 {
         height: auto;
     }
@@ -320,12 +356,12 @@
         width: 1rem;
         margin-top: 0.2vh;
     }
+
     .home-section-para {
         font-size: calc(0.8rem + 0.7vw);
     }
+
     .team-heading-sections1 {
         margin: 5rem 0rem 0rem;
     }
 }
-
-
