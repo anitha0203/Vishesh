@@ -18,7 +18,7 @@ function WorkPage() {
 
       {/**    Reviews Section        */}
       <Reviews />
-      <div className='height-1'></div>
+      <div className='height-3'></div>
     </div>
 
   )
