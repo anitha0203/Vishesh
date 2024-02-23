@@ -79,7 +79,7 @@
 
 .ProjectsScrolling-card-container{
     width: 50%;
-    margin-bottom: 173px;
+    margin-bottom: 100px;
     border: none;
     padding: 0% 2%;
 }
@@ -128,6 +128,18 @@
     .ProjectsScrolling-images{
         width: 650px;
         height: 550px;
+    }
+}
+@media (max-width:1364px) {
+    .ProjectsScrolling-card-ProjectName{
+        font-size: 36px;
+    }
+
+    .ProjectsScrolling-card-ProjectInfo{
+        font-size: 18px;
+    }
+    .ProjectsScrolling-card-ProjectType{
+        font-size: 18px;
     }
 }
 

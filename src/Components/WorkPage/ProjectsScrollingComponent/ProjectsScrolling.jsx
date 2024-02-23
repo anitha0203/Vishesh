@@ -8,10 +8,31 @@ const CreativeDesignProjects = [
     { image: require("../../../assets/WorkPage/hospital logo.png"), ProjectName: "Sri Chaitanya Hospital Logo", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Logo" },
     { image: require("../../../assets/WorkPage/Business Cards.png"), ProjectName: "Business Card", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Business Card" }
 ]
-const DevelopmentProjects = [{ image: require("../../../assets/WorkPage/inno wise.png"), ProjectName: "InnoWise LLC", projectInfo: `We've wrapped up the "Purple Petals" logo project, delivering a striking and unique design that perfectly represents the brand's elegance and beauty.`, ProjectType: "Web Development / Dashboard" }]
-const AnalysisProjects = []
-const MarketingProjects = [{ image: require("../../../assets/WorkPage/Dashboard.png"), ProjectName: `Marketing Analysis Dashboard`, projectInfo: `We've wrapped up the "Purple Petals" logo project, delivering a striking and unique design that perfectly represents the brand's elegance and beauty.`, ProjectType: "Marketing Analysis / Custom Dashboard" }]
-const UI_UxProjects = []
+const DevelopmentProjects = [
+    { image: require("../../../assets/WorkPage/inno wise.png"), ProjectName: "InnoWise LLC", projectInfo: `We've wrapped up the "Purple Petals" logo project, delivering a striking and unique design that perfectly represents the brand's elegance and beauty.`, ProjectType: "Web Development / Dashboard" },
+    { image: require("../../../assets/WorkPage/Business Cards.png"), ProjectName: "Business Card", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Business Card" },
+    { image: require("../../../assets/WorkPage/maxxwin_mockup.png"), ProjectName: "Maxwell", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote the company's message ensuring a strong and consistent online presence..", ProjectType: "Creative Design / Banner Ads" },
+    { image: require("../../../assets/WorkPage/maxxwin_mockup.png"), ProjectName: "Maxwell", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote the company's message ensuring a strong and consistent online presence..", ProjectType: "Creative Design / Banner Ads" },
+]
+const AnalysisProjects = [
+    { image: require("../../../assets/WorkPage/hospital logo.png"), ProjectName: "Sri Chaitanya Hospital Logo", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Logo" },
+    { image: require("../../../assets/WorkPage/Business Cards.png"), ProjectName: "Business Card", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Business Card" },
+    { image: require("../../../assets/WorkPage/maxxwin_mockup.png"), ProjectName: "Maxwell", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote the company's message ensuring a strong and consistent online presence..", ProjectType: "Creative Design / Banner Ads" },
+    { image: require("../../../assets/WorkPage/Business Cards.png"), ProjectName: "Business Card", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Business Card" },
+]
+const MarketingProjects = [
+    { image: require("../../../assets/WorkPage/Dashboard.png"), ProjectName: `Marketing Analysis Dashboard`, projectInfo: `We've wrapped up the "Purple Petals" logo project, delivering a striking and unique design that perfectly represents the brand's elegance and beauty.`, ProjectType: "Marketing Analysis / Custom Dashboard" },
+    { image: require("../../../assets/WorkPage/inno wise.png"), ProjectName: "InnoWise LLC", projectInfo: `We've wrapped up the "Purple Petals" logo project, delivering a striking and unique design that perfectly represents the brand's elegance and beauty.`, ProjectType: "Web Development / Dashboard" },
+    { image: require("../../../assets/WorkPage/Business Cards.png"), ProjectName: "Business Card", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Business Card" },
+    { image: require("../../../assets/WorkPage/maxxwin_mockup.png"), ProjectName: "Maxwell", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote the company's message ensuring a strong and consistent online presence..", ProjectType: "Creative Design / Banner Ads" },
+
+]
+const UI_UxProjects = [
+    { image: require("../../../assets/WorkPage/hospital logo.png"), ProjectName: "Sri Chaitanya Hospital Logo", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Logo" },
+    { image: require("../../../assets/WorkPage/Business Cards.png"), ProjectName: "Business Card", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote.", ProjectType: "Creative Design / Branding / Business Card" },
+    { image: require("../../../assets/WorkPage/maxxwin_mockup.png"), ProjectName: "Maxwell", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote the company's message ensuring a strong and consistent online presence..", ProjectType: "Creative Design / Banner Ads" },
+    { image: require("../../../assets/WorkPage/maxxwin_mockup.png"), ProjectName: "Maxwell", projectInfo: "We designed a series of eye-catching ad banners in various sizes. Our designs effectively promote the company's message ensuring a strong and consistent online presence..", ProjectType: "Creative Design / Banner Ads" },
+]
 const AllProjects = [...CreativeDesignProjects, ...DevelopmentProjects, ...AnalysisProjects, ...MarketingProjects, ...UI_UxProjects];
 function ProjectsScrolling(props) {
 

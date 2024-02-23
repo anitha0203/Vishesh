@@ -77,6 +77,8 @@
     color: red;
 }
 
+
+
 @media (max-width:1440px) {
     
     .ContactForm-field-input{
@@ -85,7 +87,10 @@
     .ContactForm-field-textarea{
         height: 129px;
     }
-    
+    .ContactForm-h6{
+        
+        width: 75%;
+    }
 }
 
 @media (max-width:1024px) {
