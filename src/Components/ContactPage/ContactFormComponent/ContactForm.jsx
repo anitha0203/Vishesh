@@ -34,7 +34,7 @@ function ContactForm(props) {
         var count = 0;
         var emailIs = true;
         for (let viewerKey in getFormData) {
-            console.log(viewerKey);
+            // console.log(viewerKey);
             if (getFormData[viewerKey] === ".") {
 
                 // console.log(obj);
@@ -78,7 +78,7 @@ function ContactForm(props) {
         else {
             setFormData({ ...tempFormData });
 
-            console.log(getFormData);
+            // console.log(getFormData);
 
             if (emailIs) {
                 setErroeMessage("please fill the fields");
