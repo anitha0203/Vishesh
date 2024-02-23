@@ -45,12 +45,12 @@ function ProjectsScrolling(props) {
         temp[index] = 1;
         setProjectTeamClisks([...temp]);
         switch (index) {
-            case 0: setProjects(AllProjects); console.log(Projects); break;
-            case 1: setProjects(CreativeDesignProjects); console.log(Projects); break;
-            case 2: setProjects(DevelopmentProjects); console.log(Projects); break;
-            case 3: setProjects(AnalysisProjects); console.log(Projects); break;
-            case 4: setProjects(MarketingProjects); console.log(Projects); break;
-            case 5: setProjects(UI_UxProjects); console.log(Projects); break;
+            case 0: setProjects(AllProjects); break;
+            case 1: setProjects(CreativeDesignProjects); break;
+            case 2: setProjects(DevelopmentProjects); break;
+            case 3: setProjects(AnalysisProjects); break;
+            case 4: setProjects(MarketingProjects); break;
+            case 5: setProjects(UI_UxProjects); break;
             default: ;
         }
 
