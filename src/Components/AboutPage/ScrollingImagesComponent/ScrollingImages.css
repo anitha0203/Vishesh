@@ -60,6 +60,35 @@ position: relative;
    margin-bottom: 20%;
 }
 
+
+@media (max-width:1423px) {
+    .ScrollingImage1{
+        width: 450px;
+        height: 381px;
+        left: 10%;
+        top: 5%;
+    }
+    .ScrollingImage2{
+        width: 391px;
+        height: 352px;
+        left: 10%;
+        top: 50%;
+    }
+    .ScrollingImage3{
+        width: 500px;
+        height: 452px;
+        top: 90%;
+        right: 0%;
+    }
+    .ScrollingImage4{
+        width: 403px;
+        height: 586px;
+        top: 140%;
+        right: 50%;
+    }
+
+}
+
 @media (max-width:1024px) {
     .ScrollingImage1{
         width: 450px;
@@ -85,13 +114,47 @@ position: relative;
         top: 140%;
         right: 50%;
     }
+
+    .ScrollingImagesContainer{
+        background-position: right;
+        background-size: 100%;
+    }
 }
+
+
 
 @media (max-width:768px) {
     .ScrollingImagesContainer{
         background-position: right;
         background-size: 110%;
     }
+
+    .ScrollingImage1{
+        width: 350px;
+        height: 281px;
+        left: 10%;
+        top: 5%;
+    }
+    .ScrollingImage2{
+        width: 291px;
+        height: 252px;
+        left: 10%;
+        top: 45%;
+    }
+    .ScrollingImage3{
+        width: 350px;
+        height: 352px;
+        top: 80%;
+        right: 0%;
+    }
+    .ScrollingImage4{
+        width: 403px;
+        height: 486px;
+        top: 130%;
+       left: 10%;
+       right: 0;
+    }
+    
 }
 
 @media (max-width:500px) {
