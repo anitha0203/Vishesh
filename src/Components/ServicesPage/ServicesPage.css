@@ -1,85 +1,152 @@
 .main-container {
-    background-color: #242424 !important;
-    color: white !important;
-    margin: 0;
-  }
-  
-  .Container-row {
-    margin-right: 0px;
-  }
-  
-  .row-container {
-    background-color: #242424 !important;
-    color: white !important;
-  }
-  .svg-aboveheading{
-      color: var(--text-icon-dark-heading, #FCFCFC);
-  
-  /* Headings/H3/Medium */
+  background-color: #242424 !important;
+  color: white !important;
+  margin: 0;
+}
+
+.services-row {
+  margin-right: 0px;
+}
+
+.row-container {
+  background-color: #242424 !important;
+  color: white !important;
+}
+.svg-aboveheading{
+    color: var(--text-icon-dark-heading, #FCFCFC);
+
+/* Headings/H3/Medium */
+font-family: Satoshi;
+font-size: 96px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 115.2px */
+padding-left: 2%;
+}
+.svg-abovetext{
+    color: var(--text-icon-dark-body, rgba(252, 252, 252, 0.90));
+
+    /* Body/Text/Regular */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+    width: 652px;
+    padding-left: 2%;
+}
+.services-svg {
+  background-color: #242424 !important;
+  color: white !important;
+}
+.svg-belowtext{
+    color: var(--text-icon-dark-body, rgba(252, 252, 252, 0.90));
+
+/* Headings/H4/Regular */
+font-family: Satoshi;
+font-size: 68px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 81.6px */
+}
+.svg-belowtext2{
+    color: var(--text-icon-light-heading, #131A27);
+
+/* Headings/H4/Medium */
+font-family: Satoshi;
+font-size: 68px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 81.6px */
+
+}
+.svg-belowpara{
+    color: var(--text-icon-light-body, #33353A);
+
+    /* Body/Text/Regular */
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+}
+.heading-work {
+  text-align: center;
+  color: var(--text-icon-light-heading, #131a27);
   font-family: Satoshi;
   font-size: 96px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 115.2px */
-  padding-left: 2%;
+  margin-top: 12%;
+}
+/* ServicesPage.css */
+
+/* Adjust font sizes and SVG sizes for smaller screens */
+@media screen and (max-width: 768px) {
+  .svg-aboveheading {
+    font-size: 48px;
+    line-height: 60px;
   }
-  .svg-abovetext{
-      color: var(--text-icon-dark-body, rgba(252, 252, 252, 0.90));
-  
-      /* Body/Text/Regular */
-      font-family: Satoshi;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 36px */
-      letter-spacing: 0.24px;
-      width: 652px;
-      padding-left: 2%;
+  .svg-abovetext {
+    font-size: 18px;
+    line-height: 27px;
+    width: 80%; /* Adjusted width for smaller screens */
+    padding-left: 10px; /* Adjusted padding for smaller screens */
   }
-  svg {
-    background-color: #242424;
-    color: white;
+  .svg-belowtext {
+    font-size: 36px;
+    line-height: 43px;
   }
-  .svg-belowtext{
-      color: var(--text-icon-dark-body, rgba(252, 252, 252, 0.90));
-  
-  /* Headings/H4/Regular */
-  font-family: Satoshi;
-  font-size: 68px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 81.6px */
+  .svg-belowtext2 {
+    font-size: 36px;
+    line-height: 43px;
   }
-  .svg-belowtext2{
-      color: var(--text-icon-light-heading, #131A27);
-  
-  /* Headings/H4/Medium */
-  font-family: Satoshi;
-  font-size: 68px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%; /* 81.6px */
-  
-  }
-  .svg-belowpara{
-      color: var(--text-icon-light-body, #33353A);
-  
-      /* Body/Text/Regular */
-      font-family: Satoshi;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 36px */
-      letter-spacing: 0.24px;
+  .svg-belowpara {
+    font-size: 16px;
+    line-height: 24px;
   }
   .heading-work {
-    text-align: center;
-    color: var(--text-icon-light-heading, #131a27);
-    font-family: Satoshi;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%; /* 115.2px */
-    margin-top: 12%;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 8%; /* Adjusted margin for smaller screens */
   }
-  
+  .services-svg{
+    width: 60%; /* Adjusted SVG width for smaller screens */
+  }
+}
+
+/* Further adjustments for even smaller screens */
+@media screen and (max-width: 576px) {
+  .svg-aboveheading {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .svg-abovetext {
+    font-size: 16px;
+    line-height: 24px;
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+  .svg-belowtext {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .svg-belowtext2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .svg-belowpara {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .heading-work {
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 6%; /* Adjusted margin for smaller screens */
+  }
+  .services-svg {
+    width: 80%; /* Adjusted SVG width for smaller screens */
+  }
+}

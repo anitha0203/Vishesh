@@ -10,7 +10,7 @@ function ServicesPage() {
   return (
     <>
       <div className="main-container">
-        <Row style={{ backgroundColor: "#242424" }} className="Container-row">
+        <Row className="services-row" style={{ backgroundColor: "#242424" }}>
           <h3
             style={{ backgroundColor: "#242424" }}
             className="svg-aboveheading"
@@ -22,15 +22,14 @@ function ServicesPage() {
             flexibility and digital-first thinking of an agile entity.
           </p>
         </Row>
-        <Row
+        <Row className="services-row"
           style={{
             justifyContent: "center",
             alignItems: "center",
             marginRight: "0px",
           }}
-          className="Container-row"
         >
-          <svg
+          <svg className="services-svg"
             style={{ padding: "0px 0px" }}
             xmlns="http://www.w3.org/2000/svg"
             width="429"
@@ -59,7 +58,7 @@ function ServicesPage() {
             </defs>
           </svg>
         </Row>
-        <Row style={{ backgroundColor: "#242424", marginTop: "8%" }} className="Container-row">
+        <Row className="services-row" style={{ backgroundColor: "#242424", marginTop: "8%" }}>
           <div style={{ paddingLeft: "20%", backgroundColor: "#242424" }}>
             <h4
               style={{ backgroundColor: "#242424", maxWidth: "1440px" }}
@@ -73,18 +72,18 @@ function ServicesPage() {
           </div>
         </Row>
         <div>
-          <Offer />
-        </div>
+      <Offer/>
       </div>
-
-
-
-      <div style={{ margin: '3%' }}>
-        <Row className="Container-row">
+      </div>
+    
+      
+      
+      <div style={{margin:'3%' }}>
+        <Row className="services-row">
           <Col>
             <h4 className="svg-belowtext2">Software Agnostic, Technical Excellence</h4>
           </Col>
-          <Col style={{ justifyContent: 'center', alignItems: 'center' }}>
+          <Col style={{justifyContent:'center',alignItems:'center'}}>
             <p className="svg-belowpara">
               Whether you’ve defined your tech stack or need something new, our
               team is well-versed in a variety of platforms and we’re equipped

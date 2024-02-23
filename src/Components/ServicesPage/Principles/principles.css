@@ -1,51 +1,79 @@
-.principlesp-container{
-    padding: 0% 3.2%;
+.principlesp-container {
+    padding: 0% 1%;
+    max-width: 100%; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container */
 }
 
-.principles-Col{
+.principles-Col {
     padding: 0px 10px !important;
-    
 }
-.principles-Row{
+
+.principles-Row {
     margin-top: 4rem;
 }
 
-.principles{
+.principles {
     color: var(--text-icon-light-heading, #131A27);
-text-align: center;
-/* Headings/H3/Medium */
-font-family: Satoshi;
-font-size: 96px;
-font-style: normal;
-font-weight: 500;
-line-height: 120%; /* 115.2px */
-margin-top: 15%;
+    text-align: center;
+    /* Headings/H3/Medium */
+    font-family: Satoshi;
+    font-size: 5vw; /* Responsive font size */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 115.2px */
+    margin-top: 15%;
 }
-.icon{
-    width: 114.561px;
-    height: 114.563px;
+
+.icon {
+    width: 10vw; /* Responsive width */
+    height: 10vw; /* Responsive height */
     flex-shrink: 0;
 }
-.heading-principals{
-    color: var(--text-icon-light-heading, #131A27);
 
+.heading-principals {
+    color: var(--text-icon-light-heading, #131A27);
     /* Headings/H5/Medium */
     font-family: Satoshi;
-    font-size: 48px;
+    font-size: 3vw; /* Responsive font size */
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 57.6px */
-    width: 420px;
+    max-width: 30vw; /* Responsive maximum width */
 }
-.sub_text_principals{
+
+.sub_text_principals {
     color: var(--text-icon-light-body, #33353A);
-    width: 420px;
-/* Body/Text/Regular */
-font-family: Satoshi;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 36px */
-letter-spacing: 0.24px;
-text-align: justify;
+    max-width: 27vw; /* Responsive maximum width */
+    /* Body/Text/Regular */
+    font-family: Satoshi;
+    font-size: 1.5vw; /* Responsive font size */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+    text-align: justify;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .heading-principals,
+    .sub_text_principals {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+    }
+
+    .principles {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading-principals,
+    .sub_text_principals {
+        font-size: 5vw; /* Further adjust font size for smaller screens */
+    }
+
+    .principles {
+        font-size: 10vw; /* Further adjust font size for smaller screens */
+    }
 }

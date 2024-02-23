@@ -13,12 +13,20 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 2rem auto 2.5rem;
+    padding: 2rem auto 2.5rem;
 }
 
 .main-logo {
     width: 450px;
+    margin: 2rem 0rem;
+    background-color: transparent;
 }
+
+
+.hr-element{
+    margin: 0rem;
+}
+
 
 .header-section,
 .header-section1 {
@@ -117,6 +125,10 @@
 
 .header-section1 {
     display: none;
+}
+
+.services-page{
+    background-color: #242424;
 }
 
 /* Responsive media queries */

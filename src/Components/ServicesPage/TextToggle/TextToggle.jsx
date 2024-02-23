@@ -7,7 +7,7 @@ import img3 from "../../../assets/ServicePage/illustrator.png";
 import img4 from "../../../assets/ServicePage/Premiere Pro.png";
 import img5 from "../../../assets/ServicePage/Dimension.png";
 import img6 from "../../../assets/ServicePage/Canva.png";
-import img7 from "../../../assets/ServicePage/After Effects.png";
+import img7 from "../../../assets/ServicePage/After Effects.png";   
 import img8 from "../../../assets/ServicePage/Davinci Resolve.png";
 import img9 from "../../../assets/ServicePage/Figma.png";
 import img10 from "../../../assets/ServicePage/Adobe XD.png";

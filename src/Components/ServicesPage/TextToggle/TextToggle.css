@@ -1,16 +1,20 @@
 .TextToggle-container {
   display: flex;
   justify-content: space-around;
-  max-width: 1690px;
-   /* Align texts with equal space */
-}
-.TextToggle-Inside{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width:'200px' !important;
+  max-width: 90%; /* Adjusted to occupy full width */
+  margin: 0 auto; /* Center the container */
 }
 
+.TextToggle-Inside {
+  display: block;
+  flex-wrap: wrap; /* Allowing items to wrap when there's not enough space */
+  justify-content: center !important;
+  align-items: center !important;
+  max-width: 70%; /* Make sure it occupies the available width */
+}
+.TextToggle-Inside > p{
+  text-align: center;
+}
 .team {
   padding: 10px;
   cursor: pointer;
@@ -23,26 +27,49 @@
 
 .content {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .underline-container {
+  width: 100%;
   display: flex;
-  
+  justify-content: center; /* Aligning underline in the center horizontally */
+  align-items: center; /* Aligning underline in the center vertically */
 }
-div.underline.active::after{
-  display: none;
-}
-div.team.active::after{
-  display: none;
-}
+
 .underline {
-  border-bottom: 2px solid #999 !important; /* Light color for the line below text */
-  flex-grow: 1;
-  max-width: 1690px !important ;
-  margin:'0 50px' ;
+  border-bottom: 2px solid #999;
+  flex-grow: 1; /* Allow the underline to grow */
+  max-width: 90%; /* Ensure the underline spans the entire width */
 }
 
 .underline.active {
-  border-bottom-color: #000; /* Dark color for the active line below text */
-  width: 20px;
+  border-bottom-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .TextToggle-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .underline-container {
+    margin-top: 20px; /* Add margin to separate underline from text */
+  }
+
+  .underline {
+    max-width: 90%; /* Adjusted max-width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .TextToggle-container {
+    padding: 0 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .underline {
+    max-width: 80%; /* Further reduced max-width for smaller screens */
+  }
 }

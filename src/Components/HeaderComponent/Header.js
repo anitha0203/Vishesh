@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Header.css'
 import Logo from '../../assets/Logo-black.png'
+import LogoWhite from '../../assets/Logo-white.png'
 import LogoS from '../../assets/logo-s.png'
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -62,8 +63,12 @@ function Header() {
 
   return (
     <div>
-      <div className='main-heading'>
+      <div className={`main-heading ${isActive('/services') ? 'services-page' : ''}`}>
+      {isActive('/services') ? (
+        <img onClick={() => { navigate('/') }} src={LogoWhite} className='main-logo' alt='main-logo' />
+      ) : (
         <img onClick={() => { navigate('/') }} src={Logo} className='main-logo' alt='main-logo' />
+      )}
       </div>
       <hr className='hr-element' />
 
@@ -71,7 +76,7 @@ function Header() {
         <img onClick={() => { navigate('/') }} src={LogoS} className='main-logo1' alt='main-logo' />
       </div>
 
-      <div className='header-section'>
+      <div  className='header-section'>
         <div className='nav-items-section'>
           <h2 className={`nav-items ${isActive('/') || isActive('/home') ? 'active' : ''}`} onClick={() => { navigate('/home') }}>Home</h2>
           <h2 className={`nav-items ${isActive('/services') ? 'active' : ''}`} onClick={() => { navigate('/services') }}>Services</h2>
