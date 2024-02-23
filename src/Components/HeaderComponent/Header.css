@@ -23,7 +23,7 @@
 }
 
 
-.hr-element{
+.hr-element {
     margin: 0rem;
 }
 
@@ -82,7 +82,7 @@
     padding: 0.5rem;
 }
 
-.nav-items:hover{
+.nav-items:hover {
     background-color: rgba(227, 233, 233, 0.5);
     border-radius: 25px;
 }
@@ -127,7 +127,7 @@
     display: none;
 }
 
-.services-page{
+.services-page {
     background-color: #242424;
 }
 
@@ -140,6 +140,7 @@
     .main-heading {
         margin: 2rem auto 1rem;
     }
+
     .main-logo1 {
         width: 80px;
     }

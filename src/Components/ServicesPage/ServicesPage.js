@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./ServicesPage.css";
 import Principles from "./Principles/principles";
 import WorkFlows from "./WorkFlows/WorkFlows";
 import TextToggle from "./TextToggle/TextToggle";
 import Offer from "./WeOffer/Offer";
+import { Helmet } from "react-helmet";
 
 function ServicesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <>
+    <div>
+      <Helmet>
+        <title>Vishesh Country Cache - Services</title>
+        <link rel="canonical" href="https://www.visheshcountrycache.com/" />
+        <meta name='description' content='Foster intellect with Vishesh Country Cache – Your destination for innovative solutions. We specialize in creative design, digital marketing, data analysis, full stack development, and UI/UX. Elevate your online presence with our cutting-edge services.' />
+        <meta name='keywords' content='Vishesh Country Cache, fostering intellect, creative design, full stack, data analysis, ui/ux, digital marketing' />
+        <meta name="author" content="Vishesh Country Cache" />
+        <meta name="robots" content="index, follow" />
+        <html lang="en" />
+      </Helmet>
       <div className="main-container">
         <Row className="services-row" style={{ backgroundColor: "#242424" }}>
           <h3
@@ -72,18 +86,18 @@ function ServicesPage() {
           </div>
         </Row>
         <div>
-      <Offer/>
+          <Offer />
+        </div>
       </div>
-      </div>
-    
-      
-      
-      <div style={{margin:'3%' }}>
+
+
+
+      <div style={{ margin: '3%' }}>
         <Row className="services-row">
           <Col>
             <h4 className="svg-belowtext2">Software Agnostic, Technical Excellence</h4>
           </Col>
-          <Col style={{justifyContent:'center',alignItems:'center'}}>
+          <Col style={{ justifyContent: 'center', alignItems: 'center' }}>
             <p className="svg-belowpara">
               Whether you’ve defined your tech stack or need something new, our
               team is well-versed in a variety of platforms and we’re equipped
@@ -100,7 +114,7 @@ function ServicesPage() {
       <div>
         <Principles />
       </div>{" "}
-    </>
+    </div>
     // by aditya
   );
 }

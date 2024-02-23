@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './AboutPage.css'
 import AboutHeader from './AboutHeaderComponent/AboutHeader'
 import ScrollingImages from './ScrollingImagesComponent/ScrollingImages'
@@ -10,22 +10,32 @@ import ContactUsNav from './ContactUsNavComponent/ContactUsNav'
 import CareersNav from './CareersNavComponent/CareersNav'
 import ApplyNowNav from './ApplyNowNavComponent/ApplyNowNav'
 import { useRef } from 'react'
+import { Helmet } from 'react-helmet'
 
 
 function AboutPage() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   const componentRef = useRef(null);
   const handleClick = () => {
-
     componentRef.current.scrollIntoView({ block: 'start' });
-
   };
 
-
-
   return (
-    <>
+    <div>
+      <Helmet>
+        <title>Vishesh Country Cache - About</title>
+        <link rel="canonical" href="https://www.visheshcountrycache.com/" />
+        <meta name='description' content='Foster intellect with Vishesh Country Cache – Your destination for innovative solutions. We specialize in creative design, digital marketing, data analysis, full stack development, and UI/UX. Elevate your online presence with our cutting-edge services.' />
+        <meta name='keywords' content='Vishesh Country Cache, fostering intellect, creative design, full stack, data analysis, ui/ux, digital marketing' />
+        <meta name="author" content="Vishesh Country Cache" />
+        <meta name="robots" content="index, follow" />
+        <html lang="en" />
+      </Helmet>
       <div >
         <AboutHeader />
       </div>
@@ -48,7 +58,7 @@ function AboutPage() {
       <div className='height-4'></div>
       <ApplyNowNav />
       <div className='height-2'></div>
-    </>
+    </div>
   )
 }
 

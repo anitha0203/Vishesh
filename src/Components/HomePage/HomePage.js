@@ -10,6 +10,7 @@ import AboutUs from './AboutUsComponent/AboutUs';
 import CardsComponent from './CardsComponent/CardsComponent';
 import Projects from './ProjectsComponent/Projects';
 import VectorSVG from '../../assets/HomePage/Vector.svg'
+import { Helmet } from 'react-helmet';
 
 function HomePage() {
 
@@ -19,6 +20,15 @@ function HomePage() {
 
   return (
     <div>
+      <Helmet>
+        <title>Vishesh Country Cache - Home</title>
+        <link rel="canonical" href="https://www.visheshcountrycache.com/" />
+        <meta name='description' content='Foster intellect with Vishesh Country Cache – Your destination for innovative solutions. We specialize in creative design, digital marketing, data analysis, full stack development, and UI/UX. Elevate your online presence with our cutting-edge services.' />
+        <meta name='keywords' content='Vishesh Country Cache, fostering intellect, creative design, full stack, data analysis, ui/ux, digital marketing' />
+        <meta name="author" content="Vishesh Country Cache" />
+        <meta name="robots" content="index, follow" />
+        <html lang="en" />
+      </Helmet>
 
       {/**    Web view view       */}
       <div className='home-main-section'>
