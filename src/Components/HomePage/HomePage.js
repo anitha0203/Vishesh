@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HomePage.css';
 import video from '../../assets/HomePage/Video.mp4';
 import OurServices from './OurServicesComponent/OurServices';
@@ -12,6 +12,11 @@ import Projects from './ProjectsComponent/Projects';
 import VectorSVG from '../../assets/HomePage/Vector.svg'
 
 function HomePage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
 
